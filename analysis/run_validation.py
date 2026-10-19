@@ -44,11 +44,20 @@ def main():
     for n in ['corpus.json', 'focused-corpus.json', 'bus-corpus.json']:
         shutil.copyfile(ROOT / 'data' / n, work / n)
     assert not (work / 'reference.json').exists()
+    # Component and treatment names are sorted by R's sort(), which follows the session collation.
+    # The page sorts by UTF-16 code unit (JavaScript Array.prototype.sort); the C collation is the
+    # matching order and is the one the archived reference used. Pin it rather than inherit a locale.
+    for n in ['reference.R', 'bus_reference.R']:
+        wrapper = ['invisible(Sys.setlocale("LC_COLLATE", "C"))',
+                   'cat("LC_COLLATE", Sys.getlocale("LC_COLLATE"), "\\n")',
+                   f'source("{n}")', '']
+        (work / ('c-' + n)).write_text('\n'.join(wrapper), encoding='utf-8', newline='\n')
     t0 = time.monotonic()
-    log = run([rscript, '--vanilla', 'reference.R'], work, work / 'reference.log')
+    log = run([rscript, '--vanilla', 'c-reference.R'], work, work / 'reference.log')
     r_seconds = time.monotonic() - t0
+    print([l for l in log.splitlines() if l.startswith('LC_COLLATE')][-1], flush=True)
     print([l for l in log.splitlines() if l.startswith('REFERENCE')][-1], flush=True)
-    log = run([rscript, '--vanilla', 'bus_reference.R'], work, work / 'bus_reference.log')
+    log = run([rscript, '--vanilla', 'c-bus_reference.R'], work, work / 'bus_reference.log')
     print([l for l in log.splitlines() if l.startswith('BUS REFERENCE')][-1], flush=True)
 
     # Fresh R refit versus the archived R reference: identical statuses/reasons/structure, numbers <= 1e-12.
