@@ -1,0 +1,107 @@
+{
+ "p19_A_input": {
+  "w": 3000,
+  "h": 1238,
+  "tif_mode": "RGB",
+  "tif_compression": "tiff_lzw",
+  "tif_dpi": [
+   300.0,
+   300.0
+  ],
+  "png_dpi": [
+   299.999,
+   299.999
+  ],
+  "print_width_mm": 254.0
+ },
+ "p19_B_components": {
+  "w": 3000,
+  "h": 544,
+  "tif_mode": "RGB",
+  "tif_compression": "tiff_lzw",
+  "tif_dpi": [
+   300.0,
+   300.0
+  ],
+  "png_dpi": [
+   299.999,
+   299.999
+  ],
+  "print_width_mm": 254.0
+ },
+ "p19_C_combinations": {
+  "w": 3000,
+  "h": 656,
+  "tif_mode": "RGB",
+  "tif_compression": "tiff_lzw",
+  "tif_dpi": [
+   300.0,
+   300.0
+  ],
+  "png_dpi": [
+   299.999,
+   299.999
+  ],
+  "print_width_mm": 254.0
+ },
+ "p19_D_forest": {
+  "w": 3000,
+  "h": 1523,
+  "tif_mode": "RGB",
+  "tif_compression": "tiff_lzw",
+  "tif_dpi": [
+   300.0,
+   300.0
+  ],
+  "png_dpi": [
+   299.999,
+   299.999
+  ],
+  "print_width_mm": 254.0
+ },
+ "p19_E_refusal_cleared": {
+  "w": 3000,
+  "h": 2477,
+  "tif_mode": "RGB",
+  "tif_compression": "tiff_lzw",
+  "tif_dpi": [
+   300.0,
+   300.0
+  ],
+  "png_dpi": [
+   299.999,
+   299.999
+  ],
+  "print_width_mm": 254.0
+ },
+ "p19_E_refusal_message": {
+  "w": 1755,
+  "h": 190,
+  "tif_mode": "RGB",
+  "tif_compression": "tiff_lzw",
+  "tif_dpi": [
+   300.0,
+   300.0
+  ],
+  "png_dpi": [
+   299.999,
+   299.999
+  ],
+  "print_width_mm": 148.6
+ },
+ "p19_F_exports": {
+  "w": 2100,
+  "h": 145,
+  "tif_mode": "RGB",
+  "tif_compression": "tiff_lzw",
+  "tif_dpi": [
+   300.0,
+   300.0
+  ],
+  "png_dpi": [
+   299.999,
+   299.999
+  ],
+  "print_width_mm": 177.8
+ }
+}

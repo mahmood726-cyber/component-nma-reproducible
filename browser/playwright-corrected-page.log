@@ -1,0 +1,44 @@
+        1 file(s) copied.
+        1 file(s) copied.
+
+Running 35 tests using 1 worker
+
+a11y sweep: 76/76 apps, 12 distinct rules, 40 instances
+  ok  1 [chromium] › a11y-sweep.spec.mjs:43:1 › a11y portfolio sweep (discovery baseline) (2.8m)
+  ok  2 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — nma-meta-reg (3.5s)
+  ok  3 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — km-reconstructor (3.1s)
+  ok  4 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — pet-peese (5.0s)
+  ok  5 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — median-to-mean (3.0s)
+  ok  6 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — component-nma (3.6s)
+  ok  7 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — powerma (3.1s)
+  ok  8 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — sequential-ma (3.7s)
+  ok  9 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — bayesian-mcmc (3.6s)
+  ok 10 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — rob2 (2.7s)
+  ok 11 [chromium] › chart-export.spec.mjs:17:3 › chart export bar present, no errors — cross-design (4.0s)
+  ok 12 [chromium] › chart-export.spec.mjs:32:1 › export actually downloads files with correct extensions (3.4s)
+  ok 13 [chromium] › chart-export.spec.mjs:45:1 › PDF export lazy-loads jsPDF from vendor/ and downloads a .pdf (3.3s)
+  ok 14 [chromium] › component-nma-parity.spec.mjs:74:3 › component-nma › loads, renders forest, no console errors (2.0s)
+  ok 15 [chromium] › component-nma-parity.spec.mjs:89:3 › component-nma › netmeta::discomb additive R-parity (cnma-tiny) (2.1s)
+  ok 16 [chromium] › component-nma-parity.spec.mjs:118:5 › component-nma › R reference parity at 1e-9: heterogeneous (2.0s)
+  ok 17 [chromium] › component-nma-parity.spec.mjs:118:5 › component-nma › R reference parity at 1e-9: disconnected-identifiable (2.3s)
+  ok 18 [chromium] › component-nma-parity.spec.mjs:131:3 › component-nma › saturated design: df 0 and tau2 not estimable, as in R (2.5s)
+  ok 19 [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: singular (2.6s)
+  ok 20 [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: numeric-junk (2.2s)
+  ok 21 [chromium] › component-nma-parity.spec.mjs:153:3 › component-nma › labels are text, not markup (R component names) (2.2s)
+  ok 22 [chromium] › component-nma-parity.spec.mjs:163:3 › component-nma › roundoff of an exact zero is displayed unsigned (2.1s)
+  ok 23 [chromium] › nma-bus-reader.spec.mjs:58:5 › bayesian-nma ← ma-comparisons-v1 reader › Load from bus button is injected (2.1s)
+  ok 24 [chromium] › nma-bus-reader.spec.mjs:64:5 › bayesian-nma ← ma-comparisons-v1 reader › Load from bus populates the textarea with correct contrasts (2.2s)
+  ok 25 [chromium] › nma-bus-reader.spec.mjs:90:5 › bayesian-nma ← ma-comparisons-v1 reader › no console errors during the import + run flow (2.2s)
+  ok 26 [chromium] › nma-bus-reader.spec.mjs:127:3 › nma-inconsistency ← ma-comparisons-v1 reader (two-arm only) › Load from bus button is injected (2.4s)
+  ok 27 [chromium] › nma-bus-reader.spec.mjs:133:3 › nma-inconsistency ← ma-comparisons-v1 reader (two-arm only) › a 3-arm bus study is refused visibly; the input is neither replaced nor analysed (2.6s)
+  ok 28 [chromium] › nma-bus-reader.spec.mjs:161:3 › nma-inconsistency ← ma-comparisons-v1 reader (two-arm only) › a bus of two-arm studies imports one contrast per study and is analysed (2.5s)
+  ok 29 [chromium] › nma-bus-reader.spec.mjs:194:3 › nma-inconsistency ← ma-comparisons-v1 reader (two-arm only) › no console errors during the refused import (2.5s)
+  ok 30 [chromium] › nma-bus-reader.spec.mjs:218:3 › nma-global-inconsistency ← ma-comparisons-v1 reader (with design) › Load from bus populates 5-column rows with the shared arm-set design (2.2s)
+  ok 31 [chromium] › nma-bus-reader.spec.mjs:245:3 › nma-global-inconsistency ← ma-comparisons-v1 reader (with design) › no console errors during the import + run flow (2.2s)
+  ok 32 [chromium] › nma-bus-reader.spec.mjs:287:3 › component-nma ← ma-comparisons-v1 reader (pipe + components) › Load from bus populates pipe-delimited contrasts with component names (2.2s)
+  ok 33 [chromium] › nma-bus-reader.spec.mjs:314:3 › component-nma ← ma-comparisons-v1 reader (pipe + components) › no console errors during the import + run flow (2.2s)
+  ok 34 [chromium] › nma-bus-reader.spec.mjs:361:3 › bucher ← ma-comparisons-v1 reader (triangle prefill) › Load from bus fills the AC/BC triangle fields on the log scale (3.5s)
+  ok 35 [chromium] › nma-bus-reader.spec.mjs:382:3 › bucher ← ma-comparisons-v1 reader (triangle prefill) › no console errors during the import flow (3.5s)
+
+  35 passed (4.4m)
+PW_EXIT=0

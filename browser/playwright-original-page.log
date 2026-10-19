@@ -1,0 +1,220 @@
+Preparing worktree (detached HEAD da66b89)
+Updating files:  18% (686/3682)
+Updating files:  19% (700/3682)
+Updating files:  20% (737/3682)
+Updating files:  21% (774/3682)
+Updating files:  22% (811/3682)
+Updating files:  23% (847/3682)
+Updating files:  24% (884/3682)
+Updating files:  25% (921/3682)
+Updating files:  26% (958/3682)
+Updating files:  27% (995/3682)
+Updating files:  28% (1031/3682)
+Updating files:  29% (1068/3682)
+Updating files:  30% (1105/3682)
+Updating files:  31% (1142/3682)
+Updating files:  32% (1179/3682)
+Updating files:  33% (1216/3682)
+Updating files:  34% (1252/3682)
+Updating files:  35% (1289/3682)
+Updating files:  36% (1326/3682)
+Updating files:  37% (1363/3682)
+Updating files:  37% (1399/3682)
+Updating files:  38% (1400/3682)
+Updating files:  39% (1436/3682)
+Updating files:  40% (1473/3682)
+Updating files:  41% (1510/3682)
+Updating files:  42% (1547/3682)
+Updating files:  43% (1584/3682)
+Updating files:  44% (1621/3682)
+Updating files:  45% (1657/3682)
+Updating files:  46% (1694/3682)
+Updating files:  47% (1731/3682)
+Updating files:  48% (1768/3682)
+Updating files:  49% (1805/3682)
+Updating files:  50% (1841/3682)
+Updating files:  51% (1878/3682)
+Updating files:  52% (1915/3682)
+Updating files:  53% (1952/3682)
+Updating files:  54% (1989/3682)
+Updating files:  55% (2026/3682)
+Updating files:  56% (2062/3682)
+Updating files:  57% (2099/3682)
+Updating files:  58% (2136/3682)
+Updating files:  59% (2173/3682)
+Updating files:  60% (2210/3682)
+Updating files:  60% (2239/3682)
+Updating files:  61% (2247/3682)
+Updating files:  62% (2283/3682)
+Updating files:  63% (2320/3682)
+Updating files:  64% (2357/3682)
+Updating files:  65% (2394/3682)
+Updating files:  66% (2431/3682)
+Updating files:  67% (2467/3682)
+Updating files:  68% (2504/3682)
+Updating files:  69% (2541/3682)
+Updating files:  70% (2578/3682)
+Updating files:  70% (2605/3682)
+Updating files:  71% (2615/3682)
+Updating files:  72% (2652/3682)
+Updating files:  73% (2688/3682)
+Updating files:  74% (2725/3682)
+Updating files:  75% (2762/3682)
+Updating files:  76% (2799/3682)
+Updating files:  76% (2802/3682)
+Updating files:  77% (2836/3682)
+Updating files:  78% (2872/3682)
+Updating files:  79% (2909/3682)
+Updating files:  80% (2946/3682)
+Updating files:  80% (2956/3682)
+Updating files:  81% (2983/3682)
+Updating files:  82% (3020/3682)
+Updating files:  83% (3057/3682)
+Updating files:  84% (3093/3682)
+Updating files:  85% (3130/3682)
+Updating files:  86% (3167/3682)
+Updating files:  87% (3204/3682)
+Updating files:  88% (3241/3682)
+Updating files:  89% (3277/3682)
+Updating files:  90% (3314/3682)
+Updating files:  91% (3351/3682)
+Updating files:  92% (3388/3682)
+Updating files:  93% (3425/3682)
+Updating files:  94% (3462/3682)
+Updating files:  95% (3498/3682)
+Updating files:  96% (3535/3682)
+Updating files:  97% (3572/3682)
+Updating files:  98% (3609/3682)
+Updating files:  99% (3646/3682)
+Updating files: 100% (3682/3682)
+Updating files: 100% (3682/3682), done.
+HEAD is now at da66b89 Merge pull request #142 from mahmood726-cyber/fix/ci-shared-tests-hang
+fatal: invalid --pretty format: H
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+added 5 packages in 7s
+
+Running 9 tests using 1 worker
+
+[1/9] [chromium] › component-nma-parity.spec.mjs:74:3 › component-nma › loads, renders forest, no console errors
+[2/9] [chromium] › component-nma-parity.spec.mjs:89:3 › component-nma › netmeta::discomb additive R-parity (cnma-tiny)
+[3/9] [chromium] › component-nma-parity.spec.mjs:118:5 › component-nma › R reference parity at 1e-9: heterogeneous
+[4/9] [chromium] › component-nma-parity.spec.mjs:118:5 › component-nma › R reference parity at 1e-9: disconnected-identifiable
+[5/9] [chromium] › component-nma-parity.spec.mjs:131:3 › component-nma › saturated design: df 0 and tau2 not estimable, as in R
+  1) [chromium] › component-nma-parity.spec.mjs:131:3 › component-nma › saturated design: df 0 and tau2 not estimable, as in R 
+
+    Error: df
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      56 | function expectFit(r, ref) {
+      57 |   expect(r, 'fit result').toBeTruthy();
+    > 58 |   expect(r.df, 'df').toBe(ref.df);
+         |                      ^
+      59 |   near9(r.Q, ref.Q, 'Q');
+      60 |   if (ref.tau2 === null) expect(r.tau2, 'tau2 not estimable (R: NA)').toBeNull();
+      61 |   else near9(r.tau2, ref.tau2, 'tau2');
+        at expectFit (<AUDIT_ROOT>\allmeta-orig\hub\shared\tests\component-nma-parity.spec.mjs:58:22)
+        at <AUDIT_ROOT>\allmeta-orig\hub\shared\tests\component-nma-parity.spec.mjs:135:5
+
+    Error Context: test-results\component-nma-parity-compo-723e0--tau2-not-estimable-as-in-R-chromium\error-context.md
+
+
+[6/9] [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: singular
+  2) [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: singular 
+
+    Error: stale result after refusal
+
+    expect(received).toBeNull()
+
+    Received: {"Q": 0.0992296692788949, "combinations": {"a": {"est": -0.38114604361273474, "se": 0.0827241596789408}, "a+b": {"est": -0.6568423550264073, "se": 0.09959718161205673}, "a+b+c": {"est": -0.8297864056664097, "se": 0.09755635344608249}, "a+c": {"est": -0.5540900942527371, "se": 0.11242214331837493}, "b": {"est": -0.27569631141367257, "se": 0.08967430338745157}, "b+c": {"est": -0.44864036205367497, "se": 0.10516897848781268}, "c": {"est": -0.1729440506400024, "se": 0.09600438296881907}}, "components": {"a": {"est": -0.38114604361273474, "se": 0.0827241596789408}, "b": {"est": -0.27569631141367257, "se": 0.08967430338745157}, "c": {"est": -0.1729440506400024, "se": 0.09600438296881907}}, "comps": ["a", "b", "c"], "df": 4, "tau2": 0}
+
+      143 |       await fitCase(page, FIXTURE); // a prior valid fit must not survive the refusal
+      144 |       const got = await fitCase(page, ref.text);
+    > 145 |       expect(got.result, 'stale result after refusal').toBeNull();
+          |                                                        ^
+      146 |       expect(got.toasts).toContain(ref.reason);
+      147 |       expect(got.comp).toEqual([]);
+      148 |       expect(got.comb).toEqual([]);
+        at <AUDIT_ROOT>\allmeta-orig\hub\shared\tests\component-nma-parity.spec.mjs:145:56
+
+    Error Context: test-results\component-nma-parity-compo-64ac3-sal-clears-results-singular-chromium\error-context.md
+
+
+[7/9] [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: numeric-junk
+  3) [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: numeric-junk 
+
+    Error: stale result after refusal
+
+    expect(received).toBeNull()
+
+    Received: {"Q": 0.5000000000000002, "combinations": {"a": {"est": 0.3500000000000001, "se": 0.07071067811865477}}, "components": {"a": {"est": 0.3500000000000001, "se": 0.07071067811865477}}, "comps": ["a"], "df": 1, "tau2": 0}
+
+      143 |       await fitCase(page, FIXTURE); // a prior valid fit must not survive the refusal
+      144 |       const got = await fitCase(page, ref.text);
+    > 145 |       expect(got.result, 'stale result after refusal').toBeNull();
+          |                                                        ^
+      146 |       expect(got.toasts).toContain(ref.reason);
+      147 |       expect(got.comp).toEqual([]);
+      148 |       expect(got.comb).toEqual([]);
+        at <AUDIT_ROOT>\allmeta-orig\hub\shared\tests\component-nma-parity.spec.mjs:145:56
+
+    Error Context: test-results\component-nma-parity-compo-bdd2e-clears-results-numeric-junk-chromium\error-context.md
+
+
+[8/9] [chromium] › component-nma-parity.spec.mjs:153:3 › component-nma › labels are text, not markup (R component names)
+  4) [chromium] › component-nma-parity.spec.mjs:153:3 › component-nma › labels are text, not markup (R component names) 
+
+    Error: df
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      56 | function expectFit(r, ref) {
+      57 |   expect(r, 'fit result').toBeTruthy();
+    > 58 |   expect(r.df, 'df').toBe(ref.df);
+         |                      ^
+      59 |   near9(r.Q, ref.Q, 'Q');
+      60 |   if (ref.tau2 === null) expect(r.tau2, 'tau2 not estimable (R: NA)').toBeNull();
+      61 |   else near9(r.tau2, ref.tau2, 'tau2');
+        at expectFit (<AUDIT_ROOT>\allmeta-orig\hub\shared\tests\component-nma-parity.spec.mjs:58:22)
+        at <AUDIT_ROOT>\allmeta-orig\hub\shared\tests\component-nma-parity.spec.mjs:157:5
+
+    Error Context: test-results\component-nma-parity-compo-b8a1e-t-markup-R-component-names--chromium\error-context.md
+
+
+[9/9] [chromium] › component-nma-parity.spec.mjs:163:3 › component-nma › roundoff of an exact zero is displayed unsigned
+  5) [chromium] › component-nma-parity.spec.mjs:163:3 › component-nma › roundoff of an exact zero is displayed unsigned 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "0.000"
+    Received: "-0.000"
+
+      169 |     const shown = await page.evaluate(([a, b]) => [fmt(a), fmt(b), fmt(-0), fmt(-0.00047), fmt(-1.5)],
+      170 |       [z.js_est_before_fix, z.r_est]);
+    > 171 |     expect(shown[0]).toBe(z.r_est.toFixed(3));
+          |                      ^
+      172 |     expect(shown[1]).toBe('0.000');
+      173 |     expect(shown[2]).toBe('0.000');
+      174 |     expect(shown[3], 'a genuine small negative keeps its sign').toBe('-0.000');
+        at <AUDIT_ROOT>\allmeta-orig\hub\shared\tests\component-nma-parity.spec.mjs:171:22
+
+    Error Context: test-results\component-nma-parity-compo-5ca70--zero-is-displayed-unsigned-chromium\error-context.md
+
+
+  5 failed
+    [chromium] › component-nma-parity.spec.mjs:131:3 › component-nma › saturated design: df 0 and tau2 not estimable, as in R 
+    [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: singular 
+    [chromium] › component-nma-parity.spec.mjs:139:5 › component-nma › refusal clears results: numeric-junk 
+    [chromium] › component-nma-parity.spec.mjs:153:3 › component-nma › labels are text, not markup (R component names) 
+    [chromium] › component-nma-parity.spec.mjs:163:3 › component-nma › roundoff of an exact zero is displayed unsigned 
+  4 passed (28.6s)
+PW_ORIGINAL_PAGE_EXIT=1

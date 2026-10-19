@@ -45,3 +45,18 @@ Not validated: multi-arm or split-mouth inference (pasted rows carry no study id
 | Provenance | Commits acd363f, f7a78dc; PR #153; release tokens | SHA-256 inventory, patch replay |
 
 MIT applies to archive tooling. Bundled package documentation and Node dependencies retain their upstream licences.
+
+## Browser checks (supplementary)
+
+`browser/` records checks run in a real browser on the corrected page (pull request #153, commit f7a78dc). They supplement, and are not
+part of, the `validate.R` comparison above.
+
+- `playwright-corrected-page.log`: Playwright (Chromium, one worker) on the corrected page: 35 tests passed, including the 9
+  component-nma parity tests in `app/patched/hub/shared/tests/component-nma-parity.spec.mjs` (R reference values at 1e-9, saturated design,
+  refusals clear results, labels as text, roundoff zero displayed unsigned).
+- `playwright-original-page.log`: the same parity spec on the released page: 5 tests fail (saturated design, two refusal cases, labels,
+  signed zero) — the spec can fail.
+- `figure1-vs-archive.txt`, `figure1-shots-log.json`, `figure1-tif-report.json`, `capture-figure1.cjs`: Figure 1 captured in Microsoft Edge
+  151; the captured results and tables equal the archived corrected-page output.
+
+Not covered: browser layout, raster/PDF chart downloads, browsers other than Chromium/Edge.

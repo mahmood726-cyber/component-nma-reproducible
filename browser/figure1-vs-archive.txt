@@ -1,0 +1,4 @@
+main netmeta::Baker2009::exac::OR::two-arm-only::DL::inactive=Placebo: browser result/tables == archived app-patched.json: True; toasts=[]
+refused netmeta::Dong2013::death::OR::two-arm-only::DL::source-labels: browser result/tables == archived app-patched.json: True; toasts=['Components are not identifiable from the contrasts.']
+refusal toast: Components are not identifiable from the contrasts.; cleared after refusal: {'comp': 0, 'comb': 0, 'forest': ''}
+browser 151.0.4129.78; console: ["error: The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element."]
