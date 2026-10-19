@@ -1367,6 +1367,7 @@
  "browser/figure1-vs-archive.txt": "a336857b39ebfe89cb44e1cfa6b4a685507c3eeb017b93e213bb9e63f46e69c6",
  "browser/playwright-corrected-page.log": "7da1557bc9889267068ba89d4adac2c434b4831b6ebb44490c0901a35350a1f8",
  "browser/playwright-original-page.log": "4bda362edc65dffdb1922c5510c9b1a5a608b2f036e5feab8a0c7b8b2681f62f",
+ "browser/postprocess-figure1.py": "35157c94ccf43a43029ac91c563106affeb5c66f5d345eddf9ec9d5ce7b8fa1c",
  "browser/pw.cmd": "8ee53f49c614e496aeab48fd31bb0d7ffdfd1b79cd23da62c6b2d18e6ba022bb",
  "browser/pw.strict.config.mjs": "b4bdceaaba7a3aaf4094904ad9f6c0b00b018e7e885837368eaeac0fbbee5aed",
  "data/bus-corpus.json": "c2c232174de77c1c12a0650c4b85654a6a1d570bb652572a94d428b2b5c0e3b8",
