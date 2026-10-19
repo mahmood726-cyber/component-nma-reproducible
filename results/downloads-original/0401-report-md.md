@@ -1,0 +1,46 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                                   | value                                                                                            |
+|---------------------------------------|--------------------------------------------------------------------------------------------------|
+| comps                                 | ["apixaban","aspirin","clopidogtrel","dabigatran 110mg","dabigatran 150mg","rivaroxaban","vkas"] |
+| tau2                                  | 0.0018268022363476639                                                                            |
+| Q                                     | 21.573814026432082                                                                               |
+| df                                    | 21                                                                                               |
+| components.apixaban.est               | -1.1188167825112818                                                                              |
+| components.apixaban.se                | 0.13839511265262797                                                                              |
+| components.aspirin.est                | -0.2603734927210035                                                                              |
+| components.aspirin.se                 | 0.10377838544965456                                                                              |
+| components.clopidogtrel.est           | -0.29377391287698107                                                                             |
+| components.clopidogtrel.se            | 0.08229583673143892                                                                              |
+| components.dabigatran 110mg.est       | -0.9822119697840228                                                                              |
+| components.dabigatran 110mg.se        | 0.1487366956695387                                                                               |
+| components.dabigatran 150mg.est       | -1.3385022502585575                                                                              |
+| components.dabigatran 150mg.se        | 0.151525916209961                                                                                |
+| components.rivaroxaban.est            | -1.1527758856829817                                                                              |
+| components.rivaroxaban.se             | 0.15579468570451957                                                                              |
+| components.vkas.est                   | -0.9023211735415588                                                                              |
+| components.vkas.se                    | 0.11255357008841702                                                                              |
+| combinations.apixaban.est             | -1.1188167825112818                                                                              |
+| combinations.apixaban.se              | 0.13839511265262797                                                                              |
+| combinations.aspirin.est              | -0.2603734927210035                                                                              |
+| combinations.aspirin.se               | 0.10377838544965456                                                                              |
+| combinations.aspirin+clopidogtrel.est | -0.5541474055979846                                                                              |
+| combinations.aspirin+clopidogtrel.se  | 0.128139227206699                                                                                |
+| combinations.dabigatran 110mg.est     | -0.9822119697840228                                                                              |
+| combinations.dabigatran 110mg.se      | 0.1487366956695387                                                                               |
+| combinations.dabigatran 150mg.est     | -1.3385022502585575                                                                              |
+| combinations.dabigatran 150mg.se      | 0.151525916209961                                                                                |
+| combinations.rivaroxaban.est          | -1.1527758856829817                                                                              |
+| combinations.rivaroxaban.se           | 0.15579468570451957                                                                              |
+| combinations.vkas.est                 | -0.9023211735415588                                                                              |
+| combinations.vkas.se                  | 0.11255357008841702                                                                              |

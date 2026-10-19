@@ -1,0 +1,4 @@
+function (x, ...) 
+UseMethod("netsplit")
+<bytecode: 0x00000114bf39dc30>
+<environment: namespace:netmeta>

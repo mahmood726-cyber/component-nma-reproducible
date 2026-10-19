@@ -1,0 +1,101 @@
+{
+  "comps": [
+    "aerobic exercise",
+    "aquatic exercise",
+    "diathermy (high)",
+    "diathermy (low)",
+    "education",
+    "electrical stimulation",
+    "placebo",
+    "proprioception exercise",
+    "strength exercise",
+    "ultrasound"
+  ],
+  "tau2": 0.15676005995200265,
+  "Q": 245.6664343395982,
+  "df": 59,
+  "components": {
+    "aerobic exercise": {
+      "est": -0.3529137284560115,
+      "se": 0.1287249150811452
+    },
+    "aquatic exercise": {
+      "est": -0.42526738798426605,
+      "se": 0.20286630205095774
+    },
+    "diathermy (high)": {
+      "est": -0.5805950810146115,
+      "se": 0.42717596527394686
+    },
+    "diathermy (low)": {
+      "est": -0.6735704454627232,
+      "se": 0.4271187863714161
+    },
+    "education": {
+      "est": -0.1506243221084512,
+      "se": 0.14502404246160236
+    },
+    "electrical stimulation": {
+      "est": -0.6729066264851002,
+      "se": 0.2580693268024488
+    },
+    "placebo": {
+      "est": -0.0975810907943061,
+      "se": 0.35381411208662716
+    },
+    "proprioception exercise": {
+      "est": -0.7291671600654237,
+      "se": 0.17204805085669964
+    },
+    "strength exercise": {
+      "est": -0.5161082619981021,
+      "se": 0.11434076948242226
+    },
+    "ultrasound": {
+      "est": -0.49510980129703663,
+      "se": 0.4861309040540488
+    }
+  },
+  "combinations": {
+    "aerobic exercise": {
+      "est": -0.3529137284560115,
+      "se": 0.1287249150811452
+    },
+    "aquatic exercise": {
+      "est": -0.42526738798426605,
+      "se": 0.20286630205095774
+    },
+    "diathermy (high)": {
+      "est": -0.5805950810146115,
+      "se": 0.42717596527394686
+    },
+    "diathermy (low)": {
+      "est": -0.6735704454627232,
+      "se": 0.4271187863714161
+    },
+    "education": {
+      "est": -0.1506243221084512,
+      "se": 0.14502404246160236
+    },
+    "electrical stimulation": {
+      "est": -0.6729066264851002,
+      "se": 0.2580693268024488
+    },
+    "placebo": {
+      "est": -0.0975810907943061,
+      "se": 0.35381411208662716
+    },
+    "proprioception exercise": {
+      "est": -0.7291671600654237,
+      "se": 0.17204805085669964
+    },
+    "strength exercise": {
+      "est": -0.5161082619981021,
+      "se": 0.11434076948242226
+    },
+    "ultrasound": {
+      "est": -0.49510980129703663,
+      "se": 0.4861309040540488
+    }
+  }
+}

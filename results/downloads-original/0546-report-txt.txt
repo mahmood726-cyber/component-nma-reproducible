@@ -1,0 +1,43 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["bone grafts","emd","flap op","gtr","prp"]
+tau2: 0.3033198592756165
+Q: 122.74222935252584
+df: 40
+components.bone grafts.est: 0.14961941746217133
+components.bone grafts.se: 0.22730959156310807
+components.emd.est: 0.32074436458904465
+components.emd.se: 0.5656344295031508
+components.flap op.est: -0.7617465047032823
+components.flap op.se: 0.5473887388881136
+components.gtr.est: 0.388512459883378
+components.gtr.se: 0.5226208696835343
+components.prp.est: -0.030806747848857584
+components.prp.se: 0.2999444820091964
+combinations.bone grafts+emd.est: 0.470363782051216
+combinations.bone grafts+emd.se: 0.6198666218459478
+combinations.bone grafts+emd+prp.est: 0.4395570342023584
+combinations.bone grafts+emd+prp.se: 0.6886227713098604
+combinations.bone grafts+gtr.est: 0.5381318773455493
+combinations.bone grafts+gtr.se: 0.569914224989481
+combinations.bone grafts+gtr+prp.est: 0.5073251294966917
+combinations.bone grafts+gtr+prp.se: 0.6440255554969273
+combinations.emd.est: 0.32074436458904465
+combinations.emd.se: 0.5656344295031508
+combinations.emd+gtr.est: 0.7092568244724227
+combinations.emd+gtr.se: 1.0673987203129278
+combinations.flap op.est: -0.7617465047032823
+combinations.flap op.se: 0.5473887388881136
+combinations.gtr.est: 0.388512459883378
+combinations.gtr.se: 0.5226208696835343

@@ -1,0 +1,38 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                                   | value                                                      |
+|---------------------------------------|------------------------------------------------------------|
+| comps                                 | ["apixaban","aspirin","clopidogtrel","rivaroxaban","vkas"] |
+| tau2                                  | 0.023103114534236406                                       |
+| Q                                     | 14.12405473288297                                          |
+| df                                    | 11                                                         |
+| components.apixaban.est               | -1.0804526395665672                                        |
+| components.apixaban.se                | 0.2710268117878543                                         |
+| components.aspirin.est                | -0.27415235531603255                                       |
+| components.aspirin.se                 | 0.2399366130854462                                         |
+| components.clopidogtrel.est           | -0.23088486115971119                                       |
+| components.clopidogtrel.se            | 0.14413471163231759                                        |
+| components.rivaroxaban.est            | -1.1010082671843442                                        |
+| components.rivaroxaban.se             | 0.2989644123059471                                         |
+| components.vkas.est                   | -0.8505535550429213                                        |
+| components.vkas.se                    | 0.23769671763284778                                        |
+| combinations.apixaban.est             | -1.0804526395665672                                        |
+| combinations.apixaban.se              | 0.2710268117878543                                         |
+| combinations.aspirin.est              | -0.27415235531603255                                       |
+| combinations.aspirin.se               | 0.2399366130854462                                         |
+| combinations.aspirin+clopidogtrel.est | -0.5050372164757437                                        |
+| combinations.aspirin+clopidogtrel.se  | 0.2686640507883243                                         |
+| combinations.rivaroxaban.est          | -1.1010082671843442                                        |
+| combinations.rivaroxaban.se           | 0.2989644123059471                                         |
+| combinations.vkas.est                 | -0.8505535550429213                                        |
+| combinations.vkas.se                  | 0.23769671763284778                                        |

@@ -1,0 +1,54 @@
+_D_a_t_a _o_f _n-_o_f-_1 _M_e_t_a-_A_n_a_l_y_s_i_s _i_n _A_s_t_h_m_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Results from 12 simulated patients in n-of-1 meta-analysis in
+     asthma (Senn, 2024).
+
+_U_s_a_g_e:
+
+     Senn2024
+     
+_F_o_r_m_a_t:
+
+     The data frame contains the following columns:
+
+       *patid*     'integer'  patient ID                  
+       *n.cycles*  'numeric'  number of cycles            
+       *md*        'numeric'  mean difference             
+       *var.md*    'integer'  variance of mean difference 
+      
+_D_e_t_a_i_l_s:
+
+     Senn (2024) simulated data from 12 patients to describe a
+     meta-analysis method of n-of-1 trials.
+
+_C_o_n_c_e_p_t_s:
+
+     medicine, asthma, mean differences, n-of-1 meta-analysis
+
+_A_u_t_h_o_r(_s):
+
+     Guido Schwarzer, <mailto:guido.schwarzer@uniklinik-freiburg.de>
+
+_S_o_u_r_c_e:
+
+     Senn S (2024): The analysis of continuous data from n-of-1 trials
+     using paired cycles: a simple tutorial. _Trials_, *25*, 128
+
+_E_x_a_m_p_l_e_s:
+
+     if (requireNamespace("meta", quietly = TRUE)) {
+     # Load meta package
+     library("meta")
+     
+     mg4 <- metagen(md, sqrt(var.md), cycles = n.cycles,
+       data = Senn2024, studlab = paste("Patient", patid),
+       sm = "MD", method.tau = "DL")
+     #
+     forest(mg4, digits.TE = 2, digits.se = 2,
+       digits.sd = 2, digits.tau2 = 1, digits.weight = 2,
+       xlim = c(-200, 550), at = c(-200, 0, 200, 400),
+       details = TRUE)
+     }
+     

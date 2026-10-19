@@ -1,0 +1,9 @@
+{
+  "entries": 7329,
+  "payload_hashes_verified": 7328,
+  "crc_ok": true,
+  "unique_paths": true,
+  "machine_path_scan": "pass (third-party dependency files retained verbatim)",
+  "sha256": "751a16b0c74f0f2e6cacb546438509d354f4a545e245973cf2ac736d605bd686",
+  "bytes": 10691771
+}

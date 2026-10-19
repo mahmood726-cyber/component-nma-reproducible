@@ -1,0 +1,4 @@
+function (x, ...) 
+UseMethod("createC")
+<bytecode: 0x00000184fbf27680>
+<environment: namespace:netmeta>

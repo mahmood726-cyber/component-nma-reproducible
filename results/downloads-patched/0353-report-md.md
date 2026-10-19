@@ -1,0 +1,54 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                            | value                                                                                                                       |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| comps                          | ["acarbose","benfluorex","metformin","miglitol","pioglitazone","rosiglitazone","sitagliptin","sulfonylurea","vildagliptin"] |
+| tau2                           | 0.10633473784446931                                                                                                         |
+| Q                              | 97.09011908341489                                                                                                           |
+| df                             | 19                                                                                                                          |
+| components.acarbose.est        | -0.8590191372148677                                                                                                         |
+| components.acarbose.se         | 0.22864344400004197                                                                                                         |
+| components.benfluorex.est      | -0.7326301273550209                                                                                                         |
+| components.benfluorex.se       | 0.28381322485978877                                                                                                         |
+| components.metformin.est       | -1.1297549869143588                                                                                                         |
+| components.metformin.se        | 0.15009597489701784                                                                                                         |
+| components.miglitol.est        | -0.9497528197268034                                                                                                         |
+| components.miglitol.se         | 0.23001882555047595                                                                                                         |
+| components.pioglitazone.est    | -1.130481279185785                                                                                                          |
+| components.pioglitazone.se     | 0.2171790791246863                                                                                                          |
+| components.rosiglitazone.est   | -1.2348143358933172                                                                                                         |
+| components.rosiglitazone.se    | 0.12635973452873156                                                                                                         |
+| components.sitagliptin.est     | -0.5700000000000001                                                                                                         |
+| components.sitagliptin.se      | 0.3507227337337528                                                                                                          |
+| components.sulfonylurea.est    | -0.42369446981978                                                                                                           |
+| components.sulfonylurea.se     | 0.2364886334914546                                                                                                          |
+| components.vildagliptin.est    | -0.7                                                                                                                        |
+| components.vildagliptin.se     | 0.35004914585117325                                                                                                         |
+| combinations.acarbose.est      | -0.8590191372148677                                                                                                         |
+| combinations.acarbose.se       | 0.22864344400004197                                                                                                         |
+| combinations.benfluorex.est    | -0.7326301273550209                                                                                                         |
+| combinations.benfluorex.se     | 0.28381322485978877                                                                                                         |
+| combinations.metformin.est     | -1.1297549869143588                                                                                                         |
+| combinations.metformin.se      | 0.15009597489701784                                                                                                         |
+| combinations.miglitol.est      | -0.9497528197268034                                                                                                         |
+| combinations.miglitol.se       | 0.23001882555047595                                                                                                         |
+| combinations.pioglitazone.est  | -1.130481279185785                                                                                                          |
+| combinations.pioglitazone.se   | 0.2171790791246863                                                                                                          |
+| combinations.rosiglitazone.est | -1.2348143358933172                                                                                                         |
+| combinations.rosiglitazone.se  | 0.12635973452873156                                                                                                         |
+| combinations.sitagliptin.est   | -0.5700000000000001                                                                                                         |
+| combinations.sitagliptin.se    | 0.3507227337337528                                                                                                          |
+| combinations.sulfonylurea.est  | -0.42369446981978                                                                                                           |
+| combinations.sulfonylurea.se   | 0.2364886334914546                                                                                                          |
+| combinations.vildagliptin.est  | -0.7                                                                                                                        |
+| combinations.vildagliptin.se   | 0.35004914585117325                                                                                                         |

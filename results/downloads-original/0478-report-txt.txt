@@ -1,0 +1,45 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["antecubital vein","hand vein","lidocaine pretreatment","lidocaine-propofol admixture","pretreatment with ketamine","pretreatment with non-steroidal anti-inflammatory","pretreatment with opioids"]
+tau2: 0.1772178769577469
+Q: 380.6098965980135
+df: 92
+components.antecubital vein.est: -1.75
+components.antecubital vein.se: NaN
+components.hand vein.est: 0.25
+components.hand vein.se: NaN
+components.lidocaine pretreatment.est: -0.75
+components.lidocaine pretreatment.se: NaN
+components.lidocaine-propofol admixture.est: -0.75
+components.lidocaine-propofol admixture.se: NaN
+components.pretreatment with ketamine.est: -0.25
+components.pretreatment with ketamine.se: NaN
+components.pretreatment with non-steroidal anti-inflammatory.est: 0
+components.pretreatment with non-steroidal anti-inflammatory.se: NaN
+components.pretreatment with opioids.est: -0.5
+components.pretreatment with opioids.se: NaN
+combinations.antecubital vein.est: -1.75
+combinations.antecubital vein.se: 0
+combinations.hand vein.est: 0.25
+combinations.hand vein.se: 0
+combinations.lidocaine pretreatment.est: -0.75
+combinations.lidocaine pretreatment.se: 0
+combinations.lidocaine-propofol admixture.est: -0.75
+combinations.lidocaine-propofol admixture.se: 0
+combinations.pretreatment with ketamine.est: -0.25
+combinations.pretreatment with ketamine.se: 0
+combinations.pretreatment with non-steroidal anti-inflammatory.est: 0
+combinations.pretreatment with non-steroidal anti-inflammatory.se: 0
+combinations.pretreatment with opioids.est: -0.5
+combinations.pretreatment with opioids.se: 0

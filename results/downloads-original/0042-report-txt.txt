@@ -1,0 +1,41 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["antithrombin iii","aprotonin","eaca","rfviia","solvent detergent plasma","tranexamic acid"]
+tau2: 0
+Q: 3.971895014746927
+df: 10
+components.antithrombin iii.est: -1.537978948451955
+components.antithrombin iii.se: 1.5946910645374086
+components.aprotonin.est: -0.8912794635029573
+components.aprotonin.se: 0.4883988804904116
+components.eaca.est: -0.23833878135736772
+components.eaca.se: 0.7039737300062545
+components.rfviia.est: 0.3719532053184932
+components.rfviia.se: 0.7536165373707445
+components.solvent detergent plasma.est: 0.07696104113612834
+components.solvent detergent plasma.se: 2.0381545756085515
+components.tranexamic acid.est: -0.13676472624981842
+components.tranexamic acid.se: 0.5454694340291407
+combinations.antithrombin iii.est: -1.537978948451955
+combinations.antithrombin iii.se: 1.5946910645374086
+combinations.aprotonin.est: -0.8912794635029573
+combinations.aprotonin.se: 0.4883988804904116
+combinations.eaca.est: -0.23833878135736772
+combinations.eaca.se: 0.7039737300062545
+combinations.rfviia.est: 0.3719532053184932
+combinations.rfviia.se: 0.7536165373707445
+combinations.solvent detergent plasma.est: 0.07696104113612834
+combinations.solvent detergent plasma.se: 2.0381545756085515
+combinations.tranexamic acid.est: -0.13676472624981842
+combinations.tranexamic acid.se: 0.5454694340291407

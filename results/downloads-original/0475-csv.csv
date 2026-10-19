@@ -1,0 +1,29 @@
+key,value
+comps,"[""antecubital vein"",""lidocaine pretreatment"",""lidocaine-propofol admixture"",""pretreatment with ketamine"",""pretreatment with non-steroidal anti-inflammatory"",""pretreatment with opioids""]"
+tau2,0.40199013976180875
+Q,206.77148296731585
+df,93
+components.antecubital vein.est,-2.4871178703847256
+components.antecubital vein.se,0.5740313459591909
+components.lidocaine pretreatment.est,-1.5692660083203713
+components.lidocaine pretreatment.se,0.18100977208152944
+components.lidocaine-propofol admixture.est,-1.6503142675657747
+components.lidocaine-propofol admixture.se,0.15335106707936882
+components.pretreatment with ketamine.est,-2.1219927079771725
+components.pretreatment with ketamine.se,0.2989035104975007
+components.pretreatment with non-steroidal anti-inflammatory.est,-0.9509454516613508
+components.pretreatment with non-steroidal anti-inflammatory.se,0.28409076299761177
+components.pretreatment with opioids.est,-1.501712896855407
+components.pretreatment with opioids.se,0.22082595926046625
+combinations.antecubital vein.est,-2.4871178703847256
+combinations.antecubital vein.se,0.5740313459591909
+combinations.lidocaine pretreatment.est,-1.5692660083203713
+combinations.lidocaine pretreatment.se,0.18100977208152944
+combinations.lidocaine-propofol admixture.est,-1.6503142675657747
+combinations.lidocaine-propofol admixture.se,0.15335106707936882
+combinations.pretreatment with ketamine.est,-2.1219927079771725
+combinations.pretreatment with ketamine.se,0.2989035104975007
+combinations.pretreatment with non-steroidal anti-inflammatory.est,-0.9509454516613508
+combinations.pretreatment with non-steroidal anti-inflammatory.se,0.28409076299761177
+combinations.pretreatment with opioids.est,-1.501712896855407
+combinations.pretreatment with opioids.se,0.22082595926046625

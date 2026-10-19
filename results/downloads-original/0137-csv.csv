@@ -1,0 +1,17 @@
+key,value
+comps,"[""cq"",""hcq"",""standard of care""]"
+tau2,0
+Q,5.384745578076759
+df,30
+components.cq.est,0.3205176743023925
+components.cq.se,0.2898282691655178
+components.hcq.est,-0.0634313637496402
+components.hcq.se,0.17349659934187497
+components.standard of care.est,-0.13144028333465863
+components.standard of care.se,0.18034041716758717
+combinations.cq.est,0.3205176743023925
+combinations.cq.se,0.2898282691655178
+combinations.hcq.est,-0.0634313637496402
+combinations.hcq.se,0.17349659934187497
+combinations.standard of care.est,-0.13144028333465863
+combinations.standard of care.se,0.18034041716758717

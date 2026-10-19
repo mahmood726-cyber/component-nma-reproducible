@@ -1,0 +1,42 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                             | value                                                                      |
+|---------------------------------|----------------------------------------------------------------------------|
+| comps                           | ["f2f cbt","hybrid cbt","multimedia cbt","no treatment","tau","wait list"] |
+| tau2                            | 0.3004079625241674                                                         |
+| Q                               | 12325.456828074532                                                         |
+| df                              | 51                                                                         |
+| components.f2f cbt.est          | -0.7367801010016706                                                        |
+| components.f2f cbt.se           | 0.22438011809202296                                                        |
+| components.hybrid cbt.est       | -0.6400836767333518                                                        |
+| components.hybrid cbt.se        | 0.3701113066666486                                                         |
+| components.multimedia cbt.est   | -0.25383929230984403                                                       |
+| components.multimedia cbt.se    | 0.26602147483241134                                                        |
+| components.no treatment.est     | 0.570012375540077                                                          |
+| components.no treatment.se      | 0.3213473731899604                                                         |
+| components.tau.est              | 0.4503238861560872                                                         |
+| components.tau.se               | 0.25438350038105595                                                        |
+| components.wait list.est        | 1.0138295653324407                                                         |
+| components.wait list.se         | 0.26323884244840506                                                        |
+| combinations.f2f cbt.est        | -0.7367801010016706                                                        |
+| combinations.f2f cbt.se         | 0.22438011809202296                                                        |
+| combinations.hybrid cbt.est     | -0.6400836767333518                                                        |
+| combinations.hybrid cbt.se      | 0.3701113066666486                                                         |
+| combinations.multimedia cbt.est | -0.25383929230984403                                                       |
+| combinations.multimedia cbt.se  | 0.26602147483241134                                                        |
+| combinations.no treatment.est   | 0.570012375540077                                                          |
+| combinations.no treatment.se    | 0.3213473731899604                                                         |
+| combinations.tau.est            | 0.4503238861560872                                                         |
+| combinations.tau.se             | 0.25438350038105595                                                        |
+| combinations.wait list.est      | 1.0138295653324407                                                         |
+| combinations.wait list.se       | 0.26323884244840506                                                        |

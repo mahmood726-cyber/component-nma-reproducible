@@ -1,0 +1,446 @@
+{
+  "checks": 88,
+  "passed": 88,
+  "checks_detail": [
+    {
+      "check": "original_hash:LICENSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:LICENSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/tests/fixtures/cnma-oracle.R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/tests/fixtures/cnma-oracle.R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/tests/fixtures/cnma-oracle.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/tests/fixtures/cnma-oracle.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/tests/fixtures/cnma-tiny.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/tests/fixtures/cnma-tiny.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/tests/test_a11y.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/tests/test_a11y.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/tests/test_smoke.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/tests/test_smoke.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:component-nma/tests/test_structure.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:component-nma/tests/test_structure.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:hub/app-style.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:hub/app-style.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:hub/shared/a11y-landmarks.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:hub/shared/a11y-landmarks.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:hub/shared/chart-export-auto.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:hub/shared/chart-export-auto.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:hub/shared/results-export.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:hub/shared/results-export.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:hub/shared/vendor/jspdf.min.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:hub/shared/vendor/jspdf.min.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:shared/app-flow.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:shared/app-flow.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:shared/autosave.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:shared/autosave.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:shared/build-info.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:shared/build-info.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:shared/forced-colors.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:shared/forced-colors.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:shared/ma-comparisons-v1.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:shared/ma-comparisons-v1.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:shared/ma-studies-v1.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:shared/ma-studies-v1.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "original_hash:shared/toast.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "checkout_hash:shared/toast.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "corpus_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference.json:unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference.json:coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "app-original.json:unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "app-original.json:coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "app-patched.json:unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "app-patched.json:coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dataset-ledger.csv:unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "configuration-ledger.csv:unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "configuration-ledger.csv:coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference_no_errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "construction_no_errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "default_uninstrumented:original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "download_count:original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "download_unique:original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "downloads_exist:original",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "default_uninstrumented:patched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "download_count:patched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "download_unique:patched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "downloads_exist:patched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "wrapper_bridge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patched_bus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "static_tests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_check",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "patch_apply",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "patch_replay:LICENSE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/tests/fixtures/cnma-oracle.R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/tests/fixtures/cnma-oracle.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/tests/fixtures/cnma-tiny.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/tests/test_a11y.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/tests/test_smoke.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:component-nma/tests/test_structure.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:hub/app-style.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:hub/shared/a11y-landmarks.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:hub/shared/chart-export-auto.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:hub/shared/results-export.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:hub/shared/vendor/jspdf.min.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:shared/app-flow.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:shared/autosave.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:shared/build-info.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:shared/forced-colors.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:shared/ma-comparisons-v1.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:shared/ma-studies-v1.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "patch_replay:shared/toast.js",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

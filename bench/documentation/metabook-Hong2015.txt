@@ -1,0 +1,78 @@
+_S_t_u_d_i_e_s _o_n _I_n_t_e_r_v_e_n_t_i_o_n_s _f_o_r _P_a_t_i_e_n_t_s _w_i_t_h _K_n_e_e _P_a_i_n _S_e_c_o_n_d_a_r_y _t_o
+_O_s_t_e_o_a_r_t_h_r_i_t_i_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Results from 54 trials comparing physical therapy interventions
+     for community-dwelling adults with knee pain secondary to
+     osteoarthritis.
+
+_U_s_a_g_e:
+
+     Hong2015
+     
+_F_o_r_m_a_t:
+
+     The data frame contains the following columns:
+
+       *id*               'numeric'    study ID                                
+       *trt*              'character'  intervention                            
+       *n*                'numeric'    number of individuals                   
+       *mean_pain*        'numeric'    mean (pain outcome)                     
+       *sd_pain*          'numeric'    standard deviation (pain outcome)       
+       *mean_disability*  'numeric'    mean (disability outcome)               
+       *sd_disability*    'numeric'    standard deviation (disability outcome) 
+      
+_D_e_t_a_i_l_s:
+
+     This data set comprises 54 trials from a network meta-analysis
+     comparing 11 physical therapy interventions, including 'placebo'
+     and 'no treatment' for community-dwelling adults with knee pain
+     secondary to osteoarthritis (Hong et al., 2015).
+
+     Two patient-reported continuous outcomes were considered. Pain was
+     reported in 51 studies, whereas disability was only reported in 26
+     trials. Evidence was available for all 11 interventions for both
+     outcomes of interest.
+
+_C_o_n_c_e_p_t_s:
+
+     medicine, pain, mean differences, network meta-analysis
+
+_A_u_t_h_o_r(_s):
+
+     Guido Schwarzer, <mailto:guido.schwarzer@uniklinik-freiburg.de>
+
+_S_o_u_r_c_e:
+
+     Hong H, Chu H, Zhang J, Carlin BP (2016): A Bayesian missing data
+     framework for generalized multiple outcome mixed treatment
+     comparisons. _Research Synthesis Methods_, *7*, 6-22.
+     doi:10.1002/jrsm.1153 <https://doi.org/10.1002/jrsm.1153>
+
+_E_x_a_m_p_l_e_s:
+
+     if (requireNamespace("netmeta", quietly = TRUE)) {
+     # Load netmeta package
+     library("netmeta")
+     
+     # Transform data from long arm-based format to contrast-based format
+     pw_pain <- pairwise(trt, n = n, mean = mean_pain, sd = sd_pain,
+       studlab = id, data = Hong2015)
+     #
+     pw_dis <- pairwise(trt, n = n, mean = mean_disability, sd = sd_disability,
+       studlab = id, data = Hong2015)
+     
+     # Conduct random effects network meta-analysis (NMA) with
+     # - 'no treatment' as reference
+     # - results from split-mouth designs as correlated outcomes
+     nma_pain <- netmeta(pw_pain, common = FALSE, reference.group = "No treatment",
+       small.values = "desirable")
+     nma_dis <- netmeta(pw_dis, common = FALSE, reference.group = "No treatment",
+       small.values = "desirable")
+     
+     # P-scores
+     netrank(nma_pain)
+     netrank(nma_dis)
+     }
+     

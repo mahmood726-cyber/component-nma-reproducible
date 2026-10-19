@@ -1,0 +1,101 @@
+{
+  "comps": [
+    "acar",
+    "benf",
+    "metf",
+    "migl",
+    "piog",
+    "plac",
+    "rosi",
+    "sita",
+    "sulf",
+    "vild"
+  ],
+  "tau2": 0.30910366248157994,
+  "Q": 217.77145845337756,
+  "df": 15,
+  "components": {
+    "acar": {
+      "est": -0.296875,
+      "se": null
+    },
+    "benf": {
+      "est": -0.1875,
+      "se": null
+    },
+    "metf": {
+      "est": -0.734375,
+      "se": null
+    },
+    "migl": {
+      "est": -0.6875,
+      "se": null
+    },
+    "piog": {
+      "est": -0.609375,
+      "se": null
+    },
+    "plac": {
+      "est": 0.3125,
+      "se": null
+    },
+    "rosi": {
+      "est": -1.046875,
+      "se": null
+    },
+    "sita": {
+      "est": -0.25,
+      "se": null
+    },
+    "sulf": {
+      "est": -0.09375,
+      "se": null
+    },
+    "vild": {
+      "est": -0.15625,
+      "se": null
+    }
+  },
+  "combinations": {
+    "acar": {
+      "est": -0.296875,
+      "se": 0
+    },
+    "benf": {
+      "est": -0.1875,
+      "se": 0
+    },
+    "metf": {
+      "est": -0.734375,
+      "se": 0
+    },
+    "migl": {
+      "est": -0.6875,
+      "se": 0
+    },
+    "piog": {
+      "est": -0.609375,
+      "se": 0
+    },
+    "plac": {
+      "est": 0.3125,
+      "se": 0
+    },
+    "rosi": {
+      "est": -1.046875,
+      "se": 0
+    },
+    "sita": {
+      "est": -0.25,
+      "se": 0
+    },
+    "sulf": {
+      "est": -0.09375,
+      "se": 0
+    },
+    "vild": {
+      "est": -0.15625,
+      "se": 0
+    }
+  }
+}

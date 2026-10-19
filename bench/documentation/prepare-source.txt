@@ -1,0 +1,39 @@
+function (TE, seTE, treat1, treat2, studlab, tau = 0, correlated = FALSE, 
+    func.inverse) 
+{
+    if (is.na(tau)) 
+        tau <- 0
+    data <- data.frame(studlab, treat1, treat2, treat1.pos = NA, 
+        treat2.pos = NA, TE, seTE, weights = 1/(seTE^2 + tau^2), 
+        correlated, narms = NA, stringsAsFactors = FALSE)
+    o <- order(data$studlab, data$treat1, data$treat2)
+    data <- data[o, ]
+    names.treat <- sort(unique(c(data$treat1, data$treat2)))
+    data$treat1.pos <- match(data$treat1, names.treat)
+    data$treat2.pos <- match(data$treat2, names.treat)
+    data$order <- o
+    sl <- unique(data$studlab)
+    W.list <- vector("list", length(sl))
+    names(W.list) <- sl
+    C.list <- vector("list", length(sl))
+    names(C.list) <- sl
+    for (s in sl) {
+        sel.s <- data$studlab == s
+        correlated.s <- unique(data$correlated[sel.s])
+        if (length(correlated.s) != 1) 
+            stop("Different values for argument 'correlated' for study '", 
+                s, "'.", call. = FALSE)
+        if (correlated.s & sum(sel.s) == 1) 
+            correlated.s <- FALSE
+        res.s <- covar_study(1/data$weights[sel.s], s, correlated.s, 
+            func.inverse)
+        W.list[[s]] <- res.s$W
+        C.list[[s]] <- res.s$Cov
+        data$narms[sel.s] <- res.s$n
+        data$weights[sel.s] <- diag(res.s$W)
+    }
+    res <- list(W = bdiag(W.list), Cov = bdiag(C.list), data = data)
+    res
+}
+<bytecode: 0x0000022e6b0a0298>
+<environment: namespace:netmeta>

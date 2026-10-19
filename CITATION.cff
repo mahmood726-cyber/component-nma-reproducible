@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite this validation archive."
+title: "Additive component network meta-analysis in the browser: validation of the allmeta component-nma app against netmeta"
+type: software
+authors:
+  - family-names: Ahmad
+    given-names: Mahmood
+version: 1.0.0
+license: MIT
+references:
+  - type: software
+    title: allmeta
+    authors:
+      - family-names: Ahmad
+        given-names: Mahmood
+    url: https://github.com/mahmood726-cyber/allmeta
+    notes: "isDerivedFrom; validated original page at commit acd363f (component-nma unchanged on main da66b89); corrections in pull request #153, branch fix/component-nma-validate, head f7a78dc."
+  - type: software
+    title: allmeta
+    authors:
+      - family-names: Ahmad
+        given-names: Mahmood
+    version: "<ALLMETA_RELEASE>"
+    doi: "<ALLMETA_RELEASE_DOI>"
+    url: "https://github.com/mahmood726-cyber/allmeta/releases/tag/<ALLMETA_RELEASE>"
+    notes: "isDerivedFrom; allmeta release containing the corrections"

@@ -1,0 +1,83 @@
+{
+  "comps": [
+    "apixaban",
+    "aspirin",
+    "clopidogtrel",
+    "dabigatran 110mg",
+    "dabigatran 150mg",
+    "placebo/control",
+    "rivaroxaban",
+    "vkas"
+  ],
+  "tau2": 0.00708456668301231,
+  "Q": 22.13330435865475,
+  "df": 20,
+  "components": {
+    "apixaban": {
+      "est": -0.375,
+      "se": null
+    },
+    "aspirin": {
+      "est": 0.375,
+      "se": null
+    },
+    "clopidogtrel": {
+      "est": -0.24714502628612353,
+      "se": 0.09774492634386411
+    },
+    "dabigatran 110mg": {
+      "est": -0.25,
+      "se": null
+    },
+    "dabigatran 150mg": {
+      "est": -0.5,
+      "se": null
+    },
+    "placebo/control": {
+      "est": 0.75,
+      "se": null
+    },
+    "rivaroxaban": {
+      "est": -0.5,
+      "se": null
+    },
+    "vkas": {
+      "est": -0.25,
+      "se": null
+    }
+  },
+  "combinations": {
+    "apixaban": {
+      "est": -0.375,
+      "se": 0
+    },
+    "aspirin": {
+      "est": 0.375,
+      "se": 0
+    },
+    "aspirin+clopidogtrel": {
+      "est": 0.12785497371387647,
+      "se": 0
+    },
+    "dabigatran 110mg": {
+      "est": -0.25,
+      "se": 0
+    },
+    "dabigatran 150mg": {
+      "est": -0.5,
+      "se": 0
+    },
+    "placebo/control": {
+      "est": 0.75,
+      "se": 0
+    },
+    "rivaroxaban": {
+      "est": -0.5,
+      "se": 0
+    },
+    "vkas": {
+      "est": -0.25,
+      "se": 0
+    }
+  }
+}

@@ -1,0 +1,41 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["budesonide","fluticasone","formoterol","salmeterol","tiotropium"]
+tau2: 0.0023543957362984302
+Q: 99.9948959430231
+df: 72
+components.budesonide.est: -0.12268797525584949
+components.budesonide.se: 0.03925921663283337
+components.fluticasone.est: -0.03706102145633247
+components.fluticasone.se: 0.018149777508129974
+components.formoterol.est: -0.022826731095812822
+components.formoterol.se: 0.036938412928054165
+components.salmeterol.est: -0.0770910187648273
+components.salmeterol.se: 0.01791068635065268
+components.tiotropium.est: -0.20007422200071473
+components.tiotropium.se: 0.03110531005761587
+combinations.budesonide.est: -0.12268797525584949
+combinations.budesonide.se: 0.03925921663283337
+combinations.budesonide+formoterol.est: -0.1455147063516623
+combinations.budesonide+formoterol.se: 0.05518713899001995
+combinations.fluticasone.est: -0.03706102145633247
+combinations.fluticasone.se: 0.018149777508129974
+combinations.fluticasone+salmeterol.est: -0.11415204022115977
+combinations.fluticasone+salmeterol.se: 0.02460984186593036
+combinations.formoterol.est: -0.022826731095812822
+combinations.formoterol.se: 0.036938412928054165
+combinations.salmeterol.est: -0.0770910187648273
+combinations.salmeterol.se: 0.01791068635065268
+combinations.tiotropium.est: -0.20007422200071473
+combinations.tiotropium.se: 0.03110531005761587

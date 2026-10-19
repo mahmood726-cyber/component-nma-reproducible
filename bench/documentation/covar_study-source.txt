@@ -1,0 +1,60 @@
+function (v, studlab, correlated, func.inverse) 
+{
+    m <- length(v)
+    n <- (1 + sqrt(8 * m + 1))/2
+    if (correlated) {
+        B <- createB(ncol = n)
+        V <- diag(diag(t(B) %*% diag(v, nrow = m) %*% B)) - t(B) %*% 
+            diag(v, nrow = m) %*% B
+        Cov <- matrix(0, nrow = m, ncol = m)
+        edges <- matrix(nrow = m, ncol = 2)
+        r <- 0
+        for (i in 1:(n - 1)) {
+            for (j in (i + 1):n) {
+                r <- r + 1
+                edges[r, ] <- c(i, j)
+            }
+        }
+        for (p in 1:(m - 1)) {
+            i <- edges[p, 1]
+            j <- edges[p, 2]
+            for (q in (p + 1):m) {
+                k <- edges[q, 1]
+                l <- edges[q, 2]
+                Cov[p, q] <- 0.5 * (V[i, l] - V[i, k] + V[j, 
+                  k] - V[j, l])
+                Cov[q, p] <- 0.5 * (V[i, l] - V[i, k] + V[j, 
+                  k] - V[j, l])
+            }
+        }
+        for (p in 1:m) {
+            i <- edges[p, 1]
+            j <- edges[p, 2]
+            Cov[p, p] <- V[i, j]
+        }
+        if (qr(Cov)$rank == n - 1) 
+            W <- ginv(as.matrix(Cov))
+        else {
+            if (length(v) > 1) 
+                W <- diag(1/v)
+            else {
+                Cov <- matrix(v)
+                W <- 1/Cov
+            }
+        }
+    }
+    else {
+        if (length(v) > 1) {
+            v <- multiarm(v, studlab, func.inverse)$v
+            Cov <- diag(v)
+            W <- diag(1/v)
+        }
+        else {
+            Cov <- matrix(v)
+            W <- 1/Cov
+        }
+    }
+    res <- list(v = v, n = n, m = m, Cov = as.matrix(Cov), W = W)
+}
+<bytecode: 0x0000022e6af7f9e8>
+<environment: namespace:netmeta>

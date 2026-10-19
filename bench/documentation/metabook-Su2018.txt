@@ -1,0 +1,74 @@
+_S_t_u_d_i_e_s _o_n _I_n_t_e_r_v_e_n_t_i_o_n_s _f_o_r _P_a_t_i_e_n_t_s _w_i_t_h _P_e_r_i_o_d_o_n_t_a_l _I_n_f_r_a_b_o_n_y
+_L_e_s_i_o_n_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Results from 52 trials comparing guided tissue regeneration,
+     enamel matrix derivatives, and their combination therapies or
+     patients with periodontal infrabony lesions.
+
+_U_s_a_g_e:
+
+     Su2018
+     
+_F_o_r_m_a_t:
+
+     The data frame contains the following columns:
+
+       *id*      'numeric'    study ID                            
+       *study*   'character'  study label                         
+       *trt*     'character'  treatment                           
+       *n*       'numeric'    number of individuals               
+       *change*  'numeric'    change in clinical attachment level 
+       *sd*      'numeric'    standard deviation                  
+       *author*  'character'  first author                        
+       *year*    'numeric'    year of publication                 
+      
+_D_e_t_a_i_l_s:
+
+     This data set comes from a systematic review of randomized
+     controlled trials on eight interventions for patients with
+     periodontal infrabony lesions (Su and Tu, 2018). The continuous
+     outcome was change in clinical attachment between baseline and 12
+     months after treatment. The studies either used a parallel or
+     split-mouth design.
+
+_C_o_n_c_e_p_t_s:
+
+     dentistry, correlated, mean differences, network meta-analysis
+
+_A_u_t_h_o_r(_s):
+
+     Guido Schwarzer, <mailto:guido.schwarzer@uniklinik-freiburg.de>
+
+_S_o_u_r_c_e:
+
+     Su Y, Tu Y (2018): Statistical approaches to adjusting weights for
+     dependent arms in network meta-analysis. _Research Synthesis
+     Methods_, *9*, 431-40. doi:10.1002/jrsm.1304
+     <https://doi.org/10.1002/jrsm.1304>
+
+_E_x_a_m_p_l_e_s:
+
+     if (requireNamespace("netmeta", quietly = TRUE)) {
+     # Load netmeta package
+     library("netmeta")
+     
+     # Transform data from long arm-based format to contrast-based format
+     pw <- pairwise(trt, n = n, mean = change, sd = sd,
+       data = Su2018, studlab = study)
+     
+     
+     # Conduct random effects network meta-analysis (NMA) with
+     # - flap operation as reference
+     # - results from split-mouth designs as correlated outcomes
+     nma <- netmeta(pw, common = FALSE, reference = "Flap op",
+       correlated = design == "split")
+     
+     # Show network graph
+     netgraph(nma, seq = "o")
+     
+     # Print results for network meta-analysis
+     nma
+     }
+     

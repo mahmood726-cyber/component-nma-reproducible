@@ -1,0 +1,17 @@
+key,value
+comps,"[""b"",""c"",""d""]"
+tau2,0.3692284894328466
+Q,151.4492095836472
+df,19
+components.b.est,0.36405622527411086
+components.b.se,0.3203699695129733
+components.c.est,0.5780628770750555
+components.c.se,0.18493564971135834
+components.d.est,1.0836144992634944
+components.d.se,0.4489049779848266
+combinations.b.est,0.36405622527411086
+combinations.b.se,0.3203699695129733
+combinations.c.est,0.5780628770750555
+combinations.c.se,0.18493564971135834
+combinations.d.est,1.0836144992634944
+combinations.d.se,0.4489049779848266

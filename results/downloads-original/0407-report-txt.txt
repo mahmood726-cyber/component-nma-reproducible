@@ -1,0 +1,37 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["apixaban","aspirin","clopidogtrel","rivaroxaban","vkas"]
+tau2: 0.021908154366566172
+Q: 14.22026098312855
+df: 11
+components.apixaban.est: -1.038984269116969
+components.apixaban.se: 0.2621088123011112
+components.aspirin.est: -0.265089755659624
+components.aspirin.se: 0.2312377176833996
+components.clopidogtrel.est: -0.2051207472026212
+components.clopidogtrel.se: 0.1388307927436032
+components.rivaroxaban.est: -1.0508231724653765
+components.rivaroxaban.se: 0.2891596542799282
+components.vkas.est: -0.8078964118277334
+components.vkas.se: 0.22913228146322334
+combinations.apixaban.est: -1.038984269116969
+combinations.apixaban.se: 0.2621088123011112
+combinations.aspirin.est: -0.265089755659624
+combinations.aspirin.se: 0.2312377176833996
+combinations.aspirin+clopidogtrel.est: -0.4702105028622452
+combinations.aspirin+clopidogtrel.se: 0.2592191338212662
+combinations.rivaroxaban.est: -1.0508231724653765
+combinations.rivaroxaban.se: 0.2891596542799282
+combinations.vkas.est: -0.8078964118277334
+combinations.vkas.se: 0.22913228146322334

@@ -1,0 +1,41 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["f2f cbt","hybrid cbt","multimedia cbt","no treatment","tau","wait list"]
+tau2: 0.2887444224306895
+Q: 13362.816616080285
+df: 60
+components.f2f cbt.est: -0.809939661364889
+components.f2f cbt.se: 0.17307839159538288
+components.hybrid cbt.est: -0.7259086799176058
+components.hybrid cbt.se: 0.24720682402264046
+components.multimedia cbt.est: -0.31408737586921287
+components.multimedia cbt.se: 0.2252518240699581
+components.no treatment.est: 0.49648627120650257
+components.no treatment.se: 0.28446112054439604
+components.tau.est: 0.31863398090732753
+components.tau.se: 0.19701971608035757
+components.wait list.est: 1.0200331940107588
+components.wait list.se: 0.21496747932882018
+combinations.f2f cbt.est: -0.809939661364889
+combinations.f2f cbt.se: 0.17307839159538288
+combinations.hybrid cbt.est: -0.7259086799176058
+combinations.hybrid cbt.se: 0.24720682402264046
+combinations.multimedia cbt.est: -0.31408737586921287
+combinations.multimedia cbt.se: 0.2252518240699581
+combinations.no treatment.est: 0.49648627120650257
+combinations.no treatment.se: 0.28446112054439604
+combinations.tau.est: 0.31863398090732753
+combinations.tau.se: 0.19701971608035757
+combinations.wait list.est: 1.0200331940107588
+combinations.wait list.se: 0.21496747932882018

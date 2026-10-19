@@ -1,0 +1,17 @@
+key,value
+comps,"[""<tag>&x"",""__proto__"",""constructor""]"
+tau2,0
+Q,4.814824860968089e-33
+df,1
+components.<tag>&x.est,0.3
+components.<tag>&x.se,0.1
+components.__proto__.est,0.10000000000000002
+components.__proto__.se,0.2
+components.constructor.est,0.2
+components.constructor.se,0.15
+combinations.<tag>&x.est,0.3
+combinations.<tag>&x.se,0.1
+combinations.__proto__.est,0.10000000000000002
+combinations.__proto__.se,0.2
+combinations.constructor.est,0.2
+combinations.constructor.se,0.15

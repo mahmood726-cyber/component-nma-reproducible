@@ -1,0 +1,31 @@
+key,value
+comps,"[""bone grafts"",""emd"",""flap op"",""gtr"",""prp""]"
+tau2,0.35032273592874813
+Q,222.92424437375877
+df,64
+components.bone grafts.est,0.07311844458557044
+components.bone grafts.se,0.1798201136955831
+components.emd.est,0.24272639148765052
+components.emd.se,0.3673290118912717
+components.flap op.est,-0.926989615077388
+components.flap op.se,0.3740736128478457
+components.gtr.est,0.3410853645908194
+components.gtr.se,0.3505201735110719
+components.prp.est,-0.0317228843226842
+components.prp.se,0.3153015174023502
+combinations.bone grafts+emd.est,0.31584483607322095
+combinations.bone grafts+emd.se,0.41525784822826173
+combinations.bone grafts+emd+prp.est,0.2841219517505367
+combinations.bone grafts+emd+prp.se,0.5213963246815139
+combinations.bone grafts+gtr.est,0.4142038091763898
+combinations.bone grafts+gtr.se,0.3949688948059363
+combinations.bone grafts+gtr+prp.est,0.3824809248537056
+combinations.bone grafts+gtr+prp.se,0.5053864607807053
+combinations.emd.est,0.24272639148765052
+combinations.emd.se,0.3673290118912717
+combinations.emd+gtr.est,0.5838117560784699
+combinations.emd+gtr.se,0.6958705441912815
+combinations.flap op.est,-0.926989615077388
+combinations.flap op.se,0.3740736128478457
+combinations.gtr.est,0.3410853645908194
+combinations.gtr.se,0.3505201735110719

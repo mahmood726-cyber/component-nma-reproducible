@@ -1,0 +1,47 @@
+{
+  "comps": [
+    "aspirin",
+    "clopidogrel",
+    "ticagrelor",
+    "ticlopidine"
+  ],
+  "tau2": 0,
+  "Q": 4.312270636608236,
+  "df": 5,
+  "components": {
+    "aspirin": {
+      "est": -0.015625,
+      "se": 4069072.568929565
+    },
+    "clopidogrel": {
+      "est": -0.03125,
+      "se": 4069072.5689295656
+    },
+    "ticagrelor": {
+      "est": 0.078125,
+      "se": 4069072.568929568
+    },
+    "ticlopidine": {
+      "est": -0.078125,
+      "se": 4069072.568929566
+    }
+  },
+  "combinations": {
+    "aspirin": {
+      "est": -0.015625,
+      "se": 4069072.568929565
+    },
+    "clopidogrel": {
+      "est": -0.03125,
+      "se": 4069072.5689295656
+    },
+    "ticagrelor": {
+      "est": 0.078125,
+      "se": 4069072.568929568
+    },
+    "ticlopidine": {
+      "est": -0.078125,
+      "se": 4069072.568929566
+    }
+  }
+}

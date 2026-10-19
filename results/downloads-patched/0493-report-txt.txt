@@ -1,0 +1,49 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["hypericum","low-dose sari","nassa","nri","rmao-a","snri","ssri","tca"]
+tau2: 0.008401888996174556
+Q: 66.73511105989567
+df: 54
+components.hypericum.est: 0.4562508175462819
+components.hypericum.se: 0.08082790444478934
+components.low-dose sari.est: 0.4003366772827819
+components.low-dose sari.se: 0.1356808288144007
+components.nassa.est: 0.29639073499261487
+components.nassa.se: 0.11439234389884614
+components.nri.est: 0.39229781443128353
+components.nri.se: 0.19828883840107428
+components.rmao-a.est: 0.3067406922046542
+components.rmao-a.se: 0.117864391824022
+components.snri.est: 0.4597077594928479
+components.snri.se: 0.09533148797715636
+components.ssri.est: 0.3924078314840377
+components.ssri.se: 0.06717514331689352
+components.tca.est: 0.42193173205583323
+components.tca.se: 0.07040927794041402
+combinations.hypericum.est: 0.4562508175462819
+combinations.hypericum.se: 0.08082790444478934
+combinations.low-dose sari.est: 0.4003366772827819
+combinations.low-dose sari.se: 0.1356808288144007
+combinations.nassa.est: 0.29639073499261487
+combinations.nassa.se: 0.11439234389884614
+combinations.nri.est: 0.39229781443128353
+combinations.nri.se: 0.19828883840107428
+combinations.rmao-a.est: 0.3067406922046542
+combinations.rmao-a.se: 0.117864391824022
+combinations.snri.est: 0.4597077594928479
+combinations.snri.se: 0.09533148797715636
+combinations.ssri.est: 0.3924078314840377
+combinations.ssri.se: 0.06717514331689352
+combinations.tca.est: 0.42193173205583323
+combinations.tca.se: 0.07040927794041402

@@ -1,0 +1,29 @@
+{
+  "comps": [
+    "chlorpheniramine",
+    "doxylamine"
+  ],
+  "tau2": 0,
+  "Q": 6.039692518058175,
+  "df": 7,
+  "components": {
+    "chlorpheniramine": {
+      "est": 0.2553373864980921,
+      "se": 0.07119602995394662
+    },
+    "doxylamine": {
+      "est": 0.17899743987660066,
+      "se": 0.08550274017520203
+    }
+  },
+  "combinations": {
+    "chlorpheniramine": {
+      "est": 0.2553373864980921,
+      "se": 0.07119602995394662
+    },
+    "doxylamine": {
+      "est": 0.17899743987660066,
+      "se": 0.08550274017520203
+    }
+  }
+}

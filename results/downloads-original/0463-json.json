@@ -1,0 +1,92 @@
+{
+  "comps": [
+    "aerobic exercise",
+    "aquatic exercise",
+    "education",
+    "electrical stimulation",
+    "no treatment",
+    "placebo",
+    "proprioception exercise",
+    "strength exercise",
+    "ultrasound"
+  ],
+  "tau2": 0,
+  "Q": 303.09866892586507,
+  "df": 12,
+  "components": {
+    "aerobic exercise": {
+      "est": -0.171875,
+      "se": 3479432.512811634
+    },
+    "aquatic exercise": {
+      "est": -0.40625,
+      "se": 3479432.5128116426
+    },
+    "education": {
+      "est": -0.1328125,
+      "se": 3479432.512811637
+    },
+    "electrical stimulation": {
+      "est": 1.1796875,
+      "se": 3479432.5128116934
+    },
+    "no treatment": {
+      "est": 0.0546875,
+      "se": 3479432.5128116347
+    },
+    "placebo": {
+      "est": 1.6796875,
+      "se": 3479432.51281167
+    },
+    "proprioception exercise": {
+      "est": -0.8359375,
+      "se": 3479432.5128116463
+    },
+    "strength exercise": {
+      "est": -0.3515625,
+      "se": 3479432.5128116375
+    },
+    "ultrasound": {
+      "est": 1.359375,
+      "se": 3479432.5128116813
+    }
+  },
+  "combinations": {
+    "aerobic exercise": {
+      "est": -0.171875,
+      "se": 3479432.512811634
+    },
+    "aquatic exercise": {
+      "est": -0.40625,
+      "se": 3479432.5128116426
+    },
+    "education": {
+      "est": -0.1328125,
+      "se": 3479432.512811637
+    },
+    "electrical stimulation": {
+      "est": 1.1796875,
+      "se": 3479432.5128116934
+    },
+    "no treatment": {
+      "est": 0.0546875,
+      "se": 3479432.5128116347
+    },
+    "placebo": {
+      "est": 1.6796875,
+      "se": 3479432.51281167
+    },
+    "proprioception exercise": {
+      "est": -0.8359375,
+      "se": 3479432.5128116463
+    },
+    "strength exercise": {
+      "est": -0.3515625,
+      "se": 3479432.5128116375
+    },
+    "ultrasound": {
+      "est": 1.359375,
+      "se": 3479432.5128116813
+    }
+  }
+}

@@ -1,0 +1,42 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                             | value                                                                    |
+|---------------------------------|--------------------------------------------------------------------------|
+| comps                           | ["f2f cbt","hybrid cbt","multimedia cbt","no treatment","placebo","tau"] |
+| tau2                            | 0.3004079625241671                                                       |
+| Q                               | 12325.45682807453                                                        |
+| df                              | 51                                                                       |
+| components.f2f cbt.est          | -1.7506096663341095                                                      |
+| components.f2f cbt.se           | 0.1483954816080449                                                       |
+| components.hybrid cbt.est       | -1.6539132420657885                                                      |
+| components.hybrid cbt.se        | 0.32716755815509607                                                      |
+| components.multimedia cbt.est   | -1.267668857642283                                                       |
+| components.multimedia cbt.se    | 0.18331319254280715                                                      |
+| components.no treatment.est     | -0.44381718979236284                                                     |
+| components.no treatment.se      | 0.27374973209627257                                                      |
+| components.placebo.est          | -1.0138295653324345                                                      |
+| components.placebo.se           | 0.26323884244840495                                                      |
+| components.tau.est              | -0.5635056791763526                                                      |
+| components.tau.se               | 0.18491483945342083                                                      |
+| combinations.f2f cbt.est        | -1.7506096663341095                                                      |
+| combinations.f2f cbt.se         | 0.1483954816080449                                                       |
+| combinations.hybrid cbt.est     | -1.6539132420657885                                                      |
+| combinations.hybrid cbt.se      | 0.32716755815509607                                                      |
+| combinations.multimedia cbt.est | -1.267668857642283                                                       |
+| combinations.multimedia cbt.se  | 0.18331319254280715                                                      |
+| combinations.no treatment.est   | -0.44381718979236284                                                     |
+| combinations.no treatment.se    | 0.27374973209627257                                                      |
+| combinations.placebo.est        | -1.0138295653324345                                                      |
+| combinations.placebo.se         | 0.26323884244840495                                                      |
+| combinations.tau.est            | -0.5635056791763526                                                      |
+| combinations.tau.se             | 0.18491483945342083                                                      |

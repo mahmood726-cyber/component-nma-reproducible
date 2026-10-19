@@ -1,0 +1,55 @@
+_E_l_e_v_a_t_e_d _C_O__2 _a_n_d _t_o_t_a_l _b_i_o_m_a_s_s _o_f _w_o_o_d_y _p_l_a_n_t_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Meta-analysis on effects of elevated CO_2 on total biomass of
+     woody plants
+
+     This dataset has been used as an example in Hedges et al. (1999)
+     to describe methods for the meta-analysis of response ratios. The
+     complete dataset with 102 observations and 26 variables is
+     available online as a supplement. Here only a subset of 10
+     variables is provided and used in the examples.
+
+_F_o_r_m_a_t:
+
+     A data frame with the following columns:
+
+           *_obsno_*  observation number                       
+           *_papno_*  database paper number                    
+           *_treat_*  treatment code                           
+           *_level_*  treatment level                          
+          *_n.elev_*  number of observations in experimental   
+                      group (elevated CO_2-level)              
+       *_mean.elev_*  estimated mean in experimental group     
+         *_sd.elev_*  standard deviation in experimental group 
+           *_n.amb_*  number of observations in control group  
+                      (ambient CO_2-level)                     
+        *_mean.amb_*  estimated mean in control group          
+          *_sd.amb_*  standard deviation in control group      
+      
+_R_e_f_e_r_e_n_c_e_s:
+
+     Hedges LV, Gurevitch J, Curtis PS (1999): The meta-analysis of
+     response ratios in experimental ecology. _Ecology_, *80*, 1150-6
+
+_E_x_a_m_p_l_e_s:
+
+     data(woodyplants)
+     
+     # Meta-analysis of response ratios (Hedges et al., 1999)
+     #
+     ma1 <- metacont(n.elev, mean.elev, sd.elev, n.amb, mean.amb, sd.amb,
+       data = woodyplants, sm = "ROM", studlab = paste(obsno, papno, sep = " / "))
+     print(ma1, prediction = TRUE)
+     
+     # Meta-analysis for plants grown with low soil fertility treatment
+     #
+     ma2 <- update(ma1, subset = (treat == "fert" & level == "low"))
+     print(ma2, prediction = TRUE)
+     
+     # Meta-analysis for plants grown under low light conditions
+     #
+     ma3 <- update(ma1, subset = (treat == "light" & level == "low"))
+     print(ma3, prediction = TRUE)
+     

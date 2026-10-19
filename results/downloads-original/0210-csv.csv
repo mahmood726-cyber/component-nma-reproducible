@@ -1,0 +1,37 @@
+key,value
+comps,"[""apixaban"",""aspirin"",""clopidogtrel"",""dabigatran 110mg"",""dabigatran 150mg"",""placebo/control"",""rivaroxaban"",""vkas""]"
+tau2,0.00708456668301231
+Q,22.13330435865475
+df,20
+components.apixaban.est,-0.375
+components.apixaban.se,NaN
+components.aspirin.est,0.375
+components.aspirin.se,NaN
+components.clopidogtrel.est,-0.24714502628612353
+components.clopidogtrel.se,0.09774492634386411
+components.dabigatran 110mg.est,-0.25
+components.dabigatran 110mg.se,NaN
+components.dabigatran 150mg.est,-0.5
+components.dabigatran 150mg.se,NaN
+components.placebo/control.est,0.75
+components.placebo/control.se,NaN
+components.rivaroxaban.est,-0.5
+components.rivaroxaban.se,NaN
+components.vkas.est,-0.25
+components.vkas.se,NaN
+combinations.apixaban.est,-0.375
+combinations.apixaban.se,0
+combinations.aspirin.est,0.375
+combinations.aspirin.se,0
+combinations.aspirin+clopidogtrel.est,0.12785497371387647
+combinations.aspirin+clopidogtrel.se,0
+combinations.dabigatran 110mg.est,-0.25
+combinations.dabigatran 110mg.se,0
+combinations.dabigatran 150mg.est,-0.5
+combinations.dabigatran 150mg.se,0
+combinations.placebo/control.est,0.75
+combinations.placebo/control.se,0
+combinations.rivaroxaban.est,-0.5
+combinations.rivaroxaban.se,0
+combinations.vkas.est,-0.25
+combinations.vkas.se,0

@@ -1,0 +1,57 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["aerobic exercise","aquatic exercise","diathermy (high)","diathermy (low)","education","electrical stimulation","no treatment","proprioception exercise","strength exercise","ultrasound"]
+tau2: 0.10738070344728394
+Q: 89.13170728409226
+df: 26
+components.aerobic exercise.est: -0.8500303783215188
+components.aerobic exercise.se: 0.399916481164071
+components.aquatic exercise.est: -0.5698227522467072
+components.aquatic exercise.se: 0.46961135517085933
+components.diathermy (high).est: -0.2628067996904379
+components.diathermy (high).se: 0.21297417000575086
+components.diathermy (low).est: -0.13055214382053584
+components.diathermy (low).se: 0.21218665688268695
+components.education.est: -0.6295440169711229
+components.education.se: 0.42996668027748836
+components.electrical stimulation.est: -0.2742842013104429
+components.electrical stimulation.se: 0.313600323633077
+components.no treatment.est: -0.3956438930549434
+components.no treatment.se: 0.43367982946924455
+components.proprioception exercise.est: -0.8662423010491185
+components.proprioception exercise.se: 0.5017146430231372
+components.strength exercise.est: -0.7082735160693429
+components.strength exercise.se: 0.43815065416754306
+components.ultrasound.est: -0.2018919541149064
+components.ultrasound.se: 0.2923685673605953
+combinations.aerobic exercise.est: -0.8500303783215188
+combinations.aerobic exercise.se: 0.399916481164071
+combinations.aquatic exercise.est: -0.5698227522467072
+combinations.aquatic exercise.se: 0.46961135517085933
+combinations.diathermy (high).est: -0.2628067996904379
+combinations.diathermy (high).se: 0.21297417000575086
+combinations.diathermy (low).est: -0.13055214382053584
+combinations.diathermy (low).se: 0.21218665688268695
+combinations.education.est: -0.6295440169711229
+combinations.education.se: 0.42996668027748836
+combinations.electrical stimulation.est: -0.2742842013104429
+combinations.electrical stimulation.se: 0.313600323633077
+combinations.no treatment.est: -0.3956438930549434
+combinations.no treatment.se: 0.43367982946924455
+combinations.proprioception exercise.est: -0.8662423010491185
+combinations.proprioception exercise.se: 0.5017146430231372
+combinations.strength exercise.est: -0.7082735160693429
+combinations.strength exercise.se: 0.43815065416754306
+combinations.ultrasound.est: -0.2018919541149064
+combinations.ultrasound.se: 0.2923685673605953

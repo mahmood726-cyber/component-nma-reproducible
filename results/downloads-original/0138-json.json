@@ -1,0 +1,47 @@
+{
+  "comps": [
+    "cq",
+    "hcq",
+    "placebo",
+    "standard of care"
+  ],
+  "tau2": 0,
+  "Q": 6.134855254742309,
+  "df": 25,
+  "components": {
+    "cq": {
+      "est": 0.375,
+      "se": null
+    },
+    "hcq": {
+      "est": -0.125,
+      "se": null
+    },
+    "placebo": {
+      "est": 0,
+      "se": null
+    },
+    "standard of care": {
+      "est": -0.125,
+      "se": null
+    }
+  },
+  "combinations": {
+    "cq": {
+      "est": 0.375,
+      "se": 0
+    },
+    "hcq": {
+      "est": -0.125,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0,
+      "se": 0
+    },
+    "standard of care": {
+      "est": -0.125,
+      "se": 0
+    }
+  }
+}

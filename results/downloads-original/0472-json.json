@@ -1,0 +1,74 @@
+{
+  "comps": [
+    "antecubital vein",
+    "hand vein",
+    "lidocaine pretreatment",
+    "lidocaine-propofol admixture",
+    "pretreatment with ketamine",
+    "pretreatment with non-steroidal anti-inflammatory",
+    "pretreatment with opioids"
+  ],
+  "tau2": 0.7532050903593447,
+  "Q": 357.12043723719955,
+  "df": 101,
+  "components": {
+    "antecubital vein": {
+      "est": -4.25,
+      "se": 6341191.604001987
+    },
+    "hand vein": {
+      "est": -1.5,
+      "se": 6341191.604001969
+    },
+    "lidocaine pretreatment": {
+      "est": -2.5,
+      "se": 6341191.604001973
+    },
+    "lidocaine-propofol admixture": {
+      "est": -2.625,
+      "se": 6341191.604001971
+    },
+    "pretreatment with ketamine": {
+      "est": -3.5,
+      "se": 6341191.604001979
+    },
+    "pretreatment with non-steroidal anti-inflammatory": {
+      "est": -2.125,
+      "se": 6341191.6040019775
+    },
+    "pretreatment with opioids": {
+      "est": -3,
+      "se": 6341191.604001975
+    }
+  },
+  "combinations": {
+    "antecubital vein": {
+      "est": -4.25,
+      "se": 6341191.604001987
+    },
+    "hand vein": {
+      "est": -1.5,
+      "se": 6341191.604001969
+    },
+    "lidocaine pretreatment": {
+      "est": -2.5,
+      "se": 6341191.604001973
+    },
+    "lidocaine-propofol admixture": {
+      "est": -2.625,
+      "se": 6341191.604001971
+    },
+    "pretreatment with ketamine": {
+      "est": -3.5,
+      "se": 6341191.604001979
+    },
+    "pretreatment with non-steroidal anti-inflammatory": {
+      "est": -2.125,
+      "se": 6341191.6040019775
+    },
+    "pretreatment with opioids": {
+      "est": -3,
+      "se": 6341191.604001975
+    }
+  }
+}

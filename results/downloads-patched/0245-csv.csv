@@ -1,0 +1,25 @@
+key,value
+comps,"[""antithrombin iii"",""aprotonin"",""rfviia"",""solvent detergent plasma"",""tranexamic acid""]"
+tau2,0
+Q,3.672556331488782
+df,8
+components.antithrombin iii.est,-1.408767216971949
+components.antithrombin iii.se,1.5050979587122777
+components.aprotonin.est,-0.7699117616902525
+components.aprotonin.se,0.48098919174529675
+components.rfviia.est,0.3546939854386779
+components.rfviia.se,0.7235614309226788
+components.solvent detergent plasma.est,0.07696104113612844
+components.solvent detergent plasma.se,1.961103242036463
+components.tranexamic acid.est,0.11981032764258548
+components.tranexamic acid.se,0.7473963696147455
+combinations.antithrombin iii.est,-1.408767216971949
+combinations.antithrombin iii.se,1.5050979587122777
+combinations.aprotonin.est,-0.7699117616902525
+combinations.aprotonin.se,0.48098919174529675
+combinations.rfviia.est,0.3546939854386779
+combinations.rfviia.se,0.7235614309226788
+combinations.solvent detergent plasma.est,0.07696104113612844
+combinations.solvent detergent plasma.se,1.961103242036463
+combinations.tranexamic acid.est,0.11981032764258548
+combinations.tranexamic acid.se,0.7473963696147455

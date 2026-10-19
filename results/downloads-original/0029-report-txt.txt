@@ -1,0 +1,37 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["ics","laba","laba-ics","tio-hh","tio-smi"]
+tau2: 0
+Q: 18.424193074411317
+df: 26
+components.ics.est: -0.09150018225365801
+components.ics.se: 0.18384415239323756
+components.laba.est: 0.058810221306233784
+components.laba.se: 0.15707072018346352
+components.laba-ics.est: -0.34726491357489414
+components.laba-ics.se: 0.2103327713855983
+components.tio-hh.est: -0.05919235940457193
+components.tio-hh.se: 0.062494320511824436
+components.tio-smi.est: 0.39884370875734876
+components.tio-smi.se: 0.18340932894529696
+combinations.ics.est: -0.09150018225365801
+combinations.ics.se: 0.18384415239323756
+combinations.laba.est: 0.058810221306233784
+combinations.laba.se: 0.15707072018346352
+combinations.laba-ics.est: -0.34726491357489414
+combinations.laba-ics.se: 0.2103327713855983
+combinations.tio-hh.est: -0.05919235940457193
+combinations.tio-hh.se: 0.062494320511824436
+combinations.tio-smi.est: 0.39884370875734876
+combinations.tio-smi.se: 0.18340932894529696

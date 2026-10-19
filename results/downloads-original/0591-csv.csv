@@ -1,0 +1,11 @@
+key,value
+comps,"[""a""]"
+tau2,0.04
+Q,5
+df,1
+components.a.est,0.2
+components.a.se,0.1
+combinations.a.est,0.2
+combinations.a.se,0.1
+combinations.a+a.est,0.4
+combinations.a+a.se,0.2

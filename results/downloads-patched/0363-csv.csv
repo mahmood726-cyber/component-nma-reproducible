@@ -1,0 +1,17 @@
+key,value
+comps,"[""comti"",""dopamine agonist"",""maobi""]"
+tau2,0.20671095175348378
+Q,46.91134118724261
+df,25
+components.comti.est,-0.9638871821214803
+components.comti.se,0.19306668493692014
+components.dopamine agonist.est,-1.4805300243228332
+components.dopamine agonist.se,0.20087536244577203
+components.maobi.est,-1.2145383260899865
+components.maobi.se,0.4100990996494074
+combinations.comti.est,-0.9638871821214803
+combinations.comti.se,0.19306668493692014
+combinations.dopamine agonist.est,-1.4805300243228332
+combinations.dopamine agonist.se,0.20087536244577203
+combinations.maobi.est,-1.2145383260899865
+combinations.maobi.se,0.4100990996494074

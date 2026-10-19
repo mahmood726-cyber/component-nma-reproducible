@@ -1,0 +1,7 @@
+source("r_session.R")
+pkgs<-c("netmeta","meta","metadat","metafor","metabook","mixmeta","mvmeta","jsonlite")
+versions<-setNames(lapply(pkgs,function(p)as.character(packageVersion(p))),pkgs)
+print(versions)
+write_json17(list(R=R.version.string,packages=versions),"versions.json")
+for(f in c("netcomb","discomb","nma_additive","prepare","chkmultiarm","covar_study"))writeLines(capture.output(print(get(f,asNamespace("netmeta")))),paste0("documentation/",f,"-source.txt"))
+cat("METADATA saved\n")

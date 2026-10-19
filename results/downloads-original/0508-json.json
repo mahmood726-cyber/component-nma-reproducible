@@ -1,0 +1,92 @@
+{
+  "comps": [
+    "hypericum",
+    "low-dose sari",
+    "nassa",
+    "nri",
+    "placebo",
+    "rmao-a",
+    "snri",
+    "ssri",
+    "tca"
+  ],
+  "tau2": 0.05606039380623926,
+  "Q": 88.18696884264598,
+  "df": 63,
+  "components": {
+    "hypericum": {
+      "est": -0.25,
+      "se": null
+    },
+    "low-dose sari": {
+      "est": 0,
+      "se": null
+    },
+    "nassa": {
+      "est": 0.75,
+      "se": null
+    },
+    "nri": {
+      "est": 1,
+      "se": null
+    },
+    "placebo": {
+      "est": 0.25,
+      "se": null
+    },
+    "rmao-a": {
+      "est": 0,
+      "se": null
+    },
+    "snri": {
+      "est": 1,
+      "se": null
+    },
+    "ssri": {
+      "est": 0.5,
+      "se": null
+    },
+    "tca": {
+      "est": 0.75,
+      "se": null
+    }
+  },
+  "combinations": {
+    "hypericum": {
+      "est": -0.25,
+      "se": 0
+    },
+    "low-dose sari": {
+      "est": 0,
+      "se": 0
+    },
+    "nassa": {
+      "est": 0.75,
+      "se": 0
+    },
+    "nri": {
+      "est": 1,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0.25,
+      "se": 0
+    },
+    "rmao-a": {
+      "est": 0,
+      "se": 0
+    },
+    "snri": {
+      "est": 1,
+      "se": 0
+    },
+    "ssri": {
+      "est": 0.5,
+      "se": 0
+    },
+    "tca": {
+      "est": 0.75,
+      "se": 0
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "runner": "stdlib runpy: shipped standalone assertion functions",
+  "checks": 14,
+  "passed": 14,
+  "tests": [
+    {
+      "variant": "original",
+      "file": "app/original/component-nma/tests/test_a11y.py",
+      "test": "test_has_lang_attribute",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "original",
+      "file": "app/original/component-nma/tests/test_a11y.py",
+      "test": "test_has_title_or_h1",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "original",
+      "file": "app/original/component-nma/tests/test_smoke.py",
+      "test": "test_index_exists",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "original",
+      "file": "app/original/component-nma/tests/test_smoke.py",
+      "test": "test_index_has_expected_content",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "original",
+      "file": "app/original/component-nma/tests/test_structure.py",
+      "test": "test_has_csp_meta",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "original",
+      "file": "app/original/component-nma/tests/test_structure.py",
+      "test": "test_has_skip_link_or_main_landmark",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "original",
+      "file": "app/original/component-nma/tests/test_structure.py",
+      "test": "test_back_to_hub_navigation",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "patched",
+      "file": "app/patched/component-nma/tests/test_a11y.py",
+      "test": "test_has_lang_attribute",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "patched",
+      "file": "app/patched/component-nma/tests/test_a11y.py",
+      "test": "test_has_title_or_h1",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "patched",
+      "file": "app/patched/component-nma/tests/test_smoke.py",
+      "test": "test_index_exists",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "patched",
+      "file": "app/patched/component-nma/tests/test_smoke.py",
+      "test": "test_index_has_expected_content",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "patched",
+      "file": "app/patched/component-nma/tests/test_structure.py",
+      "test": "test_has_csp_meta",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "patched",
+      "file": "app/patched/component-nma/tests/test_structure.py",
+      "test": "test_has_skip_link_or_main_landmark",
+      "passed": true,
+      "error": null
+    },
+    {
+      "variant": "patched",
+      "file": "app/patched/component-nma/tests/test_structure.py",
+      "test": "test_back_to_hub_navigation",
+      "passed": true,
+      "error": null
+    }
+  ]
+}

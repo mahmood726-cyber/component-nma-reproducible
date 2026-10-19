@@ -1,0 +1,40 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                                  | value                             |
+|--------------------------------------|-----------------------------------|
+| comps                                | ["bone grafts","emd","gtr","prp"] |
+| tau2                                 | 0.3716589128958665                |
+| Q                                    | 235.6870560716555                 |
+| df                                   | 65                                |
+| components.bone grafts.est           | 0.11590177345286096               |
+| components.bone grafts.se            | 0.1826178519322293                |
+| components.emd.est                   | 1.0765200666533563                |
+| components.emd.se                    | 0.14969993972273152               |
+| components.gtr.est                   | 1.1445617806869226                |
+| components.gtr.se                    | 0.1365669349203635                |
+| components.prp.est                   | -0.03208087448652541              |
+| components.prp.se                    | 0.3220263691843754                |
+| combinations.bone grafts+emd.est     | 1.1924218401062172                |
+| combinations.bone grafts+emd.se      | 0.22006696307009466               |
+| combinations.bone grafts+emd+prp.est | 1.160340965619692                 |
+| combinations.bone grafts+emd+prp.se  | 0.39003903738595963               |
+| combinations.bone grafts+gtr.est     | 1.2604635541397835                |
+| combinations.bone grafts+gtr.se      | 0.2015626301514715                |
+| combinations.bone grafts+gtr+prp.est | 1.228382679653258                 |
+| combinations.bone grafts+gtr+prp.se  | 0.379905878243086                 |
+| combinations.emd.est                 | 1.0765200666533563                |
+| combinations.emd.se                  | 0.14969993972273152               |
+| combinations.emd+gtr.est             | 2.2210818473402787                |
+| combinations.emd+gtr.se              | 0.2228849591055689                |
+| combinations.gtr.est                 | 1.1445617806869226                |
+| combinations.gtr.se                  | 0.1365669349203635                |

@@ -1,0 +1,99 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["face-to-face cbt","face-to-face interpsy","face-to-face pst","face-to-face psychodyn","hypericum","ind drug","low-dose sari","nassa","no contact cbt","nri","other face-to-face","placebo","remote cbt","rmao-a","self-help cbt","snri","ssri","tca","uc"]
+tau2: 0.020057963641492236
+Q: 126.21906903561172
+df: 105
+components.face-to-face cbt.est: 0.7334178909421887
+components.face-to-face cbt.se: 0.24123484192304162
+components.face-to-face interpsy.est: 0.018084442756003405
+components.face-to-face interpsy.se: 0.16997304899017024
+components.face-to-face pst.est: 0.21094216347711647
+components.face-to-face pst.se: 0.2056664669605601
+components.face-to-face psychodyn.est: 0.31384111420573624
+components.face-to-face psychodyn.se: 0.6175028511683772
+components.hypericum.est: 0.5550368353005659
+components.hypericum.se: 0.18437861567520303
+components.ind drug.est: 0.9445340324614269
+components.ind drug.se: 0.49852196535311233
+components.low-dose sari.est: 0.4286300681639994
+components.low-dose sari.se: 0.23791604065986163
+components.nassa.est: 0.027270350625818507
+components.nassa.se: 0.20760992627989464
+components.no contact cbt.est: 0.5382153319094378
+components.no contact cbt.se: 0.28460150688570596
+components.nri.est: 0.25023890156302087
+components.nri.se: 0.2715112626103665
+components.other face-to-face.est: 0.6606542459593832
+components.other face-to-face.se: 0.24251425483611302
+components.placebo.est: -0.11183766292786723
+components.placebo.se: 0.17251958592142597
+components.remote cbt.est: 0.7437747154467846
+components.remote cbt.se: 0.25782733352024223
+components.rmao-a.est: -0.0662709158455046
+components.rmao-a.se: 0.24738551209900655
+components.self-help cbt.est: 0.6329581396430282
+components.self-help cbt.se: 0.27549845433935405
+components.snri.est: 0.5463267105785719
+components.snri.se: 0.19038810849682086
+components.ssri.est: 0.4192016298635626
+components.ssri.se: 0.1585581800112239
+components.tca.est: 0.4246227836662988
+components.tca.se: 0.16597090569593326
+components.uc.est: 0.11691569507916633
+components.uc.se: 0.21247235169932793
+combinations.face-to-face cbt.est: 0.7334178909421887
+combinations.face-to-face cbt.se: 0.24123484192304162
+combinations.face-to-face cbt+ssri.est: 1.1526195208057513
+combinations.face-to-face cbt+ssri.se: 0.3522728811488165
+combinations.face-to-face interpsy.est: 0.018084442756003405
+combinations.face-to-face interpsy.se: 0.16997304899017024
+combinations.face-to-face interpsy+ssri.est: 0.437286072619566
+combinations.face-to-face interpsy+ssri.se: 0.2938313622684901
+combinations.face-to-face pst.est: 0.21094216347711647
+combinations.face-to-face pst.se: 0.2056664669605601
+combinations.face-to-face pst+ssri.est: 0.630143793340679
+combinations.face-to-face pst+ssri.se: 0.33434728156662336
+combinations.face-to-face psychodyn.est: 0.31384111420573624
+combinations.face-to-face psychodyn.se: 0.6175028511683772
+combinations.hypericum.est: 0.5550368353005659
+combinations.hypericum.se: 0.18437861567520303
+combinations.ind drug.est: 0.9445340324614269
+combinations.ind drug.se: 0.49852196535311233
+combinations.low-dose sari.est: 0.4286300681639994
+combinations.low-dose sari.se: 0.23791604065986163
+combinations.nassa.est: 0.027270350625818507
+combinations.nassa.se: 0.20760992627989464
+combinations.no contact cbt.est: 0.5382153319094378
+combinations.no contact cbt.se: 0.28460150688570596
+combinations.nri.est: 0.25023890156302087
+combinations.nri.se: 0.2715112626103665
+combinations.other face-to-face.est: 0.6606542459593832
+combinations.other face-to-face.se: 0.24251425483611302
+combinations.placebo.est: -0.11183766292786723
+combinations.placebo.se: 0.17251958592142597
+combinations.remote cbt.est: 0.7437747154467846
+combinations.remote cbt.se: 0.25782733352024223
+combinations.rmao-a.est: -0.0662709158455046
+combinations.rmao-a.se: 0.24738551209900655
+combinations.self-help cbt.est: 0.6329581396430282
+combinations.self-help cbt.se: 0.27549845433935405
+combinations.snri.est: 0.5463267105785719
+combinations.snri.se: 0.19038810849682086
+combinations.ssri.est: 0.4192016298635626
+combinations.ssri.se: 0.1585581800112239
+combinations.tca.est: 0.4246227836662988
+combinations.tca.se: 0.16597090569593326
+combinations.uc.est: 0.11691569507916633
+combinations.uc.se: 0.21247235169932793

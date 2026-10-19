@@ -1,0 +1,54 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                   | value                                                            |
+|-----------------------|------------------------------------------------------------------|
+| comps                 | ["acar","benf","metf","migl","piog","rosi","sita","sulf","vild"] |
+| tau2                  | 0.11441593028346095                                              |
+| Q                     | 96.83970938657134                                                |
+| df                    | 16                                                               |
+| components.acar.est   | -0.8005573136306765                                              |
+| components.acar.se    | 0.2892096120879654                                               |
+| components.benf.est   | -0.7277017864174029                                              |
+| components.benf.se    | 0.291397845148154                                                |
+| components.metf.est   | -1.123512544223678                                               |
+| components.metf.se    | 0.16689761531667016                                              |
+| components.migl.est   | -0.9496094051067053                                              |
+| components.migl.se    | 0.23587141432588007                                              |
+| components.piog.est   | -1.1274343834677474                                              |
+| components.piog.se    | 0.22578734880000823                                              |
+| components.rosi.est   | -1.2311884194256                                                 |
+| components.rosi.se    | 0.13127808858727086                                              |
+| components.sita.est   | -0.57                                                            |
+| components.sita.se    | 0.3620535047247312                                               |
+| components.sulf.est   | -0.4011290339504656                                              |
+| components.sulf.se    | 0.25075000263680014                                              |
+| components.vild.est   | -0.7                                                             |
+| components.vild.se    | 0.36141557836299887                                              |
+| combinations.acar.est | -0.8005573136306765                                              |
+| combinations.acar.se  | 0.2892096120879654                                               |
+| combinations.benf.est | -0.7277017864174029                                              |
+| combinations.benf.se  | 0.291397845148154                                                |
+| combinations.metf.est | -1.123512544223678                                               |
+| combinations.metf.se  | 0.16689761531667016                                              |
+| combinations.migl.est | -0.9496094051067053                                              |
+| combinations.migl.se  | 0.23587141432588007                                              |
+| combinations.piog.est | -1.1274343834677474                                              |
+| combinations.piog.se  | 0.22578734880000823                                              |
+| combinations.rosi.est | -1.2311884194256                                                 |
+| combinations.rosi.se  | 0.13127808858727086                                              |
+| combinations.sita.est | -0.57                                                            |
+| combinations.sita.se  | 0.3620535047247312                                               |
+| combinations.sulf.est | -0.4011290339504656                                              |
+| combinations.sulf.se  | 0.25075000263680014                                              |
+| combinations.vild.est | -0.7                                                             |
+| combinations.vild.se  | 0.36141557836299887                                              |

@@ -1,0 +1,28 @@
+_T_h_r_o_m_b_o_l_y_t_i_c _T_h_e_r_a_p_y _a_f_t_e_r _A_c_u_t_e _M_y_o_c_a_r_d_i_a_l _I_n_f_a_r_c_t_i_o_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Meta-analysis on Thrombolytic Therapy after Acute Myocardial
+     Infarction
+
+_F_o_r_m_a_t:
+
+     A data frame with the following columns:
+
+        *_author_*  first author                                 
+          *_year_*  year of publication                          
+        *_ev.exp_*  number of events in experimental group       
+         *_n.exp_*  number of observations in experimental group 
+       *_ev.cont_*  number of events in control group            
+        *_n.cont_*  number of observations in control group      
+      
+_S_o_u_r_c_e:
+
+     Olkin I (1995): Statistical and theoretical considerations in
+     meta-analysis. _Journal of Clinical Epidemiology_, *48*, 133-46
+
+_E_x_a_m_p_l_e_s:
+
+     data(Olkin1995)
+     metabin(ev.exp, n.exp, ev.cont, n.cont, data = Olkin1995)
+     

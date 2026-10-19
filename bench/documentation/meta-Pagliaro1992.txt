@@ -1,0 +1,43 @@
+_M_e_t_a-_a_n_a_l_y_s_i_s _o_n _P_r_e_v_e_n_t_i_o_n _o_f _F_i_r_s_t _B_l_e_e_d_i_n_g _i_n _C_i_r_r_h_o_s_i_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Meta-analysis on Prevention of First Bleeding in Cirrhosis
+     comparing beta-blocker or sclerotherapy with placebo.
+
+_F_o_r_m_a_t:
+
+     A data frame with the following columns:
+
+               *_id_*  study id                                     
+        *_treat.exp_*  treatment in experimental group              
+            *_logOR_*  log odds ratio                               
+          *_selogOR_*  standard error of log odds ratio             
+        *_bleed.exp_*  number of bleedings in experimental group    
+           *_n.cont_*  number of observations in experimental group 
+       *_bleed.plac_*  number of bleedings in placebo group         
+           *_n.plac_*  number of observations in placebo group      
+      
+_S_o_u_r_c_e:
+
+     Pagliaro L, D<e2><80><99>Amico G et al. (1992): Prevention of first bleeding
+     in cirrhosis. _Annals in Internal Medicine_, *117*, 59-70
+
+_E_x_a_m_p_l_e_s:
+
+     data(Pagliaro1992)
+     sclero <- subset(Pagliaro1992, treat.exp == "Sclerotherapy")
+     
+     m <- metagen(logOR, selogOR, data = sclero, sm = "OR")
+     m
+     
+     # Thompson & Sharp (1999), Table IV, method (2)
+     metabias(m, method = "Egger")
+     
+     # Thompson & Sharp (1999), Table IV, method (3a)
+     metabias(m, method = "Thompson")
+     
+     # Thompson & Sharp (1999), Table IV, method (3b)
+     update(m, method.tau = "ML")
+     metabias(update(m, method.tau = "ML"), method = "Thompson")
+     

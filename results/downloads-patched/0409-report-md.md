@@ -1,0 +1,38 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                       | value                                        |
+|---------------------------|----------------------------------------------|
+| comps                     | ["ics","laba","laba-ics","tio-hh","tio-smi"] |
+| tau2                      | 0                                            |
+| Q                         | 53.11295748454537                            |
+| df                        | 77                                           |
+| components.ics.est        | 0.02938092692831029                          |
+| components.ics.se         | 0.06328324539649516                          |
+| components.laba.est       | -0.09546539331820691                         |
+| components.laba.se        | 0.06241632331482979                          |
+| components.laba-ics.est   | -0.23158744026108577                         |
+| components.laba-ics.se    | 0.06531862536662586                          |
+| components.tio-hh.est     | -0.09192174342330435                         |
+| components.tio-hh.se      | 0.06494427838248076                          |
+| components.tio-smi.est    | 0.4081760205652836                           |
+| components.tio-smi.se     | 0.18727044459884148                          |
+| combinations.ics.est      | 0.02938092692831029                          |
+| combinations.ics.se       | 0.06328324539649516                          |
+| combinations.laba.est     | -0.09546539331820691                         |
+| combinations.laba.se      | 0.06241632331482979                          |
+| combinations.laba-ics.est | -0.23158744026108577                         |
+| combinations.laba-ics.se  | 0.06531862536662586                          |
+| combinations.tio-hh.est   | -0.09192174342330435                         |
+| combinations.tio-hh.se    | 0.06494427838248076                          |
+| combinations.tio-smi.est  | 0.4081760205652836                           |
+| combinations.tio-smi.se   | 0.18727044459884148                          |

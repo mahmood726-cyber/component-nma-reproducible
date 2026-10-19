@@ -1,0 +1,55 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["choice of product","gum","inhalator","intranasal spray","lozenge","oral spray","patch","tablets/lozenges"]
+tau2: 0.06463288893210313
+Q: 217.11541581643698
+df: 128
+components.choice of product.est: 0.5050864151161499
+components.choice of product.se: 0.14266687052715746
+components.gum.est: 0.5005629957560024
+components.gum.se: 0.059647545028734074
+components.inhalator.est: 0.4802422301514128
+components.inhalator.se: 0.2148035926335184
+components.intranasal spray.est: 0.8495355030664032
+components.intranasal spray.se: 0.22635867973993462
+components.lozenge.est: 0.5482841106693662
+components.lozenge.se: 0.43599280978513305
+components.oral spray.est: 0.9977174710402479
+components.oral spray.se: 0.45683679271201916
+components.patch.est: 0.5480244890670813
+components.patch.se: 0.061288370675200765
+components.tablets/lozenges.est: 0.6142946063550928
+components.tablets/lozenges.se: 0.13678704505375186
+combinations.choice of product.est: 0.5050864151161499
+combinations.choice of product.se: 0.14266687052715746
+combinations.gum.est: 0.5005629957560024
+combinations.gum.se: 0.059647545028734074
+combinations.gum+lozenge+patch.est: 1.59687159549245
+combinations.gum+lozenge+patch.se: 0.434452409054474
+combinations.gum+patch.est: 1.0485874848230838
+combinations.gum+patch.se: 0.08483743213850484
+combinations.inhalator.est: 0.4802422301514128
+combinations.inhalator.se: 0.2148035926335184
+combinations.inhalator+patch.est: 1.0282667192184942
+combinations.inhalator+patch.se: 0.21949008134260573
+combinations.intranasal spray.est: 0.8495355030664032
+combinations.intranasal spray.se: 0.22635867973993462
+combinations.lozenge+patch.est: 1.0963085997364477
+combinations.lozenge+patch.se: 0.43168566660754815
+combinations.oral spray.est: 0.9977174710402479
+combinations.oral spray.se: 0.45683679271201916
+combinations.patch.est: 0.5480244890670813
+combinations.patch.se: 0.061288370675200765
+combinations.tablets/lozenges.est: 0.6142946063550928
+combinations.tablets/lozenges.se: 0.13678704505375186

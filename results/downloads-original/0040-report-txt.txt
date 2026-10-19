@@ -1,0 +1,33 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["bromocriptine","cabergoline","pramipexole","ropinirole"]
+tau2: 0
+Q: 1.6241018473467592
+df: 2
+components.bromocriptine.est: -0.0764238681249708
+components.bromocriptine.se: 0.20586312595924328
+components.cabergoline.est: -0.1973521254617292
+components.cabergoline.se: 0.22243906056551827
+components.pramipexole.est: -0.47850517512961405
+components.pramipexole.se: 0.10920685342379394
+components.ropinirole.est: -0.07597295983876359
+components.ropinirole.se: 0.17048226614074663
+combinations.bromocriptine.est: -0.0764238681249708
+combinations.bromocriptine.se: 0.20586312595924328
+combinations.cabergoline.est: -0.1973521254617292
+combinations.cabergoline.se: 0.22243906056551827
+combinations.pramipexole.est: -0.47850517512961405
+combinations.pramipexole.se: 0.10920685342379394
+combinations.ropinirole.est: -0.07597295983876359
+combinations.ropinirole.se: 0.17048226614074663

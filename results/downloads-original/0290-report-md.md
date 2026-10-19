@@ -1,0 +1,54 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                            | value                                                                              |
+|--------------------------------|------------------------------------------------------------------------------------|
+| comps                          | ["hypericum","low-dose sari","nassa","nri","placebo","rmao-a","snri","ssri","tca"] |
+| tau2                           | 0.018082360699342333                                                               |
+| Q                              | 59.352399569866364                                                                 |
+| df                             | 41                                                                                 |
+| components.hypericum.est       | -0.3125                                                                            |
+| components.hypericum.se        | 4194304                                                                            |
+| components.low-dose sari.est   | -0.0625                                                                            |
+| components.low-dose sari.se    | 4194304.000000002                                                                  |
+| components.nassa.est           | -0.3125                                                                            |
+| components.nassa.se            | 4194304.000000001                                                                  |
+| components.nri.est             | -0.3125                                                                            |
+| components.nri.se              | 4194304.000000005                                                                  |
+| components.placebo.est         | -0.6875                                                                            |
+| components.placebo.se          | 4194304.000000001                                                                  |
+| components.rmao-a.est          | -0.4375                                                                            |
+| components.rmao-a.se           | 4194304.000000002                                                                  |
+| components.snri.est            | -0.3125                                                                            |
+| components.snri.se             | 4194304                                                                            |
+| components.ssri.est            | -0.3125                                                                            |
+| components.ssri.se             | 4194303.9999999995                                                                 |
+| components.tca.est             | -0.1875                                                                            |
+| components.tca.se              | 4194304                                                                            |
+| combinations.hypericum.est     | -0.3125                                                                            |
+| combinations.hypericum.se      | 4194304                                                                            |
+| combinations.low-dose sari.est | -0.0625                                                                            |
+| combinations.low-dose sari.se  | 4194304.000000002                                                                  |
+| combinations.nassa.est         | -0.3125                                                                            |
+| combinations.nassa.se          | 4194304.000000001                                                                  |
+| combinations.nri.est           | -0.3125                                                                            |
+| combinations.nri.se            | 4194304.000000005                                                                  |
+| combinations.placebo.est       | -0.6875                                                                            |
+| combinations.placebo.se        | 4194304.000000001                                                                  |
+| combinations.rmao-a.est        | -0.4375                                                                            |
+| combinations.rmao-a.se         | 4194304.000000002                                                                  |
+| combinations.snri.est          | -0.3125                                                                            |
+| combinations.snri.se           | 4194304                                                                            |
+| combinations.ssri.est          | -0.3125                                                                            |
+| combinations.ssri.se           | 4194303.9999999995                                                                 |
+| combinations.tca.est           | -0.1875                                                                            |
+| combinations.tca.se            | 4194304                                                                            |

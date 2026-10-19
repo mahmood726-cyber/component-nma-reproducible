@@ -1,0 +1,65 @@
+{
+  "comps": [
+    "ics",
+    "laba",
+    "laba-ics",
+    "placebo",
+    "tio-hh",
+    "tio-smi"
+  ],
+  "tau2": 0,
+  "Q": 53.218990373190394,
+  "df": 76,
+  "components": {
+    "ics": {
+      "est": 0.0234375,
+      "se": null
+    },
+    "laba": {
+      "est": -0.09375,
+      "se": null
+    },
+    "laba-ics": {
+      "est": -0.171875,
+      "se": null
+    },
+    "placebo": {
+      "est": 0.0078125,
+      "se": null
+    },
+    "tio-hh": {
+      "est": -0.0859375,
+      "se": null
+    },
+    "tio-smi": {
+      "est": 0.40625,
+      "se": null
+    }
+  },
+  "combinations": {
+    "ics": {
+      "est": 0.0234375,
+      "se": 0
+    },
+    "laba": {
+      "est": -0.09375,
+      "se": 0
+    },
+    "laba-ics": {
+      "est": -0.171875,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0.0078125,
+      "se": 0
+    },
+    "tio-hh": {
+      "est": -0.0859375,
+      "se": 0
+    },
+    "tio-smi": {
+      "est": 0.40625,
+      "se": 0
+    }
+  }
+}

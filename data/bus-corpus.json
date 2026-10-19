@@ -1,0 +1,428 @@
+[
+  {
+    "key": "bus::OR",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "OR",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 23,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 28,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "key": "bus::OR::zero",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "OR",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 0,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 0,
+              "n": 23,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 28,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "key": "bus::RR",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "RR",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 23,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 28,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "key": "bus::RR::zero",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "RR",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 0,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 0,
+              "n": 23,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 28,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "key": "bus::MD",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "MD",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 23,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 28,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "key": "bus::SMD",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "SMD",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 23,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 28,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "key": "bus::empty",
+    "env": null,
+    "expected_refusal": "Shared network bus is empty."
+  },
+  {
+    "key": "bus::unsupported-RD",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "RD",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 23,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 28,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    "expected_refusal": "Bus measure RD yielded no contrasts (needs OR/RR with events/n, or MD/SMD with mean/sd/n)."
+  },
+  {
+    "key": "bus::multi-arm",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "OR",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            },
+            {
+              "treatment": "a+b",
+              "events": 4,
+              "n": 30
+            }
+          ]
+        }
+      ]
+    },
+    "expected_refusal": "Multi-arm or repeated-study bus inputs are unsupported: contrast covariance is required."
+  },
+  {
+    "key": "bus::repeated-study",
+    "env": {
+      "_schema": "ma-comparisons-v1",
+      "_savedAt": "2026-01-01",
+      "effectMeasure": "OR",
+      "studies": [
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        },
+        {
+          "id": "one",
+          "arms": [
+            {
+              "treatment": "a",
+              "events": 3,
+              "n": 20,
+              "mean": 3,
+              "sd": 1.2
+            },
+            {
+              "treatment": "control",
+              "events": 5,
+              "n": 25,
+              "mean": 2,
+              "sd": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    "expected_refusal": "Multi-arm or repeated-study bus inputs are unsupported: contrast covariance is required."
+  }
+]

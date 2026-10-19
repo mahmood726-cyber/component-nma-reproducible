@@ -1,0 +1,34 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                            | value                                                      |
+|--------------------------------|------------------------------------------------------------|
+| comps                          | ["bromocriptine","cabergoline","pramipexole","ropinirole"] |
+| tau2                           | 0                                                          |
+| Q                              | 1.6088517069221426                                         |
+| df                             | 2                                                          |
+| components.bromocriptine.est   | -0.3108568344352977                                        |
+| components.bromocriptine.se    | 0.7522548541141085                                         |
+| components.cabergoline.est     | -0.6108568344352976                                        |
+| components.cabergoline.se      | 0.7805543397075286                                         |
+| components.pramipexole.est     | -1.6999999999999997                                        |
+| components.pramipexole.se      | 0.38264060488187723                                        |
+| components.ropinirole.est      | -0.30999999999999905                                       |
+| components.ropinirole.se       | 0.6680896509274875                                         |
+| combinations.bromocriptine.est | -0.3108568344352977                                        |
+| combinations.bromocriptine.se  | 0.7522548541141085                                         |
+| combinations.cabergoline.est   | -0.6108568344352976                                        |
+| combinations.cabergoline.se    | 0.7805543397075286                                         |
+| combinations.pramipexole.est   | -1.6999999999999997                                        |
+| combinations.pramipexole.se    | 0.38264060488187723                                        |
+| combinations.ropinirole.est    | -0.30999999999999905                                       |
+| combinations.ropinirole.se     | 0.6680896509274875                                         |

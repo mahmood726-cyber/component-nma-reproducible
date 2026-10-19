@@ -1,0 +1,119 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["angerctrl","behavmod","cogrestruct","cogskills","intpprbsolv","moralrsng","other","relapseprev","roletaking","socskills","subabuse","victimimpact"]
+tau2: 0.0017610107071096776
+Q: 65.61088365240742
+df: 44
+components.angerctrl.est: 0.09944650430405046
+components.angerctrl.se: 0.03696698540515202
+components.behavmod.est: -0.051537904221451505
+components.behavmod.se: 0.04429799193429204
+components.cogrestruct.est: 0.03590035222168285
+components.cogrestruct.se: 0.036246342251704894
+components.cogskills.est: -0.041523554206838544
+components.cogskills.se: 0.04451640975036329
+components.intpprbsolv.est: 0.03679449823990046
+components.intpprbsolv.se: 0.03061460158427584
+components.moralrsng.est: 0.0236150903567301
+components.moralrsng.se: 0.04160702006789287
+components.other.est: 0.08434370569404646
+components.other.se: 0.03784427415731823
+components.relapseprev.est: 0.005061498681281466
+components.relapseprev.se: 0.037371116693585935
+components.roletaking.est: 0.02144162022699366
+components.roletaking.se: 0.030441582011188153
+components.socskills.est: 0.0560818522665069
+components.socskills.se: 0.04405494593668594
+components.subabuse.est: -0.004440143196826986
+components.subabuse.se: 0.03354851010549976
+components.victimimpact.est: -0.12677266181623814
+components.victimimpact.se: 0.043813110001694605
+combinations.angerctrl+behavmod+cogrestruct+cogskills+intpprbsolv+other+relapseprev+roletaking+socskills+subabuse+victimimpact.est: 0.11479576819310708
+combinations.angerctrl+behavmod+cogrestruct+cogskills+intpprbsolv+other+relapseprev+roletaking+socskills+subabuse+victimimpact.se: 0.057520356509479016
+combinations.angerctrl+behavmod+cogrestruct+cogskills+moralrsng+socskills.est: 0.12198234072068026
+combinations.angerctrl+behavmod+cogrestruct+cogskills+moralrsng+socskills.se: 0.04092751269103567
+combinations.angerctrl+behavmod+cogrestruct+cogskills+moralrsng+socskills+subabuse+victimimpact.est: -0.00923046429238486
+combinations.angerctrl+behavmod+cogrestruct+cogskills+moralrsng+socskills+subabuse+victimimpact.se: 0.0438061250167656
+combinations.angerctrl+behavmod+cogrestruct+cogskills+roletaking+socskills+subabuse.est: 0.11536872739411683
+combinations.angerctrl+behavmod+cogrestruct+cogskills+roletaking+socskills+subabuse.se: 0.05646424690158884
+combinations.angerctrl+behavmod+cogskills+intpprbsolv+moralrsng+relapseprev+roletaking+socskills+subabuse.est: 0.14493946245034603
+combinations.angerctrl+behavmod+cogskills+intpprbsolv+moralrsng+relapseprev+roletaking+socskills+subabuse.se: 0.06224438884605226
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+moralrsng+other+victimimpact.est: 0.11180393479333367
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+moralrsng+other+victimimpact.se: 0.07008167778358654
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills.est: 0.2761048572006301
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills.se: 0.04995171213283487
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills+subabuse.est: 0.2716647140038031
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills+subabuse.se: 0.044265438386196315
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+relapseprev+roletaking.est: 0.15712091946707038
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+relapseprev+roletaking.se: 0.06975299214228121
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+roletaking+socskills.est: 0.2081412730522958
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+roletaking+socskills.se: 0.04648109797434532
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+roletaking+socskills+subabuse+victimimpact.est: 0.07692846803923067
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+roletaking+socskills+subabuse+victimimpact.se: 0.05315996039949044
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+socskills+subabuse+victimimpact.est: 0.05548684781223703
+combinations.angerctrl+cogrestruct+cogskills+intpprbsolv+socskills+subabuse+victimimpact.se: 0.05561766093120042
+combinations.angerctrl+cogrestruct+cogskills+moralrsng+other+roletaking+socskills.est: 0.27930557086317187
+combinations.angerctrl+cogrestruct+cogskills+moralrsng+other+roletaking+socskills.se: 0.07538633755608064
+combinations.angerctrl+cogrestruct+cogskills+moralrsng+roletaking+socskills.est: 0.19496186516912545
+combinations.angerctrl+cogrestruct+cogskills+moralrsng+roletaking+socskills.se: 0.05958252846886444
+combinations.angerctrl+cogrestruct+cogskills+other+relapseprev+subabuse.est: 0.1787883634973957
+combinations.angerctrl+cogrestruct+cogskills+other+relapseprev+subabuse.se: 0.05595210752071255
+combinations.angerctrl+cogrestruct+intpprbsolv+moralrsng+other+subabuse.est: 0.2756600076195833
+combinations.angerctrl+cogrestruct+intpprbsolv+moralrsng+other+subabuse.se: 0.04224015725581076
+combinations.angerctrl+cogrestruct+other+relapseprev.est: 0.22475206090106126
+combinations.angerctrl+cogrestruct+other+relapseprev.se: 0.05037163170406902
+combinations.angerctrl+cogskills+intpprbsolv+socskills+victimimpact.est: 0.02402663878738115
+combinations.angerctrl+cogskills+intpprbsolv+socskills+victimimpact.se: 0.04873634390373862
+combinations.behavmod+cogrestruct+cogskills+intpprbsolv+other+roletaking+socskills.est: 0.14150057022084028
+combinations.behavmod+cogrestruct+cogskills+intpprbsolv+other+roletaking+socskills.se: 0.05415405976693195
+combinations.behavmod+cogrestruct+cogskills+intpprbsolv+other+socskills.est: 0.12005894999384663
+combinations.behavmod+cogrestruct+cogskills+intpprbsolv+other+socskills.se: 0.0520378936721259
+combinations.behavmod+cogrestruct+cogskills+intpprbsolv+roletaking+socskills.est: 0.057156864526793826
+combinations.behavmod+cogrestruct+cogskills+intpprbsolv+roletaking+socskills.se: 0.05320198745253236
+combinations.behavmod+cogrestruct+cogskills+other+relapseprev+socskills+subabuse.est: 0.08388580723840064
+combinations.behavmod+cogrestruct+cogskills+other+relapseprev+socskills+subabuse.se: 0.03547786030505234
+combinations.behavmod+cogskills+intpprbsolv+other.est: 0.02807674550565687
+combinations.behavmod+cogskills+intpprbsolv+other.se: 0.07439467459099294
+combinations.cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills+subabuse.est: 0.17221820969975263
+combinations.cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills+subabuse.se: 0.03298869635734016
+combinations.cogrestruct+cogskills+intpprbsolv+relapseprev+socskills+subabuse.est: 0.08787450400570615
+combinations.cogrestruct+cogskills+intpprbsolv+relapseprev+socskills+subabuse.se: 0.04527538130328085
+combinations.cogrestruct+cogskills+intpprbsolv+roletaking.est: 0.05261291648173843
+combinations.cogrestruct+cogskills+intpprbsolv+roletaking.se: 0.061009557121900274
+combinations.cogrestruct+cogskills+intpprbsolv+roletaking+socskills.est: 0.10869476874824532
+combinations.cogrestruct+cogskills+intpprbsolv+roletaking+socskills.se: 0.03988640669480937
+combinations.cogrestruct+intpprbsolv+moralrsng.est: 0.0963099408183134
+combinations.cogrestruct+intpprbsolv+moralrsng.se: 0.03625298358985297
+combinations.cogrestruct+intpprbsolv+moralrsng+relapseprev+socskills+subabuse.est: 0.1530131485692748
+combinations.cogrestruct+intpprbsolv+moralrsng+relapseprev+socskills+subabuse.se: 0.05391313038171418
+combinations.cogrestruct+intpprbsolv+moralrsng+socskills.est: 0.15239179308482032
+combinations.cogrestruct+intpprbsolv+moralrsng+socskills.se: 0.05132477023868125
+combinations.cogrestruct+intpprbsolv+moralrsng+subabuse.est: 0.09186979762148642
+combinations.cogrestruct+intpprbsolv+moralrsng+subabuse.se: 0.03304331996334522
+combinations.cogrestruct+intpprbsolv+other+socskills+subabuse+victimimpact.est: 0.08190760340907158
+combinations.cogrestruct+intpprbsolv+other+socskills+subabuse+victimimpact.se: 0.04819811949407699
+combinations.cogrestruct+moralrsng.est: 0.059515442578412944
+combinations.cogrestruct+moralrsng.se: 0.04161303159594651
+combinations.cogskills+intpprbsolv+other+roletaking+socskills.est: 0.15713812222060897
+combinations.cogskills+intpprbsolv+other+roletaking+socskills.se: 0.04955605559658849
+combinations.cogskills+intpprbsolv+roletaking+socskills.est: 0.07279441652656249
+combinations.cogskills+intpprbsolv+roletaking+socskills.se: 0.024570924048587295
+combinations.cogskills+intpprbsolv+socskills.est: 0.05135279629956882
+combinations.cogskills+intpprbsolv+socskills.se: 0.02196328773109098
+combinations.cogskills+relapseprev+socskills+subabuse.est: 0.015179653544122838
+combinations.cogskills+relapseprev+socskills+subabuse.se: 0.03901579633578935
+combinations.intpprbsolv+relapseprev.est: 0.04185599692118193
+combinations.intpprbsolv+relapseprev.se: 0.05191211760387438
+combinations.other+relapseprev+subabuse.est: 0.08496506117850094
+combinations.other+relapseprev+subabuse.se: 0.04033442849888514

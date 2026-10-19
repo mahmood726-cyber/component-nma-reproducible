@@ -1,0 +1,487 @@
+_A_d_d_i_t_i_v_e _n_e_t_w_o_r_k _m_e_t_a-_a_n_a_l_y_s_i_s _f_o_r _c_o_m_b_i_n_a_t_i_o_n_s _o_f _t_r_e_a_t_m_e_n_t_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Some treatments in a network meta-analysis may be combinations of
+     other treatments or have common components. The influence of
+     individual components can be evaluated in an additive network
+     meta-analysis model assuming that the effect of treatment
+     combinations is the sum of the effects of its components. This
+     function implements this additive model in a frequentist way.
+
+_U_s_a_g_e:
+
+     netcomb(
+       x,
+       inactive = NULL,
+       sep.comps = gs("sep.comps"),
+       C.matrix,
+       common = x$common,
+       random = x$random | !is.null(tau.preset),
+       tau.preset = NULL,
+       details.chkident = FALSE,
+       nchar.comps = x$nchar.trts,
+       sep.ia = gs("sep.ia"),
+       func.inverse = invmat,
+       overall.hetstat = x$overall.hetstat,
+       backtransf = x$backtransf,
+       na.unident = gs("na.unident"),
+       warn.deprecated = gs("warn.deprecated"),
+       ...
+     )
+     
+_A_r_g_u_m_e_n_t_s:
+
+       x: An object of class 'netmeta'.
+
+inactive: A character string defining the inactive treatment component
+          (see Details).
+
+sep.comps: A single character to define separator between treatment
+          components.
+
+C.matrix: C matrix (see Details).
+
+  common: A logical indicating whether a common effects network
+          meta-analysis should be conducted.
+
+  random: A logical indicating whether a random effects network
+          meta-analysis should be conducted.
+
+tau.preset: An optional value for the square-root of the between-study
+          variance tau^2.
+
+details.chkident: A logical indicating whether details on
+          unidentifiable components should be printed.
+
+nchar.comps: A numeric defining the minimum number of characters used
+          to create unique names for components (see Details).
+
+  sep.ia: A single character to define separator for interactions.
+
+func.inverse: R function used to calculate the pseudoinverse of the
+          Laplacian matrix L (see 'netmeta').
+
+overall.hetstat: A logical indicating whether to print heterogeneity
+          measures.
+
+backtransf: A logical indicating whether results should be back
+          transformed in printouts and forest plots.
+
+na.unident: A logical indicating whether unidentifiable components and
+          combinations should be set to missing values.
+
+warn.deprecated: A logical indicating whether warnings should be
+          printed if deprecated arguments are used.
+
+     ...: Additional arguments (to catch deprecated arguments).
+
+_D_e_t_a_i_l_s:
+
+     Treatments in network meta-analysis (NMA) can be complex
+     interventions. Some treatments may be combinations of others or
+     have common components. The standard analysis provided by
+     'netmeta' is a NMA where all existing (single or combined)
+     treatments are considered as different nodes in the network.
+     Exploiting the fact that some treatments are combinations of
+     common components, an additive component network meta-analysis
+     (CNMA) model can be used to evaluate the influence of individual
+     components. This model assumes that the effect of a treatment
+     combination is the sum of the effects of its components which
+     implies that common components cancel out in comparisons.
+
+     The additive CNMA model has been implemented using Bayesian
+     methods (Mills et al., 2012; Welton et al., 2013). This function
+     implements the additive model in a frequentist way (R<c3><bc>cker et al.,
+     2020).
+
+     The underlying multivariate model is given by
+
+                       delta = B theta, theta = C beta                  
+     
+     with
+
+     delta
+          vector of true treatment effects (differences) from
+          individual studies,
+
+     B
+          design matrix describing the structure of the network,
+
+     theta
+          parameter vector that represents the existing combined
+          treatments,
+
+     C
+          matrix describing how the treatments are composed,
+
+     beta
+          parameter vector representing the treatment components.
+
+     All parameters are estimated using weighted least squares
+     regression.
+
+     Argument 'inactive' can be used to specify a single component that
+     does not have any therapeutic value. Accordingly, it is assumed
+     that the treatment effect of the combination of this component
+     with an additional treatment component is equal to the treatment
+     effect of the additional component alone.
+
+     Argument 'sep.comps' can be used to specify the separator between
+     individual components. By default, the matrix *C* is calculated
+     internally from treatment names. However, it is possible to
+     specify a different matrix using argument 'C.matrix'.
+
+     By default, component names are not abbreviated in printouts.
+     However, in order to get more concise printouts, argument
+     'nchar.comps' can be used to define the minimum number of
+     characters for abbreviated component names (see 'abbreviate',
+     argument 'minlength'). R function 'treats' is utilised internally
+     to create abbreviated component names.
+
+_V_a_l_u_e:
+
+     An object of class 'netcomb' with corresponding 'print',
+     'summary', and 'forest' functions. The object is a list containing
+     the following components:
+
+ studlab: Study labels.
+
+  treat1: Label/Number for first treatment.
+
+  treat2: Label/Number for second treatment.
+
+      TE: Estimate of treatment effect, i.e. difference between first
+          and second treatment.
+
+    seTE: Standard error of treatment estimate.
+
+seTE.adj.common, seTE.adj.random: Standard error of treatment estimate,
+          adjusted for multi-arm studies.
+
+  design: Design of study providing pairwise comparison.
+
+  event1: Number of events in first treatment group.
+
+  event2: Number of events in second treatment group.
+
+      n1: Number of observations in first treatment group.
+
+      n2: Number of observations in second treatment group.
+
+       k: Total number of studies.
+
+       m: Total number of pairwise comparisons.
+
+       n: Total number of treatments.
+
+       d: Total number of designs (corresponding to the unique set of
+          treatments compared within studies).
+
+       c: Total number of components.
+
+    trts: Treatments included in network meta-analysis.
+
+  k.trts: Number of studies evaluating a treatment.
+
+  n.trts: Number of observations receiving a treatment (if arguments
+          'n1' and 'n2' are provided).
+
+events.trts: Number of events observed for a treatment (if arguments
+          'event1' and 'event2' are provided).
+
+ studies: Study labels coerced into a factor with its levels sorted
+          alphabetically.
+
+   narms: Number of arms for each study.
+
+ designs: Unique list of designs present in the network. A design
+          corresponds to the set of treatments compared within a study.
+
+   comps: Unique list of components present in the network.
+
+TE.nma.common, TE.nma.random: A vector of length _m_ of consistent
+          treatment effects estimated by network meta-analysis (nma)
+          (common and random effects model).
+
+seTE.nma.common, seTE.nma.random: A vector of length _m_ of effective
+          standard errors estimated by network meta-analysis (common
+          and random effects model).
+
+lower.nma.common, lower.nma.random: A vector of length _m_ of lower
+          confidence interval limits for consistent treatment effects
+          estimated by network meta-analysis (common and random effects
+          model).
+
+upper.nma.common, upper.nma.random: A vector of length _m_ of upper
+          confidence interval limits for the consistent treatment
+          effects estimated by network meta-analysis (common and random
+          effects model).
+
+statistic.nma.common, statistic.nma.random: A vector of length _m_ of
+          z-values for test of treatment effect for individual
+          comparisons (common and random effects model).
+
+pval.nma.common, pval.nma.random: A vector of length _m_ of p-values
+          for test of treatment effect for individual comparisons
+          (common and random effects model).
+
+TE.cnma.common, TE.cnma.random: A vector of length _m_ of consistent
+          treatment effects estimated by the additive (common and
+          random effects) model.
+
+seTE.cnma.common, seTE.cnma.random: A vector of length _m_ with
+          standard errors estimated by the additive (common and random
+          effects) model.
+
+lower.cnma.common, lower.cnma.random: A vector of length _m_ of lower
+          confidence interval limits for consistent treatment effects
+          estimated by the additive (common and random effects) model.
+
+upper.cnma.common, upper.cnma.random: A vector of length _m_ of upper
+          confidence interval limits for consistent treatment effects
+          estimated by the additive (common and random effects) model.
+
+statistic.cnma.common, statistic.cnma.random: A vector of length _m_ of
+          z-values for the test of an overall effect estimated by the
+          additive (common and random effects) model.
+
+pval.cnma.common, pval.cnma.random: A vector of length _m_ of p-values
+          for the test of an overall effect estimated by the additive
+          (common and random effects) model.
+
+TE.common, TE.random: _n_x_n_ matrix with overall treatment effects
+          estimated by the additive (common and random effects) model.
+
+seTE.common, seTE.random: _n_x_n_ matrix with standard errors estimated
+          by the additive (common and random effects) model.
+
+lower.common, upper.common, lower.random, upper.random: _n_x_n_
+          matrices with lower and upper confidence interval limits
+          estimated by the additive (common and random effects) model.
+
+statistic.common, pval.common, statistic.random, pval.random: _n_x_n_
+          matrices with z-values and p-values for test of overall
+          effect estimated by the additive (common and random effects)
+          model.
+
+Comp.common, Comp.random: A vector of component effects (common and
+          random effects model).
+
+seComp.common, seComp.random: A vector with corresponding standard
+          errors (common and random effects model).
+
+lower.Comp.common, lower.Comp.random: A vector with lower confidence
+          limits for components (common and random effects model).
+
+upper.Comp.common, upper.Comp.random: A vector with upper confidence
+          limits for components (common and random effects model).
+
+statistic.Comp.common, statistic.Comp.random: A vector with z-values
+          for the overall effect of components (common and random
+          effects model).
+
+pval.Comp.common, pval.Comp.random: A vector with p-values for the
+          overall effect of components (common and random effects
+          model).
+
+Comb.common, Comb.random: A vector of combination effects (common and
+          random effects model).
+
+seComb.common, seComb.random: A vector with corresponding standard
+          errors (common and random effects model).
+
+lower.Comb.common, lower.Comb.random: A vector with lower confidence
+          limits for combinations (common and random effects model).
+
+upper.Comb.common, upper.Comb.random: A vector with upper confidence
+          limits for combinations (common and random effects model).
+
+statistic.Comb.common, statistic.Comb.random: A vector with z-values
+          for the overall effect of combinations (common and random
+          effects model).
+
+pval.Comb.common, pval.Comb.random: A vector with p-values for the
+          overall effect of combinations (common and random effects
+          model).
+
+Q.additive: Overall heterogeneity / inconsistency statistic (additive
+          model).
+
+df.Q.additive: Degrees of freedom for test of heterogeneity /
+          inconsistency (additive model).
+
+pval.Q.additive: P-value for test of heterogeneity / inconsistency
+          (additive model).
+
+     tau: Square-root of between-study variance (additive model).
+
+I2, lower.I2, upper.I2: I-squared, lower and upper confidence limits.
+
+Q.standard: Overall heterogeneity / inconsistency statistic (standard
+          model).
+
+df.Q.standard: Degrees of freedom for test of heterogeneity /
+          inconsistency (standard model).
+
+pval.Q.standard: P-value for test of heterogeneity / inconsistency
+          (standard model).
+
+  Q.diff: Test statistic for difference in goodness of fit between
+          standard and additive model.
+
+df.Q.diff: Degrees of freedom for difference in goodness of fit between
+          standard and additive model.
+
+pval.Q.diff: P-value for difference in goodness of fit between standard
+          and additive model.
+
+A.matrix: Adjacency matrix (_n_x_n_).
+
+B.matrix: Edge-vertex incidence matrix (_m_x_n_).
+
+C.matrix: As defined above.
+
+      sm: Summary measure.
+
+level.ma: Level for confidence intervals.
+
+common, random, tau.preset: As defined above.
+
+sep.trts: A character used in comparison names as separator between
+          treatment labels.
+
+nchar.comps: A numeric defining the minimum number of characters used
+          to create unique component names.
+
+inactive, sep.comps, sep.ia: As defined above.
+
+backtransf: A logical indicating whether results should be back
+          transformed in printouts and forest plots.
+
+   title: Title of meta-analysis / systematic review.
+
+       x: As defined above.
+
+    call: Function call.
+
+ version: Version of R package netmeta used to create object.
+
+_N_o_t_e:
+
+     This function calculates effects for individual components and
+     complex interventions present in the network.
+
+     R function 'netcomplex' can be used to calculate the effect for
+     arbitrary complex interventions in a component network
+     meta-analysis. Furthermore, R function 'netcomparison' can be used
+     to calculate the effect for comparisons of two arbitrary complex
+     intervention in a component network meta-analysis.
+
+_A_u_t_h_o_r(_s):
+
+     Gerta R<c3><bc>cker <mailto:gerta.ruecker@uniklinik-freiburg.de>, Guido
+     Schwarzer <mailto:guido.schwarzer@uniklinik-freiburg.de>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     K<c3><b6>nig J, Krahn U, Binder H (2013): Visualizing the flow of
+     evidence in network meta-analysis and characterizing mixed
+     treatment comparisons. _Statistics in Medicine_, *32*, 5414-29
+
+     Mills EJ, Thorlund K, Ioannidis JP (2012): Calculating additive
+     treatment effects from multiple randomized trials provides useful
+     estimates of combination therapies. _Journal of Clinical
+     Epidemiology_, *65*, 1282-8
+
+     R<c3><bc>cker G, Petropoulou M, Schwarzer G (2020): Network meta-analysis
+     of multicomponent interventions. _Biometrical Journal_, *62*,
+     808-21
+
+     Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K (2009): Mixed
+     treatment comparison meta-analysis of complex interventions:
+     psychological interventions in coronary heart disease. _American
+     Journal of Epidemiology_, *169*: 1158-65
+
+_S_e_e _A_l_s_o:
+
+     'discomb', 'netmeta', 'forest.netcomb', 'print.netcomb',
+     'netcomplex', 'netcomparison'
+
+_E_x_a_m_p_l_e_s:
+
+     # Only consider studies including Face-to-face PST (to reduce
+     # runtime of example)
+     #
+     face <- subset(Linde2016, id %in% c(16, 24, 49, 118))
+     
+     # Use pairwise() to transform data to comparison-based format
+     #
+     pw1 <- pairwise(treat = int,
+       event = resp, n = n, studlab = paste(author, year),
+       data = face, reference = "plac", sm = "OR")
+     
+     # Conduct random effects network meta-analysis
+     #
+     nma1 <- netmeta(pw1, common = FALSE)
+     nma1
+     
+     # Additive model for treatment components (with placebo as inactive
+     # treatment)
+     #
+     cnma1 <- netcomb(nma1, inactive = "placebo")
+     cnma1
+     
+     # Print results with two digits and test statistics with three digits
+     print(cnma1, digits = 2, digits.stat = 3)
+     
+     # Print detailed results
+     print(summary(cnma1), digits = 2, digits.stat = 3)
+     
+     # All available combinations in CNMA
+     combinations(cnma1) # only "Face-to-face PST + SSRI"
+     
+     # Create C matrix with all available interactions, i.e., one interaction
+     # for each combination
+     colnames(createC(cnma1))
+     
+     # Run interaction CNMA model with all available interactions
+     # (same result as standard NMA)
+     netcomb(nma1, C.matrix = createC(cnma1))
+     
+     
+     forest(nma1, xlim = c(0.2, 50))
+     forest(cnma1, xlim = c(0.2, 50))
+     
+     # Specify, order of treatments
+     #
+     trts <- c("TCA", "SSRI", "SNRI", "NRI", "Low-dose SARI", "NaSSa",
+       "rMAO-A", "Ind drug", "Hypericum", "Face-to-face CBT",
+       "Face-to-face PST", "Face-to-face interpsy", "Face-to-face psychodyn",
+       "Other face-to-face", "Remote CBT", "Self-help CBT", "No contact CBT",
+       "Face-to-face CBT + SSRI", "Face-to-face interpsy + SSRI",
+       "Face-to-face PST + SSRI", "UC", "Placebo")
+     #
+     # Note, three treatments are actually combinations of 'SSRI' with
+     # other components:
+     # "Face-to-face CBT + SSRI",
+     # "Face-to-face interpsy + SSRI",
+     # "Face-to-face PST + SSRI"
+     
+     pw2 <- pairwise(treat = int,
+       event = resp, n = n, studlab = paste(author, year),
+       data = Linde2016, reference = "plac", sm = "OR")
+     
+     # Conduct random effects network meta-analysis
+     #
+     nma2 <- netmeta(pw2, common = FALSE)
+     nma2
+     forest(nma2, xlim = c(0.2, 50))
+     
+     # Additive model for treatment components (with placebo as inactive
+     # treatment)
+     #
+     cnma2 <- netcomb(nma2, inactive = "placebo")
+     cnma2
+     forest(cnma2, xlim = c(0.2, 50))
+     

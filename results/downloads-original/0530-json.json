@@ -1,0 +1,101 @@
+{
+  "comps": [
+    "acarbose",
+    "benfluorex",
+    "metformin",
+    "miglitol",
+    "pioglitazone",
+    "placebo",
+    "rosiglitazone",
+    "sitagliptin",
+    "sulfonylurea",
+    "vildagliptin"
+  ],
+  "tau2": 0.29243157573207573,
+  "Q": 218.5832636140221,
+  "df": 15,
+  "components": {
+    "acarbose": {
+      "est": -0.765625,
+      "se": null
+    },
+    "benfluorex": {
+      "est": -0.4375,
+      "se": null
+    },
+    "metformin": {
+      "est": -1.015625,
+      "se": null
+    },
+    "miglitol": {
+      "est": -0.9375,
+      "se": null
+    },
+    "pioglitazone": {
+      "est": -1.375,
+      "se": null
+    },
+    "placebo": {
+      "est": 0.0625,
+      "se": null
+    },
+    "rosiglitazone": {
+      "est": -1.328125,
+      "se": null
+    },
+    "sitagliptin": {
+      "est": -0.515625,
+      "se": null
+    },
+    "sulfonylurea": {
+      "est": -0.328125,
+      "se": null
+    },
+    "vildagliptin": {
+      "est": -0.65625,
+      "se": null
+    }
+  },
+  "combinations": {
+    "acarbose": {
+      "est": -0.765625,
+      "se": 0
+    },
+    "benfluorex": {
+      "est": -0.4375,
+      "se": 0
+    },
+    "metformin": {
+      "est": -1.015625,
+      "se": 0
+    },
+    "miglitol": {
+      "est": -0.9375,
+      "se": 0
+    },
+    "pioglitazone": {
+      "est": -1.375,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0.0625,
+      "se": 0
+    },
+    "rosiglitazone": {
+      "est": -1.328125,
+      "se": 0
+    },
+    "sitagliptin": {
+      "est": -0.515625,
+      "se": 0
+    },
+    "sulfonylurea": {
+      "est": -0.328125,
+      "se": 0
+    },
+    "vildagliptin": {
+      "est": -0.65625,
+      "se": 0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+key,value
+comps,"[""1"",""2"",""3""]"
+tau2,0.014074252162799247
+Q,11.6388302094275
+df,9
+components.1.est,0.0439453125
+components.1.se,7908855.468687605
+components.2.est,0.044921875
+components.2.se,7908855.468687606
+components.3.est,0.0966796875
+components.3.se,7908855.468687629
+combinations.1.est,0.0439453125
+combinations.1.se,7908855.468687605
+combinations.2.est,0.044921875
+combinations.2.se,7908855.468687606
+combinations.3.est,0.0966796875
+combinations.3.se,7908855.468687629

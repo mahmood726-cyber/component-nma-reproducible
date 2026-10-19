@@ -1,0 +1,74 @@
+{
+  "comps": [
+    "f2f cbt",
+    "hybrid cbt",
+    "multimedia cbt",
+    "no treatment",
+    "placebo",
+    "tau",
+    "wait list"
+  ],
+  "tau2": 0.23637182954661476,
+  "Q": 19289.340663894178,
+  "df": 59,
+  "components": {
+    "f2f cbt": {
+      "est": 0,
+      "se": null
+    },
+    "hybrid cbt": {
+      "est": 0,
+      "se": null
+    },
+    "multimedia cbt": {
+      "est": 0,
+      "se": null
+    },
+    "no treatment": {
+      "est": 0,
+      "se": null
+    },
+    "placebo": {
+      "est": 0,
+      "se": null
+    },
+    "tau": {
+      "est": 0,
+      "se": null
+    },
+    "wait list": {
+      "est": 1,
+      "se": null
+    }
+  },
+  "combinations": {
+    "f2f cbt": {
+      "est": 0,
+      "se": 0
+    },
+    "hybrid cbt": {
+      "est": 0,
+      "se": 0
+    },
+    "multimedia cbt": {
+      "est": 0,
+      "se": 0
+    },
+    "no treatment": {
+      "est": 0,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0,
+      "se": 0
+    },
+    "tau": {
+      "est": 0,
+      "se": 0
+    },
+    "wait list": {
+      "est": 1,
+      "se": 0
+    }
+  }
+}

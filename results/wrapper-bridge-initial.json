@@ -1,0 +1,1464 @@
+{
+  "configurations": 40,
+  "checks": 1886,
+  "passed": 1704,
+  "max_difference": 0.05653934435094272,
+  "failures": [
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_Q",
+      "wrapper": 62.64250285760825,
+      "engine": 63.04151438047682,
+      "difference": 0.00632934546052305,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_tau2",
+      "wrapper": 0.009959025783326803,
+      "engine": 0.01024880841024947,
+      "difference": 0.00028978262692266714,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.est",
+      "wrapper": -0.29564106044703753,
+      "engine": -0.29084657572903366,
+      "difference": 0.004794484718003866,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.se",
+      "wrapper": 0.12560093062823993,
+      "engine": 0.12660566704787346,
+      "difference": 0.0010047364196335284,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.lo",
+      "wrapper": -0.5418143609031015,
+      "engine": -0.5389891233815352,
+      "difference": 0.0028252375215663816,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.hi",
+      "wrapper": -0.049467759990973525,
+      "engine": -0.04270402807653223,
+      "difference": 0.0067637319144412955,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.est",
+      "wrapper": -0.0892131621226777,
+      "engine": -0.08886367418352306,
+      "difference": 0.0003494879391546385,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.se",
+      "wrapper": 0.0652578791364734,
+      "engine": 0.0656151852192047,
+      "difference": 0.0003573060827312957,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.lo",
+      "wrapper": -0.21711625493763337,
+      "engine": -0.21746707405208915,
+      "difference": 0.0003508191144557804,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.hi",
+      "wrapper": 0.038689930692277955,
+      "engine": 0.039739725685043026,
+      "difference": 0.0010497949927650713,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.est",
+      "wrapper": -0.03521415319077727,
+      "engine": -0.03553848478206759,
+      "difference": 0.00032433159129032635,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.se",
+      "wrapper": 0.11146026077859846,
+      "engine": 0.11181798544103208,
+      "difference": 0.00035772466243362555,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.lo",
+      "wrapper": -0.25367225002427257,
+      "engine": -0.2546977090703145,
+      "difference": 0.0010254590460419544,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.hi",
+      "wrapper": 0.183243943642718,
+      "engine": 0.18362073950617935,
+      "difference": 0.0003767958634613433,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.placebo.est",
+      "wrapper": 0.03461266788828056,
+      "engine": 0.035022237311010354,
+      "difference": 0.00040956942272979413,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.placebo.se",
+      "wrapper": 0.08482593715866663,
+      "engine": 0.08521905645312157,
+      "difference": 0.00039311929445494387,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.placebo.lo",
+      "wrapper": -0.1316431138975639,
+      "engine": -0.13200404413359357,
+      "difference": 0.00036093023602967733,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.placebo.hi",
+      "wrapper": 0.20086844967412498,
+      "engine": 0.20204851875561425,
+      "difference": 0.0011800690814892656,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.est",
+      "wrapper": -0.17051657830823147,
+      "engine": -0.17070342578237063,
+      "difference": 0.00018684747413916236,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.se",
+      "wrapper": 0.07440409511389813,
+      "engine": 0.07480940729287382,
+      "difference": 0.0004053121789756864,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.lo",
+      "wrapper": -0.31634592503376435,
+      "engine": -0.31732716978119135,
+      "difference": 0.0009812447474270014,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.hi",
+      "wrapper": -0.02468723158269856,
+      "engine": -0.02407968178354991,
+      "difference": 0.0006075497991486489,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.est",
+      "wrapper": -0.34035058144711405,
+      "engine": -0.3404314891356147,
+      "difference": 8.090768850066432e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.se",
+      "wrapper": 0.10106993798382226,
+      "engine": 0.10154012868217231,
+      "difference": 0.00047019069835005367,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.lo",
+      "wrapper": -0.5384440198151024,
+      "engine": -0.5394464843382349,
+      "difference": 0.0010024645231325735,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.hi",
+      "wrapper": -0.14225714307912568,
+      "engine": -0.1414164939329945,
+      "difference": 0.0008406491461311894,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.est",
+      "wrapper": -0.29564106044703753,
+      "engine": -0.29084657572903366,
+      "difference": 0.004794484718003866,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.se",
+      "wrapper": 0.12560093062823993,
+      "engine": 0.12660566704787346,
+      "difference": 0.0010047364196335284,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.lo",
+      "wrapper": -0.5418143609031015,
+      "engine": -0.5389891233815352,
+      "difference": 0.0028252375215663816,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.hi",
+      "wrapper": -0.049467759990973525,
+      "engine": -0.04270402807653223,
+      "difference": 0.0067637319144412955,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.est",
+      "wrapper": -0.3308552136378148,
+      "engine": -0.3263850605111013,
+      "difference": 0.004470153126713505,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.se",
+      "wrapper": 0.17855465969483197,
+      "engine": 0.17819669292532528,
+      "difference": 0.0003579667695066957,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.lo",
+      "wrapper": -0.680815915911491,
+      "engine": -0.6756441608088821,
+      "difference": 0.0051717551026089215,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.hi",
+      "wrapper": 0.019105488635861423,
+      "engine": 0.022874039786679623,
+      "difference": 0.0037685511508182,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.est",
+      "wrapper": -0.0892131621226777,
+      "engine": -0.08886367418352306,
+      "difference": 0.0003494879391546385,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.se",
+      "wrapper": 0.0652578791364734,
+      "engine": 0.0656151852192047,
+      "difference": 0.0003573060827312957,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.lo",
+      "wrapper": -0.21711625493763337,
+      "engine": -0.21746707405208915,
+      "difference": 0.0003508191144557804,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.hi",
+      "wrapper": 0.038689930692277955,
+      "engine": 0.039739725685043026,
+      "difference": 0.0010497949927650713,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.est",
+      "wrapper": -0.2597297404309092,
+      "engine": -0.25956709996589367,
+      "difference": 0.00016264046501551777,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.se",
+      "wrapper": 0.11892439430316361,
+      "engine": 0.11956991250125094,
+      "difference": 0.0006455181980873359,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.lo",
+      "wrapper": -0.4928172701483502,
+      "engine": -0.49391982210295104,
+      "difference": 0.00110255195460085,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.hi",
+      "wrapper": -0.0266422107134682,
+      "engine": -0.025214377828836287,
+      "difference": 0.0014278328846319133,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.est",
+      "wrapper": -0.03521415319077727,
+      "engine": -0.03553848478206759,
+      "difference": 0.00032433159129032635,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.se",
+      "wrapper": 0.11146026077859846,
+      "engine": 0.11181798544103208,
+      "difference": 0.00035772466243362555,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.lo",
+      "wrapper": -0.25367225002427257,
+      "engine": -0.2546977090703145,
+      "difference": 0.0010254590460419544,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.hi",
+      "wrapper": 0.183243943642718,
+      "engine": 0.18362073950617935,
+      "difference": 0.0003767958634613433,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.est",
+      "wrapper": 0.03461266788828056,
+      "engine": 0.035022237311010354,
+      "difference": 0.00040956942272979413,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.se",
+      "wrapper": 0.08482593715866663,
+      "engine": 0.08521905645312157,
+      "difference": 0.00039311929445494387,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.lo",
+      "wrapper": -0.1316431138975639,
+      "engine": -0.13200404413359357,
+      "difference": 0.00036093023602967733,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.hi",
+      "wrapper": 0.20086844967412498,
+      "engine": 0.20204851875561425,
+      "difference": 0.0011800690814892656,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.est",
+      "wrapper": -0.17051657830823147,
+      "engine": -0.17070342578237063,
+      "difference": 0.00018684747413916236,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.se",
+      "wrapper": 0.07440409511389813,
+      "engine": 0.07480940729287382,
+      "difference": 0.0004053121789756864,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.lo",
+      "wrapper": -0.31634592503376435,
+      "engine": -0.31732716978119135,
+      "difference": 0.0009812447474270014,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.hi",
+      "wrapper": -0.02468723158269856,
+      "engine": -0.02407968178354991,
+      "difference": 0.0006075497991486489,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.est",
+      "wrapper": -0.34035058144711405,
+      "engine": -0.3404314891356147,
+      "difference": 8.090768850066432e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.se",
+      "wrapper": 0.10106993798382226,
+      "engine": 0.10154012868217231,
+      "difference": 0.00047019069835005367,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.lo",
+      "wrapper": -0.5384440198151024,
+      "engine": -0.5394464843382349,
+      "difference": 0.0010024645231325735,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::OR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.hi",
+      "wrapper": -0.14225714307912568,
+      "engine": -0.1414164939329945,
+      "difference": 0.0008406491461311894,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_Q",
+      "wrapper": 72.0267707888714,
+      "engine": 72.12528009928981,
+      "difference": 0.0013658083584950592,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_tau2",
+      "wrapper": 0.0040715934345165305,
+      "engine": 0.004085344359740405,
+      "difference": 1.3750925223874819e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.est",
+      "wrapper": -0.12860725435761092,
+      "engine": -0.13915413585306957,
+      "difference": 0.010546881495458654,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.se",
+      "wrapper": 0.06546363820295263,
+      "engine": 0.06562918506982307,
+      "difference": 0.00016554686687043907,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.lo",
+      "wrapper": -0.25691362753235847,
+      "engine": -0.2677849749246366,
+      "difference": 0.01087134739227813,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.budesonide.hi",
+      "wrapper": -0.00030088118286339394,
+      "engine": -0.010523296781502545,
+      "difference": 0.01022241559863915,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.est",
+      "wrapper": -0.03869237533605676,
+      "engine": -0.03823548474529505,
+      "difference": 0.00045689059076171185,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.se",
+      "wrapper": 0.03612101973521002,
+      "engine": 0.036138277502328606,
+      "difference": 1.7257767118583622e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.lo",
+      "wrapper": -0.1094882731019289,
+      "engine": -0.1090652071131732,
+      "difference": 0.00042306598875570256,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.fluticasone.hi",
+      "wrapper": 0.03210352242981538,
+      "engine": 0.03259423762258311,
+      "difference": 0.0004907151927677281,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.est",
+      "wrapper": -0.032142346751694896,
+      "engine": -0.0360238684304554,
+      "difference": 0.003881521678760505,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.se",
+      "wrapper": 0.061428113748773064,
+      "engine": 0.06133921815648539,
+      "difference": 8.88955922876758e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.lo",
+      "wrapper": -0.1525392373375198,
+      "engine": -0.1562465268570121,
+      "difference": 0.003707289519492285,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.formoterol.hi",
+      "wrapper": 0.08825454383413,
+      "engine": 0.08419878999610131,
+      "difference": 0.004055753838028697,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.placebo.est",
+      "wrapper": 0.008911967295374135,
+      "engine": 0.009797555356448969,
+      "difference": 0.0008855880610748341,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.placebo.se",
+      "wrapper": 0.046422775454221965,
+      "engine": 0.04642204867703063,
+      "difference": 7.26777191331629e-07,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.placebo.lo",
+      "wrapper": -0.08207500065729094,
+      "engine": -0.08118798813909632,
+      "difference": 0.0008870125181946187,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.placebo.hi",
+      "wrapper": 0.09989893524803921,
+      "engine": 0.10078309885199425,
+      "difference": 0.000884163603955046,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.est",
+      "wrapper": -0.092424415192399,
+      "engine": -0.09190009832147221,
+      "difference": 0.0005243168709267859,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.se",
+      "wrapper": 0.0401364532433173,
+      "engine": 0.040154289301379355,
+      "difference": 1.7836058062055404e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.lo",
+      "wrapper": -0.17109041801647673,
+      "engine": -0.17060105917697774,
+      "difference": 0.0004893588394989934,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.salmeterol.hi",
+      "wrapper": -0.01375841236832126,
+      "engine": -0.013199137465966682,
+      "difference": 0.0005592749023545784,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.est",
+      "wrapper": -0.2072782382668187,
+      "engine": -0.2064708547084444,
+      "difference": 0.0008073835583743139,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.se",
+      "wrapper": 0.05866514215410947,
+      "engine": 0.05867789829444116,
+      "difference": 1.2756140331686427e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.lo",
+      "wrapper": -0.32225980403679577,
+      "engine": -0.3214774220540533,
+      "difference": 0.0007823819827424972,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_components.tiotropium.hi",
+      "wrapper": -0.09229667249684165,
+      "engine": -0.09146428736283549,
+      "difference": 0.0008323851340061583,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.est",
+      "wrapper": -0.12860725435761092,
+      "engine": -0.13915413585306957,
+      "difference": 0.010546881495458654,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.se",
+      "wrapper": 0.06546363820295263,
+      "engine": 0.06562918506982307,
+      "difference": 0.00016554686687043907,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.lo",
+      "wrapper": -0.25691362753235847,
+      "engine": -0.2677849749246366,
+      "difference": 0.01087134739227813,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide.hi",
+      "wrapper": -0.00030088118286339394,
+      "engine": -0.010523296781502545,
+      "difference": 0.01022241559863915,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.est",
+      "wrapper": -0.1607496011093058,
+      "engine": -0.17517800428352498,
+      "difference": 0.014428403174219173,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.se",
+      "wrapper": 0.0994252331821713,
+      "engine": 0.1002505700652187,
+      "difference": 0.0008253368830474089,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.lo",
+      "wrapper": -0.3556194773008582,
+      "engine": -0.37166551104096285,
+      "difference": 0.01604603374010466,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.budesonide+formoterol.hi",
+      "wrapper": 0.034120275082246604,
+      "engine": 0.02130950247391289,
+      "difference": 0.012810772608333715,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.est",
+      "wrapper": -0.03869237533605676,
+      "engine": -0.03823548474529505,
+      "difference": 0.00045689059076171185,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.se",
+      "wrapper": 0.03612101973521002,
+      "engine": 0.036138277502328606,
+      "difference": 1.7257767118583622e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.lo",
+      "wrapper": -0.1094882731019289,
+      "engine": -0.1090652071131732,
+      "difference": 0.00042306598875570256,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone.hi",
+      "wrapper": 0.03210352242981538,
+      "engine": 0.03259423762258311,
+      "difference": 0.0004907151927677281,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.est",
+      "wrapper": -0.13111679052845576,
+      "engine": -0.13013558306676726,
+      "difference": 0.0009812074616885047,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.se",
+      "wrapper": 0.06483697680647413,
+      "engine": 0.0648558871119321,
+      "difference": 1.891030545797534e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.lo",
+      "wrapper": -0.25819492993560383,
+      "engine": -0.2572507859915496,
+      "difference": 0.0009441439440542321,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.fluticasone+salmeterol.hi",
+      "wrapper": -0.00403865112130769,
+      "engine": -0.003020380141984913,
+      "difference": 0.0010182709793227773,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.est",
+      "wrapper": -0.032142346751694896,
+      "engine": -0.0360238684304554,
+      "difference": 0.003881521678760505,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.se",
+      "wrapper": 0.061428113748773064,
+      "engine": 0.06133921815648539,
+      "difference": 8.88955922876758e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.lo",
+      "wrapper": -0.1525392373375198,
+      "engine": -0.1562465268570121,
+      "difference": 0.003707289519492285,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.formoterol.hi",
+      "wrapper": 0.08825454383413,
+      "engine": 0.08419878999610131,
+      "difference": 0.004055753838028697,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.est",
+      "wrapper": 0.008911967295374135,
+      "engine": 0.009797555356448969,
+      "difference": 0.0008855880610748341,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.se",
+      "wrapper": 0.046422775454221965,
+      "engine": 0.04642204867703063,
+      "difference": 7.26777191331629e-07,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.lo",
+      "wrapper": -0.08207500065729094,
+      "engine": -0.08118798813909632,
+      "difference": 0.0008870125181946187,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.placebo.hi",
+      "wrapper": 0.09989893524803921,
+      "engine": 0.10078309885199425,
+      "difference": 0.000884163603955046,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.est",
+      "wrapper": -0.092424415192399,
+      "engine": -0.09190009832147221,
+      "difference": 0.0005243168709267859,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.se",
+      "wrapper": 0.0401364532433173,
+      "engine": 0.040154289301379355,
+      "difference": 1.7836058062055404e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.lo",
+      "wrapper": -0.17109041801647673,
+      "engine": -0.17060105917697774,
+      "difference": 0.0004893588394989934,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.salmeterol.hi",
+      "wrapper": -0.01375841236832126,
+      "engine": -0.013199137465966682,
+      "difference": 0.0005592749023545784,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.est",
+      "wrapper": -0.2072782382668187,
+      "engine": -0.2064708547084444,
+      "difference": 0.0008073835583743139,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.se",
+      "wrapper": 0.05866514215410947,
+      "engine": 0.05867789829444116,
+      "difference": 1.2756140331686427e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.lo",
+      "wrapper": -0.32225980403679577,
+      "engine": -0.3214774220540533,
+      "difference": 0.0007823819827424972,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Baker2009::exac::RR::full::DL::source-labels",
+      "quantity": "native_combinations.tiotropium.hi",
+      "wrapper": -0.09229667249684165,
+      "engine": -0.09146428736283549,
+      "difference": 0.0008323851340061583,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_Q",
+      "wrapper": 41.137442488162264,
+      "engine": 39.048654474296406,
+      "difference": 0.05349193312770338,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.est",
+      "wrapper": 0.015824220939726633,
+      "engine": 0.0198554829544723,
+      "difference": 0.004031262014745667,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.se",
+      "wrapper": 0.08269045870942249,
+      "engine": 0.08267005582100155,
+      "difference": 2.0402888420936738e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.lo",
+      "wrapper": -0.14624609999583785,
+      "engine": -0.14217484905460653,
+      "difference": 0.004071250941231314,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.hi",
+      "wrapper": 0.1778945418752911,
+      "engine": 0.18188581496355116,
+      "difference": 0.0039912730882600556,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.est",
+      "wrapper": -0.07733375412803979,
+      "engine": -0.07707177043232244,
+      "difference": 0.00026198369571735214,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.se",
+      "wrapper": 0.0810392970749915,
+      "engine": 0.08105424248624758,
+      "difference": 1.494541125608706e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.lo",
+      "wrapper": -0.23616785772746524,
+      "engine": -0.23593516649954396,
+      "difference": 0.00023269122792127228,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.hi",
+      "wrapper": 0.08150034947138564,
+      "engine": 0.08179162563489908,
+      "difference": 0.0002912761635134459,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.est",
+      "wrapper": -0.24608333898892418,
+      "engine": -0.24315551078602635,
+      "difference": 0.002927828202897831,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.se",
+      "wrapper": 0.08768647841347507,
+      "engine": 0.08790066834344312,
+      "difference": 0.00021418992996805053,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.lo",
+      "wrapper": -0.41794567861048415,
+      "engine": -0.4154376549561749,
+      "difference": 0.002508023654309244,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.hi",
+      "wrapper": -0.07422099936736418,
+      "engine": -0.07087336661587781,
+      "difference": 0.0033476327514863624,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.est",
+      "wrapper": -0.08485030441989729,
+      "engine": -0.08465665047774373,
+      "difference": 0.00019365394215355158,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.se",
+      "wrapper": 0.06567396507256992,
+      "engine": 0.06567594166788744,
+      "difference": 1.9765953175182593e-06,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.lo",
+      "wrapper": -0.21356891068407574,
+      "engine": -0.21337913079755655,
+      "difference": 0.00018977988651919242,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.hi",
+      "wrapper": 0.043868301844281185,
+      "engine": 0.04406582984206908,
+      "difference": 0.00019752799778789687,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.est",
+      "wrapper": 0.015824220939726633,
+      "engine": 0.0198554829544723,
+      "difference": 0.004031262014745667,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.se",
+      "wrapper": 0.08269045870942249,
+      "engine": 0.08267005582100155,
+      "difference": 2.0402888420936738e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.lo",
+      "wrapper": -0.14624609999583785,
+      "engine": -0.14217484905460653,
+      "difference": 0.004071250941231314,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.hi",
+      "wrapper": 0.1778945418752911,
+      "engine": 0.18188581496355116,
+      "difference": 0.0039912730882600556,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.est",
+      "wrapper": -0.07733375412803979,
+      "engine": -0.07707177043232244,
+      "difference": 0.00026198369571735214,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.se",
+      "wrapper": 0.0810392970749915,
+      "engine": 0.08105424248624758,
+      "difference": 1.494541125608706e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.lo",
+      "wrapper": -0.23616785772746524,
+      "engine": -0.23593516649954396,
+      "difference": 0.00023269122792127228,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.hi",
+      "wrapper": 0.08150034947138564,
+      "engine": 0.08179162563489908,
+      "difference": 0.0002912761635134459,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.est",
+      "wrapper": -0.24608333898892418,
+      "engine": -0.24315551078602635,
+      "difference": 0.002927828202897831,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.se",
+      "wrapper": 0.08768647841347507,
+      "engine": 0.08790066834344312,
+      "difference": 0.00021418992996805053,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.lo",
+      "wrapper": -0.41794567861048415,
+      "engine": -0.4154376549561749,
+      "difference": 0.002508023654309244,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.hi",
+      "wrapper": -0.07422099936736418,
+      "engine": -0.07087336661587781,
+      "difference": 0.0033476327514863624,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.est",
+      "wrapper": -0.08485030441989729,
+      "engine": -0.08465665047774373,
+      "difference": 0.00019365394215355158,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.se",
+      "wrapper": 0.06567396507256992,
+      "engine": 0.06567594166788744,
+      "difference": 1.9765953175182593e-06,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.lo",
+      "wrapper": -0.21356891068407574,
+      "engine": -0.21337913079755655,
+      "difference": 0.00018977988651919242,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::OR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.hi",
+      "wrapper": 0.043868301844281185,
+      "engine": 0.04406582984206908,
+      "difference": 0.00019752799778789687,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_Q",
+      "wrapper": 41.02154984999469,
+      "engine": 38.826334361637244,
+      "difference": 0.05653934435094272,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.est",
+      "wrapper": 0.0166334313684885,
+      "engine": 0.01986331485470701,
+      "difference": 0.0032298834862185093,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.se",
+      "wrapper": 0.07219436316941888,
+      "engine": 0.07219180158714787,
+      "difference": 2.5615822710073344e-06,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.lo",
+      "wrapper": -0.12486492033037744,
+      "engine": -0.1216300162351643,
+      "difference": 0.0032349040952131397,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.ics.hi",
+      "wrapper": 0.15813178306735443,
+      "engine": 0.16135664594457833,
+      "difference": 0.0032248628772238996,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.est",
+      "wrapper": -0.07123529900742777,
+      "engine": -0.07139796819214103,
+      "difference": 0.00016266918471326275,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.se",
+      "wrapper": 0.07264266070808469,
+      "engine": 0.07255339576354419,
+      "difference": 8.926494454049305e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.lo",
+      "wrapper": -0.21361229773643664,
+      "engine": -0.21360001084476854,
+      "difference": 1.2286891668100708e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba.hi",
+      "wrapper": 0.07114169972158109,
+      "engine": 0.07080407446048648,
+      "difference": 0.00033762526109461233,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.est",
+      "wrapper": -0.21649195021720313,
+      "engine": -0.21392839208930714,
+      "difference": 0.002563558127895993,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.se",
+      "wrapper": 0.07814585791265136,
+      "engine": 0.0783452399185767,
+      "difference": 0.0001993820059253415,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.lo",
+      "wrapper": -0.36965501726698413,
+      "engine": -0.3674822406898672,
+      "difference": 0.0021727765771169527,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.laba-ics.hi",
+      "wrapper": -0.0633288831674221,
+      "engine": -0.0603745434887471,
+      "difference": 0.0029543396786750054,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.est",
+      "wrapper": -0.07360997342829192,
+      "engine": -0.07351016017305906,
+      "difference": 9.981325523286677e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.se",
+      "wrapper": 0.058455477361894714,
+      "engine": 0.058454280157855504,
+      "difference": 1.197204039210531e-06,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.lo",
+      "wrapper": -0.18818060375670198,
+      "engine": -0.1880784440246701,
+      "difference": 0.00010215973203187012,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_components.tio-hh.hi",
+      "wrapper": 0.040960656900118145,
+      "engine": 0.04105812367855201,
+      "difference": 9.746677843386342e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.est",
+      "wrapper": 0.0166334313684885,
+      "engine": 0.01986331485470701,
+      "difference": 0.0032298834862185093,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.se",
+      "wrapper": 0.07219436316941888,
+      "engine": 0.07219180158714787,
+      "difference": 2.5615822710073344e-06,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.lo",
+      "wrapper": -0.12486492033037744,
+      "engine": -0.1216300162351643,
+      "difference": 0.0032349040952131397,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.ics.hi",
+      "wrapper": 0.15813178306735443,
+      "engine": 0.16135664594457833,
+      "difference": 0.0032248628772238996,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.est",
+      "wrapper": -0.07123529900742777,
+      "engine": -0.07139796819214103,
+      "difference": 0.00016266918471326275,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.se",
+      "wrapper": 0.07264266070808469,
+      "engine": 0.07255339576354419,
+      "difference": 8.926494454049305e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.lo",
+      "wrapper": -0.21361229773643664,
+      "engine": -0.21360001084476854,
+      "difference": 1.2286891668100708e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba.hi",
+      "wrapper": 0.07114169972158109,
+      "engine": 0.07080407446048648,
+      "difference": 0.00033762526109461233,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.est",
+      "wrapper": -0.21649195021720313,
+      "engine": -0.21392839208930714,
+      "difference": 0.002563558127895993,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.se",
+      "wrapper": 0.07814585791265136,
+      "engine": 0.0783452399185767,
+      "difference": 0.0001993820059253415,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.lo",
+      "wrapper": -0.36965501726698413,
+      "engine": -0.3674822406898672,
+      "difference": 0.0021727765771169527,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.laba-ics.hi",
+      "wrapper": -0.0633288831674221,
+      "engine": -0.0603745434887471,
+      "difference": 0.0029543396786750054,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.est",
+      "wrapper": -0.07360997342829192,
+      "engine": -0.07351016017305906,
+      "difference": 9.981325523286677e-05,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.se",
+      "wrapper": 0.058455477361894714,
+      "engine": 0.058454280157855504,
+      "difference": 1.197204039210531e-06,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.lo",
+      "wrapper": -0.18818060375670198,
+      "engine": -0.1880784440246701,
+      "difference": 0.00010215973203187012,
+      "passed": false
+    },
+    {
+      "key": "netmeta::Dong2013::death::RR::full::DL::inactive=Placebo",
+      "quantity": "native_combinations.tio-hh.hi",
+      "wrapper": 0.040960656900118145,
+      "engine": 0.04105812367855201,
+      "difference": 9.746677843386342e-05,
+      "passed": false
+    }
+  ]
+}

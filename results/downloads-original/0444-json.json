@@ -1,0 +1,839 @@
+{
+  "comps": [
+    "agomelatine@1",
+    "agomelatine@10",
+    "agomelatine@25",
+    "agomelatine@38",
+    "agomelatine@5",
+    "agomelatine@50",
+    "amitriptyline@100",
+    "amitriptyline@139",
+    "amitriptyline@150",
+    "amitriptyline@200",
+    "amitriptyline@225",
+    "bupropion@100",
+    "bupropion@150",
+    "bupropion@200",
+    "bupropion@300",
+    "bupropion@400",
+    "bupropion@450",
+    "citalopram@10",
+    "citalopram@20",
+    "citalopram@40",
+    "citalopram@60",
+    "clomipramine@150",
+    "clomipramine@60",
+    "clomipramine@75",
+    "desvenlafaxine@10",
+    "desvenlafaxine@100",
+    "desvenlafaxine@200",
+    "desvenlafaxine@25",
+    "desvenlafaxine@400",
+    "desvenlafaxine@50",
+    "duloxetine@120",
+    "duloxetine@40",
+    "duloxetine@60",
+    "duloxetine@80",
+    "escitalopram@10",
+    "escitalopram@20",
+    "escitalopram@28",
+    "escitalopram@4",
+    "fluoxetine@20",
+    "fluoxetine@40",
+    "fluoxetine@60",
+    "fluvoxamine@100",
+    "fluvoxamine@200",
+    "levomilnacipran@120",
+    "levomilnacipran@40",
+    "levomilnacipran@80",
+    "milnacipran@100",
+    "milnacipran@150",
+    "milnacipran@200",
+    "milnacipran@50",
+    "mirtazapine@15",
+    "mirtazapine@30",
+    "mirtazapine@45",
+    "mirtazapine@5",
+    "mirtazapine@60",
+    "nefazodone@100",
+    "nefazodone@200",
+    "nefazodone@300",
+    "nefazodone@50",
+    "paroxetine@10",
+    "paroxetine@12.5",
+    "paroxetine@20",
+    "paroxetine@25",
+    "paroxetine@30",
+    "paroxetine@40",
+    "placebo",
+    "reboxetine@10",
+    "reboxetine@2",
+    "reboxetine@4",
+    "reboxetine@8",
+    "sertraline@100",
+    "sertraline@150",
+    "sertraline@200",
+    "sertraline@50",
+    "venlafaxine@150",
+    "venlafaxine@200",
+    "venlafaxine@225",
+    "venlafaxine@24",
+    "venlafaxine@375",
+    "venlafaxine@75",
+    "vilazodone@10",
+    "vilazodone@17",
+    "vilazodone@20",
+    "vilazodone@30",
+    "vilazodone@40",
+    "vilazodone@5",
+    "vortioxetine@1",
+    "vortioxetine@10",
+    "vortioxetine@15",
+    "vortioxetine@2.5",
+    "vortioxetine@20",
+    "vortioxetine@5"
+  ],
+  "tau2": 1.6893365030434278,
+  "Q": 33562.67377830832,
+  "df": 361,
+  "components": {
+    "agomelatine@1": {
+      "est": 0.5859375,
+      "se": null
+    },
+    "agomelatine@10": {
+      "est": 0.453125,
+      "se": null
+    },
+    "agomelatine@25": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "agomelatine@38": {
+      "est": 0.453125,
+      "se": null
+    },
+    "agomelatine@5": {
+      "est": 0.3359375,
+      "se": null
+    },
+    "agomelatine@50": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "amitriptyline@100": {
+      "est": 0.609375,
+      "se": null
+    },
+    "amitriptyline@139": {
+      "est": 1.203125,
+      "se": null
+    },
+    "amitriptyline@150": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "amitriptyline@200": {
+      "est": 1.453125,
+      "se": null
+    },
+    "amitriptyline@225": {
+      "est": 0.703125,
+      "se": null
+    },
+    "bupropion@100": {
+      "est": 0.7109375,
+      "se": null
+    },
+    "bupropion@150": {
+      "est": 0.453125,
+      "se": null
+    },
+    "bupropion@200": {
+      "est": 0.453125,
+      "se": null
+    },
+    "bupropion@300": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "bupropion@400": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "bupropion@450": {
+      "est": 0.703125,
+      "se": null
+    },
+    "citalopram@10": {
+      "est": -0.2890625,
+      "se": null
+    },
+    "citalopram@20": {
+      "est": 0.5859375,
+      "se": null
+    },
+    "citalopram@40": {
+      "est": 0.5234375,
+      "se": null
+    },
+    "citalopram@60": {
+      "est": 0.484375,
+      "se": null
+    },
+    "clomipramine@150": {
+      "est": 1.1171875,
+      "se": null
+    },
+    "clomipramine@60": {
+      "est": 0.328125,
+      "se": null
+    },
+    "clomipramine@75": {
+      "est": 0.484375,
+      "se": null
+    },
+    "desvenlafaxine@10": {
+      "est": 0.203125,
+      "se": null
+    },
+    "desvenlafaxine@100": {
+      "est": 0.5234375,
+      "se": null
+    },
+    "desvenlafaxine@200": {
+      "est": 0.6796875,
+      "se": null
+    },
+    "desvenlafaxine@25": {
+      "est": 0.3359375,
+      "se": null
+    },
+    "desvenlafaxine@400": {
+      "est": 0.6484375,
+      "se": null
+    },
+    "desvenlafaxine@50": {
+      "est": 0.328125,
+      "se": null
+    },
+    "duloxetine@120": {
+      "est": 0.578125,
+      "se": null
+    },
+    "duloxetine@40": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "duloxetine@60": {
+      "est": 0.5078125,
+      "se": null
+    },
+    "duloxetine@80": {
+      "est": 0.5859375,
+      "se": null
+    },
+    "escitalopram@10": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "escitalopram@20": {
+      "est": 0.296875,
+      "se": null
+    },
+    "escitalopram@28": {
+      "est": 0.7109375,
+      "se": null
+    },
+    "escitalopram@4": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "fluoxetine@20": {
+      "est": 0.484375,
+      "se": null
+    },
+    "fluoxetine@40": {
+      "est": 0.515625,
+      "se": null
+    },
+    "fluoxetine@60": {
+      "est": 0.203125,
+      "se": null
+    },
+    "fluvoxamine@100": {
+      "est": 0.7109375,
+      "se": null
+    },
+    "fluvoxamine@200": {
+      "est": 0.3984375,
+      "se": null
+    },
+    "levomilnacipran@120": {
+      "est": 0.7109375,
+      "se": null
+    },
+    "levomilnacipran@40": {
+      "est": 0.5859375,
+      "se": null
+    },
+    "levomilnacipran@80": {
+      "est": 0.7109375,
+      "se": null
+    },
+    "milnacipran@100": {
+      "est": 0.4765625,
+      "se": null
+    },
+    "milnacipran@150": {
+      "est": 0.7109375,
+      "se": null
+    },
+    "milnacipran@200": {
+      "est": 0.7265625,
+      "se": null
+    },
+    "milnacipran@50": {
+      "est": 0.3515625,
+      "se": null
+    },
+    "mirtazapine@15": {
+      "est": 0.453125,
+      "se": null
+    },
+    "mirtazapine@30": {
+      "est": 0.453125,
+      "se": null
+    },
+    "mirtazapine@45": {
+      "est": 0.3203125,
+      "se": null
+    },
+    "mirtazapine@5": {
+      "est": 0.203125,
+      "se": null
+    },
+    "mirtazapine@60": {
+      "est": 0.2109375,
+      "se": null
+    },
+    "nefazodone@100": {
+      "est": 0.8203125,
+      "se": null
+    },
+    "nefazodone@200": {
+      "est": 0.9296875,
+      "se": null
+    },
+    "nefazodone@300": {
+      "est": 0.4453125,
+      "se": null
+    },
+    "nefazodone@50": {
+      "est": 0.6953125,
+      "se": null
+    },
+    "paroxetine@10": {
+      "est": 0.203125,
+      "se": null
+    },
+    "paroxetine@12.5": {
+      "est": 0.234375,
+      "se": null
+    },
+    "paroxetine@20": {
+      "est": 0.578125,
+      "se": null
+    },
+    "paroxetine@25": {
+      "est": 0.3984375,
+      "se": null
+    },
+    "paroxetine@30": {
+      "est": 0.609375,
+      "se": null
+    },
+    "paroxetine@40": {
+      "est": 0.2109375,
+      "se": null
+    },
+    "placebo": {
+      "est": 0.203125,
+      "se": null
+    },
+    "reboxetine@10": {
+      "est": 1.703125,
+      "se": null
+    },
+    "reboxetine@2": {
+      "est": 0.3203125,
+      "se": null
+    },
+    "reboxetine@4": {
+      "est": 0.140625,
+      "se": null
+    },
+    "reboxetine@8": {
+      "est": 0.515625,
+      "se": null
+    },
+    "sertraline@100": {
+      "est": 0.515625,
+      "se": null
+    },
+    "sertraline@150": {
+      "est": 0.0859375,
+      "se": null
+    },
+    "sertraline@200": {
+      "est": 0.328125,
+      "se": null
+    },
+    "sertraline@50": {
+      "est": 0.5859375,
+      "se": null
+    },
+    "venlafaxine@150": {
+      "est": 0.640625,
+      "se": null
+    },
+    "venlafaxine@200": {
+      "est": 0.6484375,
+      "se": null
+    },
+    "venlafaxine@225": {
+      "est": 0.390625,
+      "se": null
+    },
+    "venlafaxine@24": {
+      "est": 0.078125,
+      "se": null
+    },
+    "venlafaxine@375": {
+      "est": 0.921875,
+      "se": null
+    },
+    "venlafaxine@75": {
+      "est": 0.4609375,
+      "se": null
+    },
+    "vilazodone@10": {
+      "est": 0.265625,
+      "se": null
+    },
+    "vilazodone@17": {
+      "est": 0.6484375,
+      "se": null
+    },
+    "vilazodone@20": {
+      "est": 0.203125,
+      "se": null
+    },
+    "vilazodone@30": {
+      "est": 0.640625,
+      "se": null
+    },
+    "vilazodone@40": {
+      "est": 0.4296875,
+      "se": null
+    },
+    "vilazodone@5": {
+      "est": 0.3359375,
+      "se": null
+    },
+    "vortioxetine@1": {
+      "est": 0.6171875,
+      "se": null
+    },
+    "vortioxetine@10": {
+      "est": 0.6171875,
+      "se": null
+    },
+    "vortioxetine@15": {
+      "est": 0.546875,
+      "se": null
+    },
+    "vortioxetine@2.5": {
+      "est": 0.5703125,
+      "se": null
+    },
+    "vortioxetine@20": {
+      "est": 0.6328125,
+      "se": null
+    },
+    "vortioxetine@5": {
+      "est": 0.4296875,
+      "se": null
+    }
+  },
+  "combinations": {
+    "agomelatine@1": {
+      "est": 0.5859375,
+      "se": 0
+    },
+    "agomelatine@10": {
+      "est": 0.453125,
+      "se": 0
+    },
+    "agomelatine@25": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "agomelatine@38": {
+      "est": 0.453125,
+      "se": 0
+    },
+    "agomelatine@5": {
+      "est": 0.3359375,
+      "se": 0
+    },
+    "agomelatine@50": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "amitriptyline@100": {
+      "est": 0.609375,
+      "se": 0
+    },
+    "amitriptyline@139": {
+      "est": 1.203125,
+      "se": 0
+    },
+    "amitriptyline@150": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "amitriptyline@200": {
+      "est": 1.453125,
+      "se": 0
+    },
+    "amitriptyline@225": {
+      "est": 0.703125,
+      "se": 0
+    },
+    "bupropion@100": {
+      "est": 0.7109375,
+      "se": 0
+    },
+    "bupropion@150": {
+      "est": 0.453125,
+      "se": 0
+    },
+    "bupropion@200": {
+      "est": 0.453125,
+      "se": 0
+    },
+    "bupropion@300": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "bupropion@400": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "bupropion@450": {
+      "est": 0.703125,
+      "se": 0
+    },
+    "citalopram@10": {
+      "est": -0.2890625,
+      "se": 0
+    },
+    "citalopram@20": {
+      "est": 0.5859375,
+      "se": 0
+    },
+    "citalopram@40": {
+      "est": 0.5234375,
+      "se": 0
+    },
+    "citalopram@60": {
+      "est": 0.484375,
+      "se": 0
+    },
+    "clomipramine@150": {
+      "est": 1.1171875,
+      "se": 0
+    },
+    "clomipramine@60": {
+      "est": 0.328125,
+      "se": 0
+    },
+    "clomipramine@75": {
+      "est": 0.484375,
+      "se": 0
+    },
+    "desvenlafaxine@10": {
+      "est": 0.203125,
+      "se": 0
+    },
+    "desvenlafaxine@100": {
+      "est": 0.5234375,
+      "se": 0
+    },
+    "desvenlafaxine@200": {
+      "est": 0.6796875,
+      "se": 0
+    },
+    "desvenlafaxine@25": {
+      "est": 0.3359375,
+      "se": 0
+    },
+    "desvenlafaxine@400": {
+      "est": 0.6484375,
+      "se": 0
+    },
+    "desvenlafaxine@50": {
+      "est": 0.328125,
+      "se": 0
+    },
+    "duloxetine@120": {
+      "est": 0.578125,
+      "se": 0
+    },
+    "duloxetine@40": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "duloxetine@60": {
+      "est": 0.5078125,
+      "se": 0
+    },
+    "duloxetine@80": {
+      "est": 0.5859375,
+      "se": 0
+    },
+    "escitalopram@10": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "escitalopram@20": {
+      "est": 0.296875,
+      "se": 0
+    },
+    "escitalopram@28": {
+      "est": 0.7109375,
+      "se": 0
+    },
+    "escitalopram@4": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "fluoxetine@20": {
+      "est": 0.484375,
+      "se": 0
+    },
+    "fluoxetine@40": {
+      "est": 0.515625,
+      "se": 0
+    },
+    "fluoxetine@60": {
+      "est": 0.203125,
+      "se": 0
+    },
+    "fluvoxamine@100": {
+      "est": 0.7109375,
+      "se": 0
+    },
+    "fluvoxamine@200": {
+      "est": 0.3984375,
+      "se": 0
+    },
+    "levomilnacipran@120": {
+      "est": 0.7109375,
+      "se": 0
+    },
+    "levomilnacipran@40": {
+      "est": 0.5859375,
+      "se": 0
+    },
+    "levomilnacipran@80": {
+      "est": 0.7109375,
+      "se": 0
+    },
+    "milnacipran@100": {
+      "est": 0.4765625,
+      "se": 0
+    },
+    "milnacipran@150": {
+      "est": 0.7109375,
+      "se": 0
+    },
+    "milnacipran@200": {
+      "est": 0.7265625,
+      "se": 0
+    },
+    "milnacipran@50": {
+      "est": 0.3515625,
+      "se": 0
+    },
+    "mirtazapine@15": {
+      "est": 0.453125,
+      "se": 0
+    },
+    "mirtazapine@30": {
+      "est": 0.453125,
+      "se": 0
+    },
+    "mirtazapine@45": {
+      "est": 0.3203125,
+      "se": 0
+    },
+    "mirtazapine@5": {
+      "est": 0.203125,
+      "se": 0
+    },
+    "mirtazapine@60": {
+      "est": 0.2109375,
+      "se": 0
+    },
+    "nefazodone@100": {
+      "est": 0.8203125,
+      "se": 0
+    },
+    "nefazodone@200": {
+      "est": 0.9296875,
+      "se": 0
+    },
+    "nefazodone@300": {
+      "est": 0.4453125,
+      "se": 0
+    },
+    "nefazodone@50": {
+      "est": 0.6953125,
+      "se": 0
+    },
+    "paroxetine@10": {
+      "est": 0.203125,
+      "se": 0
+    },
+    "paroxetine@12.5": {
+      "est": 0.234375,
+      "se": 0
+    },
+    "paroxetine@20": {
+      "est": 0.578125,
+      "se": 0
+    },
+    "paroxetine@25": {
+      "est": 0.3984375,
+      "se": 0
+    },
+    "paroxetine@30": {
+      "est": 0.609375,
+      "se": 0
+    },
+    "paroxetine@40": {
+      "est": 0.2109375,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0.203125,
+      "se": 0
+    },
+    "reboxetine@10": {
+      "est": 1.703125,
+      "se": 0
+    },
+    "reboxetine@2": {
+      "est": 0.3203125,
+      "se": 0
+    },
+    "reboxetine@4": {
+      "est": 0.140625,
+      "se": 0
+    },
+    "reboxetine@8": {
+      "est": 0.515625,
+      "se": 0
+    },
+    "sertraline@100": {
+      "est": 0.515625,
+      "se": 0
+    },
+    "sertraline@150": {
+      "est": 0.0859375,
+      "se": 0
+    },
+    "sertraline@200": {
+      "est": 0.328125,
+      "se": 0
+    },
+    "sertraline@50": {
+      "est": 0.5859375,
+      "se": 0
+    },
+    "venlafaxine@150": {
+      "est": 0.640625,
+      "se": 0
+    },
+    "venlafaxine@200": {
+      "est": 0.6484375,
+      "se": 0
+    },
+    "venlafaxine@225": {
+      "est": 0.390625,
+      "se": 0
+    },
+    "venlafaxine@24": {
+      "est": 0.078125,
+      "se": 0
+    },
+    "venlafaxine@375": {
+      "est": 0.921875,
+      "se": 0
+    },
+    "venlafaxine@75": {
+      "est": 0.4609375,
+      "se": 0
+    },
+    "vilazodone@10": {
+      "est": 0.265625,
+      "se": 0
+    },
+    "vilazodone@17": {
+      "est": 0.6484375,
+      "se": 0
+    },
+    "vilazodone@20": {
+      "est": 0.203125,
+      "se": 0
+    },
+    "vilazodone@30": {
+      "est": 0.640625,
+      "se": 0
+    },
+    "vilazodone@40": {
+      "est": 0.4296875,
+      "se": 0
+    },
+    "vilazodone@5": {
+      "est": 0.3359375,
+      "se": 0
+    },
+    "vortioxetine@1": {
+      "est": 0.6171875,
+      "se": 0
+    },
+    "vortioxetine@10": {
+      "est": 0.6171875,
+      "se": 0
+    },
+    "vortioxetine@15": {
+      "est": 0.546875,
+      "se": 0
+    },
+    "vortioxetine@2.5": {
+      "est": 0.5703125,
+      "se": 0
+    },
+    "vortioxetine@20": {
+      "est": 0.6328125,
+      "se": 0
+    },
+    "vortioxetine@5": {
+      "est": 0.4296875,
+      "se": 0
+    }
+  }
+}

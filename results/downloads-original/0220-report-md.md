@@ -1,0 +1,40 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                       | value                                       |
+|---------------------------|---------------------------------------------|
+| comps                     | ["ics","laba","placebo","tio-hh","tio-smi"] |
+| tau2                      | 0                                           |
+| Q                         | 18.655078336421077                          |
+| df                        | 26                                          |
+| components.ics.est        | -0.4144075773291319                         |
+| components.ics.se         | 0.21011827585964288                         |
+| components.laba.est       | -0.263754290960581                          |
+| components.laba.se        | 0.29437722465646116                         |
+| components.placebo.est    | -0.3188228609659661                         |
+| components.placebo.se     | 0.28769245128921495                         |
+| components.tio-hh.est     | -0.38459078592565776                        |
+| components.tio-hh.se      | 0.2968050550327116                          |
+| components.tio-smi.est    | 0.08935315959931756                         |
+| components.tio-smi.se     | 0.3432741847984568                          |
+| combinations.ics.est      | -0.4144075773291319                         |
+| combinations.ics.se       | 0.21011827585964288                         |
+| combinations.ics+laba.est | -0.6781618682897129                         |
+| combinations.ics+laba.se  | 0.4432804506239701                          |
+| combinations.laba.est     | -0.263754290960581                          |
+| combinations.laba.se      | 0.29437722465646116                         |
+| combinations.placebo.est  | -0.3188228609659661                         |
+| combinations.placebo.se   | 0.28769245128921495                         |
+| combinations.tio-hh.est   | -0.38459078592565776                        |
+| combinations.tio-hh.se    | 0.2968050550327116                          |
+| combinations.tio-smi.est  | 0.08935315959931756                         |
+| combinations.tio-smi.se   | 0.3432741847984568                          |

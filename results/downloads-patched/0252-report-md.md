@@ -1,0 +1,58 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                                      | value                                                                                                                                                              |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| comps                                    | ["choice of product","gum","inhalator","intranasal spray","oral spray","patch","patch and gum","patch and inhalator","patch, gum, and lozenge","tablets/lozenges"] |
+| tau2                                     | 0.05702130346373133                                                                                                                                                |
+| Q                                        | 197.9408715413405                                                                                                                                                  |
+| df                                       | 121                                                                                                                                                                |
+| components.choice of product.est         | 0.49998544492727437                                                                                                                                                |
+| components.choice of product.se          | 0.13724186445154316                                                                                                                                                |
+| components.gum.est                       | 0.5055484555204514                                                                                                                                                 |
+| components.gum.se                        | 0.05884678263944367                                                                                                                                                |
+| components.inhalator.est                 | 0.7616425709680871                                                                                                                                                 |
+| components.inhalator.se                  | 0.23983724683499766                                                                                                                                                |
+| components.intranasal spray.est          | 0.8494559922265329                                                                                                                                                 |
+| components.intranasal spray.se           | 0.22205017639845365                                                                                                                                                |
+| components.oral spray.est                | 0.997717471040248                                                                                                                                                  |
+| components.oral spray.se                 | 0.44842866735639525                                                                                                                                                |
+| components.patch.est                     | 0.5719132177558788                                                                                                                                                 |
+| components.patch.se                      | 0.061225884952773896                                                                                                                                               |
+| components.patch and gum.est             | 0.11499341753488712                                                                                                                                                |
+| components.patch and gum.se              | 0.47298212473267415                                                                                                                                                |
+| components.patch and inhalator.est       | 0.07738666361542013                                                                                                                                                |
+| components.patch and inhalator.se        | 0.4392572795730434                                                                                                                                                 |
+| components.patch, gum, and lozenge.est   | 2.776704605840288                                                                                                                                                  |
+| components.patch, gum, and lozenge.se    | 1.064661189653905                                                                                                                                                  |
+| components.tablets/lozenges.est          | 0.612381079741195                                                                                                                                                  |
+| components.tablets/lozenges.se           | 0.13785553050257715                                                                                                                                                |
+| combinations.choice of product.est       | 0.49998544492727437                                                                                                                                                |
+| combinations.choice of product.se        | 0.13724186445154316                                                                                                                                                |
+| combinations.gum.est                     | 0.5055484555204514                                                                                                                                                 |
+| combinations.gum.se                      | 0.05884678263944367                                                                                                                                                |
+| combinations.inhalator.est               | 0.7616425709680871                                                                                                                                                 |
+| combinations.inhalator.se                | 0.23983724683499766                                                                                                                                                |
+| combinations.intranasal spray.est        | 0.8494559922265329                                                                                                                                                 |
+| combinations.intranasal spray.se         | 0.22205017639845365                                                                                                                                                |
+| combinations.oral spray.est              | 0.997717471040248                                                                                                                                                  |
+| combinations.oral spray.se               | 0.44842866735639525                                                                                                                                                |
+| combinations.patch.est                   | 0.5719132177558788                                                                                                                                                 |
+| combinations.patch.se                    | 0.061225884952773896                                                                                                                                               |
+| combinations.patch and gum.est           | 0.11499341753488712                                                                                                                                                |
+| combinations.patch and gum.se            | 0.47298212473267415                                                                                                                                                |
+| combinations.patch and inhalator.est     | 0.07738666361542013                                                                                                                                                |
+| combinations.patch and inhalator.se      | 0.4392572795730434                                                                                                                                                 |
+| combinations.patch, gum, and lozenge.est | 2.776704605840288                                                                                                                                                  |
+| combinations.patch, gum, and lozenge.se  | 1.064661189653905                                                                                                                                                  |
+| combinations.tablets/lozenges.est        | 0.612381079741195                                                                                                                                                  |
+| combinations.tablets/lozenges.se         | 0.13785553050257715                                                                                                                                                |

@@ -1,0 +1,49 @@
+Component NMA
+=============
+
+Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/).
+
+METHODS
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+RESULTS
+
+comps: ["hypericum","low-dose sari","nassa","nri","rmao-a","snri","ssri","tca"]
+tau2: 0.02590497499698819
+Q: 61.14105388230635
+df: 44
+components.hypericum.est: -0.3566392811860972
+components.hypericum.se: 0.15532098820668944
+components.low-dose sari.est: -0.7283415572107926
+components.low-dose sari.se: 0.2612809317393655
+components.nassa.est: -0.04444675332306372
+components.nassa.se: 0.1908689360903291
+components.nri.est: 0.38879728687410464
+components.nri.se: 0.26106766448399893
+components.rmao-a.est: -0.11870277093658282
+components.rmao-a.se: 0.18367767970326215
+components.snri.est: -0.07038240363616063
+components.snri.se: 0.15001771956103205
+components.ssri.est: -0.058869002253028435
+components.ssri.se: 0.10906144213306787
+components.tca.est: -0.019639577246464673
+components.tca.se: 0.10250926712917095
+combinations.hypericum.est: -0.3566392811860972
+combinations.hypericum.se: 0.15532098820668944
+combinations.low-dose sari.est: -0.7283415572107926
+combinations.low-dose sari.se: 0.2612809317393655
+combinations.nassa.est: -0.04444675332306372
+combinations.nassa.se: 0.1908689360903291
+combinations.nri.est: 0.38879728687410464
+combinations.nri.se: 0.26106766448399893
+combinations.rmao-a.est: -0.11870277093658282
+combinations.rmao-a.se: 0.18367767970326215
+combinations.snri.est: -0.07038240363616063
+combinations.snri.se: 0.15001771956103205
+combinations.ssri.est: -0.058869002253028435
+combinations.ssri.se: 0.10906144213306787
+combinations.tca.est: -0.019639577246464673
+combinations.tca.se: 0.10250926712917095

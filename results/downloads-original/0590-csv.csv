@@ -1,0 +1,13 @@
+key,value
+comps,"["""",""a""]"
+tau2,0
+Q,2.773339119917619e-30
+df,1
+components..est,-0.1000000000000002
+components..se,0.14142135623730953
+components.a.est,0.4000000000000002
+components.a.se,0.1
+combinations.+a.est,0.3
+combinations.+a.se,0.1
+combinations.a.est,0.4000000000000002
+combinations.a.se,0.1

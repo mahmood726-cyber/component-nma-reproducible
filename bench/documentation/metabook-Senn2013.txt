@@ -1,0 +1,80 @@
+_S_t_u_d_i_e_s _o_n _D_i_a_b_e_t_e_s _T_r_e_a_t_m_e_n_t_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Results from 26 trials evaluating treatments for diabetes.
+
+_U_s_a_g_e:
+
+     Senn2013
+     
+_F_o_r_m_a_t:
+
+     The data frame contains the following columns:
+
+       *study*      'character'  study ID           
+       *treatment*  'character'  treatment          
+       *n*          'integer'    sample size        
+       *mean*       'numeric'    mean               
+       *sd*         'numeric'    standard deviation 
+       *type*       'character'  outcome type       
+       *author*     'character'  first author       
+       *year*       'numeric'    first author       
+      
+_D_e_t_a_i_l_s:
+
+     This network meta-analysis compared the effectiveness of nine
+     active treatments and placebo in patients with diabetes (Senn et
+     al., 2013). Patients enrolled in 26 studies included in this data
+     set were treated to reduce blood glucose (HBA1c) levels. The
+     effect measure was the mean difference of average plasma glucose
+     concentration HbA1C and measured in mmol / mol. The outcome was
+     either measured as a change score or post intervention (variable
+     type).
+
+_C_o_n_c_e_p_t_s:
+
+     medicine, diabetes, mean differences, network meta-analysis
+
+_A_u_t_h_o_r(_s):
+
+     Guido Schwarzer, <mailto:guido.schwarzer@uniklinik-freiburg.de>
+
+_S_o_u_r_c_e:
+
+     Senn S, Gavini F, Magrez D, Scheen A (2013): Issues in performing
+     a network meta-analysis. _Statistical Methods in Medical
+     Research_, *22*, 169-89
+
+_E_x_a_m_p_l_e_s:
+
+     if (requireNamespace("netmeta", quietly = TRUE)) {
+     # Load netmeta package
+     library("netmeta")
+     
+     # Print mean differences with two digits
+     oldset <- settings.meta(digits = 2)
+     
+     # Transform data from long arm-based format to contrast-based
+     # format.
+     pw1 <- pairwise(studlab = study, treat = treatment,
+       n = n, mean = mean, sd = sd, data = Senn2013,
+       varnames = c("MD", "seMD"))
+     
+     # Conduct network meta-analysis
+     nma1 <- netmeta(pw1, random = FALSE,
+       reference.group = "placebo")
+     nma1
+     
+     # Draw network graph
+     netgraph(nma1, seq = "optimal", multiarm = TRUE,
+       cex = 1.5, lwd = 7, rotate = -1 / n * 360,
+       pch.points = 21, bg.points = "lightblue",
+       cex.points = n.trts, points.max = 10,
+       labels = paste0(trts, "\n(n=", n.trts, ")"),
+       offset = 0.045)
+     
+     # Use previous settings
+     settings.meta(oldset)
+     }
+     

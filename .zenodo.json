@@ -1,0 +1,25 @@
+{
+  "title": "Additive component network meta-analysis in the browser: validation of the allmeta component-nma app against netmeta",
+  "creators": [
+    {
+      "name": "Ahmad, Mahmood"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mahmood726-cyber/allmeta",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/mahmood726-cyber/allmeta/releases/tag/<ALLMETA_RELEASE>",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    }
+  ],
+  "description": "Validation archive for the allmeta component-nma page against R netmeta 3.7.0. Validated original page: commit acd363f (component-nma unchanged on main da66b89). Corrections: pull request #153, branch fix/component-nma-validate, head f7a78dc. allmeta release <ALLMETA_RELEASE>, DOI <ALLMETA_RELEASE_DOI>."
+}

@@ -1,0 +1,56 @@
+{
+  "comps": [
+    "antithrombin iii",
+    "aprotonin",
+    "rfviia",
+    "solvent detergent plasma",
+    "tranexamic acid"
+  ],
+  "tau2": 0,
+  "Q": 3.672556331488782,
+  "df": 8,
+  "components": {
+    "antithrombin iii": {
+      "est": -1.408767216971949,
+      "se": 1.5050979587122777
+    },
+    "aprotonin": {
+      "est": -0.7699117616902525,
+      "se": 0.48098919174529675
+    },
+    "rfviia": {
+      "est": 0.3546939854386779,
+      "se": 0.7235614309226788
+    },
+    "solvent detergent plasma": {
+      "est": 0.07696104113612844,
+      "se": 1.961103242036463
+    },
+    "tranexamic acid": {
+      "est": 0.11981032764258548,
+      "se": 0.7473963696147455
+    }
+  },
+  "combinations": {
+    "antithrombin iii": {
+      "est": -1.408767216971949,
+      "se": 1.5050979587122777
+    },
+    "aprotonin": {
+      "est": -0.7699117616902525,
+      "se": 0.48098919174529675
+    },
+    "rfviia": {
+      "est": 0.3546939854386779,
+      "se": 0.7235614309226788
+    },
+    "solvent detergent plasma": {
+      "est": 0.07696104113612844,
+      "se": 1.961103242036463
+    },
+    "tranexamic acid": {
+      "est": 0.11981032764258548,
+      "se": 0.7473963696147455
+    }
+  }
+}

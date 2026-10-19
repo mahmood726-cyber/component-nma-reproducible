@@ -1,0 +1,661 @@
+{
+  "original": {
+    "checks": 91238,
+    "passed": 88736,
+    "quantities": {
+      "Q": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 6.962292193884274e-16
+      },
+      "app_coverage": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "app_evidence": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "app_unique": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "combination_membership": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "combinations_est": {
+        "checks": 2386,
+        "passed": 2386,
+        "max_difference": 6.039613253960852e-14
+      },
+      "combinations_se": {
+        "checks": 2386,
+        "passed": 2386,
+        "max_difference": 2.6330781607239147e-14
+      },
+      "component_design": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "component_membership": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "components_est": {
+        "checks": 2134,
+        "passed": 2134,
+        "max_difference": 6.039613253960852e-14
+      },
+      "components_se": {
+        "checks": 2134,
+        "passed": 2134,
+        "max_difference": 2.6330781607239147e-14
+      },
+      "corpus_unique": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "csv_array": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "csv_keys": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "csv_number": {
+        "checks": 18746,
+        "passed": 18746,
+        "max_difference": 0
+      },
+      "csv_scalar": {
+        "checks": 583,
+        "passed": 0,
+        "max_difference": 1
+      },
+      "df": {
+        "checks": 330,
+        "passed": 328,
+        "max_difference": 1
+      },
+      "display_combinations": {
+        "checks": 330,
+        "passed": 328,
+        "max_difference": 1
+      },
+      "display_components": {
+        "checks": 330,
+        "passed": 328,
+        "max_difference": 1
+      },
+      "display_export_combinations": {
+        "checks": 330,
+        "passed": 329,
+        "max_difference": 1
+      },
+      "display_export_components": {
+        "checks": 330,
+        "passed": 329,
+        "max_difference": 1
+      },
+      "execution_error": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_error": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_csv": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_json": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_md": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_report-md": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_report-txt": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "fit_present": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "input_rows": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "json_export": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "md_array": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "md_keys": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "md_number": {
+        "checks": 18746,
+        "passed": 18746,
+        "max_difference": 0
+      },
+      "md_scalar": {
+        "checks": 583,
+        "passed": 0,
+        "max_difference": 1
+      },
+      "plot_CI_x1": {
+        "checks": 4514,
+        "passed": 4514,
+        "max_difference": 1.602869708741379e-14
+      },
+      "plot_CI_x2": {
+        "checks": 4514,
+        "passed": 4514,
+        "max_difference": 1.1848687423935019e-14
+      },
+      "plot_CI_y1": {
+        "checks": 4514,
+        "passed": 4514,
+        "max_difference": 0
+      },
+      "plot_CI_y2": {
+        "checks": 4514,
+        "passed": 4514,
+        "max_difference": 0
+      },
+      "plot_evidence": {
+        "checks": 330,
+        "passed": 329,
+        "max_difference": 0
+      },
+      "plot_labels": {
+        "checks": 329,
+        "passed": 329,
+        "max_difference": 0
+      },
+      "plot_line_count": {
+        "checks": 329,
+        "passed": 329,
+        "max_difference": 0
+      },
+      "plot_point_x": {
+        "checks": 4514,
+        "passed": 4514,
+        "max_difference": 1.2255153481579993e-14
+      },
+      "plot_point_y": {
+        "checks": 4514,
+        "passed": 4514,
+        "max_difference": 0
+      },
+      "plot_rect_count": {
+        "checks": 329,
+        "passed": 329,
+        "max_difference": 0
+      },
+      "plot_viewBox": {
+        "checks": 329,
+        "passed": 329,
+        "max_difference": 0
+      },
+      "reference_coverage": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "reference_evidence": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "reference_unique": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "refusal_combination_table": {
+        "checks": 265,
+        "passed": 0,
+        "max_difference": 1
+      },
+      "refusal_component_table": {
+        "checks": 265,
+        "passed": 0,
+        "max_difference": 1
+      },
+      "refusal_forest": {
+        "checks": 265,
+        "passed": 0,
+        "max_difference": 1
+      },
+      "refusal_reason": {
+        "checks": 265,
+        "passed": 0,
+        "max_difference": 0
+      },
+      "refusal_state": {
+        "checks": 265,
+        "passed": 0,
+        "max_difference": 1
+      },
+      "report_md_data": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "report_txt_data": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "tau2": {
+        "checks": 328,
+        "passed": 328,
+        "max_difference": 5.290975953202987e-14
+      },
+      "tau2_undefined": {
+        "checks": 2,
+        "passed": 0,
+        "max_difference": 1
+      }
+    },
+    "native_summary": {
+      "configurations": 149,
+      "checks": 4989,
+      "passed": 214,
+      "errors": 10
+    },
+    "display_zero_normalised": 0
+  },
+  "patched": {
+    "checks": 72150,
+    "passed": 72150,
+    "quantities": {
+      "Q": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 6.962292193884274e-16
+      },
+      "app_coverage": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "app_evidence": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "app_unique": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "combination_membership": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "combinations_est": {
+        "checks": 2386,
+        "passed": 2386,
+        "max_difference": 6.039613253960852e-14
+      },
+      "combinations_se": {
+        "checks": 2386,
+        "passed": 2386,
+        "max_difference": 2.6330781607239147e-14
+      },
+      "component_design": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "component_membership": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "components_est": {
+        "checks": 2134,
+        "passed": 2134,
+        "max_difference": 6.039613253960852e-14
+      },
+      "components_se": {
+        "checks": 2134,
+        "passed": 2134,
+        "max_difference": 2.6330781607239147e-14
+      },
+      "corpus_unique": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "csv_array": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "csv_keys": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "csv_number": {
+        "checks": 10028,
+        "passed": 10028,
+        "max_difference": 0
+      },
+      "csv_scalar": {
+        "checks": 2,
+        "passed": 2,
+        "max_difference": 0
+      },
+      "df": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "display_combinations": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "display_components": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "display_export_combinations": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "display_export_components": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "execution_error": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_error": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_csv": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_json": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_md": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_report-md": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "export_present_report-txt": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "fit_present": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "input_rows": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "json_export": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "md_array": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "md_keys": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "md_number": {
+        "checks": 10028,
+        "passed": 10028,
+        "max_difference": 0
+      },
+      "md_scalar": {
+        "checks": 2,
+        "passed": 2,
+        "max_difference": 0
+      },
+      "plot_CI_x1": {
+        "checks": 4520,
+        "passed": 4520,
+        "max_difference": 1.602869708741379e-14
+      },
+      "plot_CI_x2": {
+        "checks": 4520,
+        "passed": 4520,
+        "max_difference": 1.1848687423935019e-14
+      },
+      "plot_CI_y1": {
+        "checks": 4520,
+        "passed": 4520,
+        "max_difference": 0
+      },
+      "plot_CI_y2": {
+        "checks": 4520,
+        "passed": 4520,
+        "max_difference": 0
+      },
+      "plot_evidence": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "plot_labels": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "plot_line_count": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "plot_point_x": {
+        "checks": 4520,
+        "passed": 4520,
+        "max_difference": 1.2255153481579993e-14
+      },
+      "plot_point_y": {
+        "checks": 4520,
+        "passed": 4520,
+        "max_difference": 0
+      },
+      "plot_rect_count": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "plot_viewBox": {
+        "checks": 330,
+        "passed": 330,
+        "max_difference": 0
+      },
+      "reference_coverage": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "reference_evidence": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "reference_unique": {
+        "checks": 1,
+        "passed": 1,
+        "max_difference": 0
+      },
+      "refusal_combination_table": {
+        "checks": 265,
+        "passed": 265,
+        "max_difference": 0
+      },
+      "refusal_component_table": {
+        "checks": 265,
+        "passed": 265,
+        "max_difference": 0
+      },
+      "refusal_forest": {
+        "checks": 265,
+        "passed": 265,
+        "max_difference": 0
+      },
+      "refusal_reason": {
+        "checks": 265,
+        "passed": 265,
+        "max_difference": 0
+      },
+      "refusal_state": {
+        "checks": 265,
+        "passed": 265,
+        "max_difference": 0
+      },
+      "report_md_data": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "report_txt_data": {
+        "checks": 595,
+        "passed": 595,
+        "max_difference": 0
+      },
+      "tau2": {
+        "checks": 328,
+        "passed": 328,
+        "max_difference": 5.290975953202987e-14
+      },
+      "tau2_undefined": {
+        "checks": 2,
+        "passed": 2,
+        "max_difference": 0
+      }
+    },
+    "native_summary": {
+      "configurations": 149,
+      "checks": 4989,
+      "passed": 214,
+      "errors": 10
+    },
+    "display_zero_normalised": 2
+  },
+  "bus": {
+    "original": {
+      "checks": 63,
+      "passed": 49
+    },
+    "patched": {
+      "checks": 63,
+      "passed": 63
+    }
+  },
+  "static_tests": {
+    "original": {
+      "checks": 7,
+      "passed": 7
+    },
+    "patched": {
+      "checks": 7,
+      "passed": 7
+    }
+  },
+  "wrapper_bridge": {
+    "checks": 2064,
+    "passed": 2064
+  },
+  "corpus": {
+    "catalogue_entries": 639,
+    "dataset_ledger_rows": 639,
+    "included_datasets": 54,
+    "included_packages": [
+      "meta",
+      "metabook",
+      "metadat",
+      "mixmeta",
+      "mvmeta",
+      "netmeta"
+    ],
+    "configurations": 576,
+    "focused_cases": 19,
+    "reference_configurations": 595,
+    "reference_ok": 330,
+    "reference_refused": 265,
+    "reference_error": 0,
+    "refusal_reasons": {
+      "Components are not identifiable from the contrasts.": 256,
+      "At least 2 valid contrasts are required.": 2,
+      "Invalid contrast input.": 7
+    },
+    "two_arm_only": 242,
+    "full": 334,
+    "with_repeated_study_ids": 242,
+    "split_mouth": 8,
+    "max_rows": 2001
+  }
+}

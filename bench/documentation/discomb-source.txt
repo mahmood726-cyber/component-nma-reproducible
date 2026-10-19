@@ -1,0 +1,644 @@
+function (TE, seTE, treat1, treat2, studlab, data = NULL, subset = NULL, 
+    inactive = NULL, sep.comps = gs("sep.comps"), C.matrix, sm, 
+    level = gs("level"), level.ma = gs("level.ma"), common = gs("common"), 
+    random = gs("random") | !is.null(tau.preset), reference.group, 
+    baseline.reference = gs("baseline.reference"), seq = gs("sep"), 
+    tau.preset = NULL, tol.multiarm = gs("tol.multiarm"), tol.multiarm.se = gs("tol.multiarm.se"), 
+    details.chkmultiarm = gs("details.chkmultiarm"), details.chkident = FALSE, 
+    sep.trts = gs("sep.trts"), nchar.comps = gs("nchar.comps"), 
+    sep.ia = gs("sep.ia"), func.inverse = invmat, n1 = NULL, 
+    n2 = NULL, event1 = NULL, event2 = NULL, incr = NULL, overall.hetstat = gs("overall.hetstat"), 
+    backtransf = gs("backtransf"), na.unident = gs("na.unident"), 
+    title = gs("title"), keepdata = gs("keepdata"), warn = gs("warn"), 
+    warn.deprecated = gs("warn.deprecated"), nchar.trts = nchar.comps, 
+    ...) 
+{
+    chkchar(sep.comps, nchar = 1, length = 1)
+    chklevel(level)
+    missing.reference.group <- missing(reference.group)
+    chklogical(baseline.reference)
+    if (!is.null(tau.preset)) 
+        chknumeric(tau.preset, min = 0, length = 1)
+    chknumeric(tol.multiarm, min = 0, length = 1)
+    if (!is.null(tol.multiarm.se)) 
+        chknumeric(tol.multiarm.se, min = 0, length = 1)
+    chklogical(details.chkmultiarm)
+    chklogical(details.chkident)
+    missing.sep.trts <- missing(sep.trts)
+    chkchar(sep.trts)
+    overall.hetstat <- replaceNULL(overall.hetstat, TRUE)
+    chklogical(overall.hetstat)
+    chklogical(backtransf)
+    chklogical(na.unident)
+    chkchar(title)
+    chklogical(keepdata)
+    chklogical(warn)
+    args <- list(...)
+    chklogical(warn.deprecated)
+    level.ma <- deprecated(level.ma, missing(level.ma), args, 
+        "level.comb", warn.deprecated)
+    chklevel(level.ma)
+    missing.common <- missing(common)
+    common <- deprecated(common, missing.common, args, "comb.fixed", 
+        warn.deprecated)
+    common <- deprecated(common, missing.common, args, "fixed", 
+        warn.deprecated)
+    chklogical(common)
+    random <- deprecated(random, missing(random), args, "comb.random", 
+        warn.deprecated)
+    chklogical(random)
+    nchar.comps <- deprecated2(nchar.comps, missing(nchar.comps), 
+        nchar.trts, missing(nchar.trts), warn.deprecated)
+    nchar.comps <- replaceNULL(nchar.comps, 666)
+    chknumeric(nchar.comps, min = 1, length = 1)
+    missing.sep.ia <- missing(sep.ia)
+    chkchar(sep.ia, nchar = 0:1, length = 1)
+    nulldata <- is.null(data)
+    sfsp <- sys.frame(sys.parent())
+    mc <- match.call()
+    if (nulldata) 
+        data <- sfsp
+    TE <- catch("TE", mc, data, sfsp)
+    avail.reference.group.pairwise <- FALSE
+    if (is.data.frame(TE) & !is.null(attr(TE, "pairwise"))) {
+        is.pairwise <- TRUE
+        sm <- attr(TE, "sm")
+        if (missing.reference.group) {
+            reference.group <- attr(TE, "reference.group")
+            if (is.null(reference.group)) 
+                reference.group <- ""
+            else avail.reference.group.pairwise <- TRUE
+        }
+        keep.all.comparisons <- attr(TE, "keep.all.comparisons")
+        if (!is.null(keep.all.comparisons) && !keep.all.comparisons) 
+            stop("First argument is a pairwise object created with ", 
+                "'keep.all.comparisons = FALSE'.", call. = TRUE)
+        if (is.null(attr(TE, "varnames"))) 
+            seTE <- TE$seTE
+        else seTE <- TE[[attr(TE, "varnames")[2]]]
+        treat1 <- TE$treat1
+        treat2 <- TE$treat2
+        studlab <- TE$studlab
+        if (!is.null(TE$n1)) 
+            n1 <- TE$n1
+        if (!is.null(TE$n2)) 
+            n2 <- TE$n2
+        if (!is.null(TE$event1)) 
+            event1 <- TE$event1
+        if (!is.null(TE$event2)) 
+            event2 <- TE$event2
+        if (!is.null(TE$incr)) 
+            incr <- TE$incr
+        pairdata <- TE
+        data <- TE
+        if (is.null(attr(TE, "varnames"))) 
+            TE <- TE$TE
+        else TE <- TE[[attr(TE, "varnames")[1]]]
+    }
+    else {
+        is.pairwise <- FALSE
+        if (missing(sm)) 
+            if (!is.null(data) && !is.null(attr(data, "sm"))) 
+                sm <- attr(data, "sm")
+            else sm <- ""
+        seTE <- catch("seTE", mc, data, sfsp)
+        treat1 <- catch("treat1", mc, data, sfsp)
+        treat2 <- catch("treat2", mc, data, sfsp)
+        studlab <- catch("studlab", mc, data, sfsp)
+        if (length(studlab) == 0) {
+            if (warn) 
+                warning("No information given for argument 'studlab'. ", 
+                  "Assuming that comparisons are from independent studies.", 
+                  call. = FALSE)
+            studlab <- seq(along = TE)
+        }
+        studlab <- as.character(studlab)
+        n1 <- catch("n1", mc, data, sfsp)
+        n2 <- catch("n2", mc, data, sfsp)
+        event1 <- catch("event1", mc, data, sfsp)
+        event2 <- catch("event2", mc, data, sfsp)
+        incr <- catch("incr", mc, data, sfsp)
+    }
+    subset <- catch("subset", mc, data, sfsp)
+    missing.subset <- is.null(subset)
+    studlab <- as.character(studlab)
+    chknumeric(TE)
+    chknumeric(seTE)
+    if (!any(!is.na(TE) & !is.na(seTE))) 
+        stop("Missing data for estimates (argument 'TE') and ", 
+            "standard errors (argument 'seTE') in all studies.\n  ", 
+            "No network meta-analysis possible.", call. = FALSE)
+    k.Comp <- length(TE)
+    if (is.factor(treat1)) 
+        treat1 <- as.character(treat1)
+    if (is.factor(treat2)) 
+        treat2 <- as.character(treat2)
+    if (is.factor(studlab)) 
+        studlab <- as.character(studlab)
+    treat1 <- rmSpace(rmSpace(treat1, end = TRUE))
+    treat2 <- rmSpace(rmSpace(treat2, end = TRUE))
+    if (!is.null(event1) & !is.null(event2)) 
+        available.events <- TRUE
+    else available.events <- FALSE
+    if (!is.null(n1) & !is.null(n2)) 
+        available.n <- TRUE
+    else available.n <- FALSE
+    if (available.events & is.null(incr)) 
+        incr <- rep(0, length(event2))
+    if (keepdata) {
+        if (nulldata & !is.pairwise) 
+            data <- data.frame(.studlab = studlab, stringsAsFactors = FALSE)
+        else if (nulldata & is.pairwise) {
+            data <- pairdata
+            data$.studlab <- studlab
+        }
+        else data$.studlab <- studlab
+        data$.order <- seq_along(studlab)
+        data$.treat1 <- treat1
+        data$.treat2 <- treat2
+        data$.TE <- TE
+        data$.seTE <- seTE
+        data$.event1 <- event1
+        data$.n1 <- n1
+        data$.event2 <- event2
+        data$.n2 <- n2
+        data$.incr <- incr
+        wo <- data$.treat1 > data$.treat2
+        if (any(wo)) {
+            data$.TE[wo] <- -data$.TE[wo]
+            ttreat1 <- data$.treat1
+            data$.treat1[wo] <- data$.treat2[wo]
+            data$.treat2[wo] <- ttreat1[wo]
+            if (isCol(data, ".n1") & isCol(data, ".n2")) {
+                tn1 <- data$.n1
+                data$.n1[wo] <- data$.n2[wo]
+                data$.n2[wo] <- tn1[wo]
+            }
+            if (isCol(data, ".event1") & isCol(data, ".event2")) {
+                tevent1 <- data$.event1
+                data$.event1[wo] <- data$.event2[wo]
+                data$.event2[wo] <- tevent1[wo]
+            }
+            if (isCol(data, ".sd1") & isCol(data, ".sd2")) {
+                tsd1 <- data$.sd1
+                data$.sd1[wo] <- data$.sd2[wo]
+                data$.sd2[wo] <- tsd1[wo]
+            }
+            if (isCol(data, ".time1") & isCol(data, ".time2")) {
+                ttime1 <- data$.time1
+                data$.time1[wo] <- data$.time2[wo]
+                data$.time2[wo] <- ttime1[wo]
+            }
+        }
+        if (!missing.subset) {
+            if (length(subset) == dim(data)[1]) 
+                data$.subset <- subset
+            else {
+                data$.subset <- FALSE
+                data$.subset[subset] <- TRUE
+            }
+        }
+    }
+    if (!is.null(subset)) {
+        if ((is.logical(subset) & (sum(subset) > k.Comp)) || 
+            (length(subset) > k.Comp)) 
+            stop("Length of subset is larger than number of studies.")
+        TE <- TE[subset]
+        seTE <- seTE[subset]
+        treat1 <- treat1[subset]
+        treat2 <- treat2[subset]
+        studlab <- studlab[subset]
+        if (!is.null(n1)) 
+            n1 <- n1[subset]
+        if (!is.null(n2)) 
+            n2 <- n2[subset]
+        if (!is.null(event1)) 
+            event1 <- event1[subset]
+        if (!is.null(event2)) 
+            event2 <- event2[subset]
+        if (!is.null(incr)) 
+            incr <- incr[subset]
+    }
+    trts <- sort(unique(c(treat1, treat2)))
+    if (compmatch(trts, sep.trts)) {
+        if (!missing.sep.trts) 
+            warning("Separator '", sep.trts, "' used in at least ", 
+                "one treatment label. Try to use predefined separators: ", 
+                "':', '-', '_', '/', '+', '.', '|', '*'.", call. = FALSE)
+        if (!compmatch(trts, ":")) 
+            sep.trts <- ":"
+        else if (!compmatch(trts, "-")) 
+            sep.trts <- "-"
+        else if (!compmatch(trts, "_")) 
+            sep.trts <- "_"
+        else if (!compmatch(trts, "/")) 
+            sep.trts <- "/"
+        else if (!compmatch(trts, "+")) 
+            sep.trts <- "+"
+        else if (!compmatch(trts, ".")) 
+            sep.trts <- "-"
+        else if (!compmatch(trts, "|")) 
+            sep.trts <- "|"
+        else if (!compmatch(trts, "*")) 
+            sep.trts <- "*"
+        else stop("All predefined separators ", "(':', '-', '_', '/', '+', '.', '|', '*') ", 
+            "are used in at least one treatment label.", "\n   Please specify a different character that ", 
+            "should be used as separator (argument 'sep.trts').", 
+            call. = FALSE)
+    }
+    if (!is.null(seq)) 
+        seq <- setseq(seq, trts)
+    else {
+        seq <- trts
+        if (is.numeric(seq)) 
+            seq <- as.character(seq)
+    }
+    if (!(any(grepl(sep.comps, treat1, fixed = TRUE)) | any(grepl(sep.comps, 
+        treat2, fixed = TRUE)))) 
+        warning("No treatment contains the component separator '", 
+            sep.comps, "'.", call. = FALSE)
+    if (any(treat1 == treat2)) 
+        stop("Treatments must be different (arguments 'treat1' and 'treat2').", 
+            call. = FALSE)
+    if (length(studlab) != 0) 
+        studlab <- as.character(studlab)
+    else {
+        if (warn) 
+            warning("No information given for argument 'studlab'. ", 
+                "Assuming that comparisons are from independent studies.", 
+                call. = FALSE)
+        studlab <- seq(along = TE)
+    }
+    tabnarms <- table(studlab)
+    sel.narms <- !is_wholenumber((1 + sqrt(8 * tabnarms + 1))/2)
+    if (sum(sel.narms) == 1) 
+        stop(paste0("Study '", names(tabnarms)[sel.narms], "' has a wrong number of comparisons.", 
+            "\n  Please provide data for all treatment comparisons", 
+            " (two-arm: 1; three-arm: 3; four-arm: 6, ...)."))
+    if (sum(sel.narms) > 1) 
+        stop(paste0("The following studies have a wrong number of comparisons: ", 
+            paste(paste0("'", names(tabnarms)[sel.narms], "'"), 
+                collapse = ", "), "\n  Please provide data for all treatment comparisons", 
+            " (two-arm: 1; three-arm: 3; four-arm: 6, ...)."))
+    excl <- is.na(TE) | is.na(seTE) | seTE <= 0
+    if (any(excl)) {
+        if (keepdata) 
+            data$.excl <- excl
+        dat.NAs <- data.frame(studlab = studlab[excl], treat1 = treat1[excl], 
+            treat2 = treat2[excl], TE = format(round(TE[excl], 
+                4)), seTE = format(round(seTE[excl], 4)))
+        warning("Comparison", if (sum(excl) > 1) 
+            "s", " with missing TE / seTE or zero seTE not considered in", 
+            " network meta-analysis.", call. = FALSE)
+        cat("Comparison", if (sum(excl) > 1) 
+            "s", " not considered in network meta-analysis:\n", 
+            sep = "")
+        prmatrix(dat.NAs, quote = FALSE, right = TRUE, rowlab = rep("", 
+            sum(excl)))
+        cat("\n")
+        studlab <- studlab[!excl]
+        treat1 <- treat1[!excl]
+        treat2 <- treat2[!excl]
+        TE <- TE[!excl]
+        seTE <- seTE[!excl]
+        if (!is.null(n1)) 
+            n1 <- n1[!excl]
+        if (!is.null(n2)) 
+            n2 <- n2[!excl]
+        if (!is.null(event1)) 
+            event1 <- event1[!excl]
+        if (!is.null(event2)) 
+            event2 <- event2[!excl]
+        if (!is.null(incr)) 
+            incr <- incr[!excl]
+        seq <- seq[seq %in% unique(c(treat1, treat2))]
+        trts <- trts[trts %in% unique(c(treat1, treat2))]
+    }
+    tabnarms <- table(studlab)
+    sel.narms <- !is_wholenumber((1 + sqrt(8 * tabnarms + 1))/2)
+    if (sum(sel.narms) == 1) 
+        stop(paste0("After removing comparisons with missing treatment effects", 
+            " or standard errors,\n  study '", names(tabnarms)[sel.narms], 
+            "' has a wrong number of comparisons.", " Please check data and\n  consider to remove study", 
+            " from network meta-analysis."))
+    if (sum(sel.narms) > 1) 
+        stop(paste0("After removing comparisons with missing treatment effects", 
+            " or standard errors,\n  the following studies have", 
+            " a wrong number of comparisons: ", paste(paste0("'", 
+                names(tabnarms)[sel.narms], "'"), collapse = ", "), 
+            "\n  Please check data and consider to remove studies", 
+            " from network meta-analysis."))
+    wo <- treat1 > treat2
+    if (any(wo)) {
+        TE[wo] <- -TE[wo]
+        ttreat1 <- treat1
+        treat1[wo] <- treat2[wo]
+        treat2[wo] <- ttreat1[wo]
+        if (available.n) {
+            tn1 <- n1
+            n1[wo] <- n2[wo]
+            n2[wo] <- tn1[wo]
+        }
+        if (available.events) {
+            tevent1 <- event1
+            event1[wo] <- event2[wo]
+            event2[wo] <- tevent1[wo]
+        }
+    }
+    if (missing.reference.group & !avail.reference.group.pairwise) {
+        go.on <- TRUE
+        i <- 0
+        while (go.on) {
+            i <- i + 1
+            sel.i <- !is.na(TE) & !is.na(seTE) & (treat1 == trts[i] | 
+                treat2 == trts[i])
+            if (sum(sel.i) > 0) {
+                go.on <- FALSE
+                reference.group <- trts[i]
+            }
+            else if (i == length(trts)) {
+                go.on <- FALSE
+                reference.group <- ""
+            }
+        }
+    }
+    if (reference.group != "") 
+        reference.group <- setref(reference.group, trts)
+    netc <- netconnection(treat1, treat2, studlab)
+    if (missing(C.matrix)) {
+        C.matrix <- createC(netc, inactive = inactive, sep.comps = sep.comps)
+        inactive <- attr(C.matrix, "inactive")
+        C.matrix <- C.matrix[trts, , drop = FALSE]
+    }
+    else {
+        if (!(is.matrix(C.matrix) | is.data.frame(C.matrix))) 
+            stop("Argument 'C.matrix' must be a matrix or data frame.", 
+                call. = FALSE)
+        wrong.trts <- FALSE
+        if (is.null(rownames(C.matrix))) 
+            wrong.trts <- TRUE
+        else {
+            if (length(unique(trts)) == length(unique(tolower(trts))) && 
+                length(unique(rownames(C.matrix))) == length(unique(tolower(rownames(C.matrix))))) 
+                idx <- charmatch(tolower(rownames(C.matrix)), 
+                  tolower(trts), nomatch = NA)
+            else idx <- charmatch(rownames(C.matrix), trts, nomatch = NA)
+            if (any(is.na(idx)) || any(idx == 0)) 
+                wrong.trts <- TRUE
+        }
+        if (wrong.trts) 
+            stop(paste0("Row names of argument 'C.matrix' must be a ", 
+                "permutation of treatment names:\n  ", paste(paste0("'", 
+                  trts, "'"), collapse = " - ")), call. = FALSE)
+        C.matrix <- C.matrix[trts, , drop = FALSE]
+    }
+    if (is.data.frame(C.matrix)) 
+        C.matrix <- as.matrix(C.matrix)
+    c <- ncol(C.matrix)
+    p0 <- prepare(TE, seTE, treat1, treat2, studlab, func.inverse = func.inverse)
+    W.matrix.common <- p0$W
+    dat.c <- p0$data
+    B.matrix <- createB(dat.c$treat1.pos, dat.c$treat2.pos)
+    colnames(B.matrix) <- trts
+    rownames(B.matrix) <- studlab
+    X.matrix <- B.matrix %*% C.matrix
+    colnames(X.matrix) <- colnames(C.matrix)
+    rownames(X.matrix) <- studlab
+    A.matrix <- diag(diag(t(B.matrix) %*% B.matrix)) - t(B.matrix) %*% 
+        B.matrix
+    if (qr(X.matrix)$rank < c) 
+        comps.unident <- get_unident(X.matrix, details.chkident)
+    else comps.unident <- NULL
+    tdata <- data.frame(studies = dat.c$studlab, narms = dat.c$narms, 
+        order = dat.c$order, stringsAsFactors = FALSE)
+    tdata <- tdata[!duplicated(tdata[, c("studies", "narms")]), 
+        , drop = FALSE]
+    studies <- tdata$studies[order(tdata$order)]
+    narms <- tdata$narms[order(tdata$order)]
+    n.a <- sum(narms)
+    comps <- colnames(C.matrix)
+    n <- length(trts)
+    m <- length(TE)
+    k <- length(unique(studlab))
+    df.Q.additive <- n.a - k - qr(X.matrix)$rank
+    if (netc$n.subnets == 1) {
+        net <- netmeta(TE, seTE, treat1, treat2, studlab, tol.multiarm = tol.multiarm, 
+            tol.multiarm.se = tol.multiarm.se, details.chkmultiarm = details.chkmultiarm)
+        Q <- net$Q
+        df.Q <- net$df.Q
+        pval.Q <- net$pval.Q
+        df.Q.diff <- n - 1 - qr(X.matrix)$rank
+    }
+    else {
+        Q <- df.Q <- pval.Q <- df.Q.diff <- NA
+    }
+    res.c <- nma_additive(dat.c$TE, W.matrix.common, dat.c$treat1, 
+        dat.c$treat2, dat.c$studlab, level.ma, X.matrix, C.matrix, 
+        B.matrix, df.Q.additive, n, sep.trts)
+    if (!is.null(tau.preset)) 
+        tau <- tau.preset
+    else tau <- res.c$tau
+    p1 <- prepare(TE, seTE, treat1, treat2, studlab, tau = if (is.na(tau)) 
+        0
+    else tau, func.inverse = func.inverse)
+    W.matrix.random <- p1$W
+    dat.r <- p1$data
+    res.r <- nma_additive(dat.r$TE, W.matrix.random, dat.r$treat1, 
+        dat.r$treat2, dat.r$studlab, level.ma, X.matrix, C.matrix, 
+        B.matrix, df.Q.additive, n, sep.trts)
+    Q.diff <- res.c$Q.additive - Q
+    if (!is.na(Q.diff) && abs(Q.diff) < .Machine$double.eps^0.75) 
+        Q.diff <- 0
+    if (is.na(df.Q.diff) | df.Q.diff == 0) 
+        pval.Q.diff <- NA
+    else pval.Q.diff <- 1 - pchisq(Q.diff, df.Q.diff)
+    if (na.unident & length(comps.unident) > 0) {
+        trts <- names(res.c$combinations$TE)
+        unident.pattern <- paste0("^", comps.unident, "$", collapse = "|")
+        unident.combs <- trts[unlist(lapply(lapply(compsplit(trts, 
+            sep.comps), grepl, pattern = unident.pattern), any))]
+        res.c$components <- lapply(res.c$components, setNA_vars, 
+            comps.unident)
+        res.c$combinations <- lapply(res.c$combinations, setNA_vars, 
+            unident.combs)
+        res.r$components <- lapply(res.r$components, setNA_vars, 
+            comps.unident)
+        res.r$combinations <- lapply(res.r$combinations, setNA_vars, 
+            unident.combs)
+    }
+    if (length(comps.unident) == 0) 
+        comps.unident <- NULL
+    comps <- names(res.c$components$TE)
+    if (sep.comps == sep.ia) 
+        stop("Input for arguments 'sep.comps' and 'sep.ia' must be different.", 
+            call. = FALSE)
+    sep.ia <- setsep(comps, sep.ia, missing = missing.sep.ia)
+    n.comps <- table(dat.c$studlab)
+    designs <- designs(dat.c$treat1, dat.c$treat2, dat.c$studlab, 
+        sep.trts = sep.trts)
+    NAs <- rep(NA, length(res.c$comparisons$TE))
+    o <- order(dat.c$order)
+    W.matrix.common <- W.matrix.common[o, o, drop = FALSE]
+    rownames(W.matrix.common) <- colnames(W.matrix.common) <- res.c$studlab[o]
+    W.matrix.random <- W.matrix.random[o, o, drop = FALSE]
+    rownames(W.matrix.random) <- colnames(W.matrix.random) <- res.c$studlab[o]
+    res <- list(studlab = dat.c$studlab, treat1 = dat.c$treat1, 
+        treat2 = dat.c$treat2, TE = dat.c$TE, seTE = dat.c$seTE, 
+        seTE.adj = sqrt(1/dat.c$weights), seTE.adj.common = sqrt(1/dat.c$weights), 
+        seTE.adj.random = sqrt(1/dat.r$weights), design = designs$design, 
+        event1 = event1, event2 = event2, n1 = n1, n2 = n2, incr = incr, 
+        k = k, m = m, n = n, d = length(unique(designs$design)), 
+        c = c, s = netc$n.subnets, trts = trts, k.trts = NA, 
+        n.trts = if (available.n) NA else NULL, events.trts = if (available.events) NA else NULL, 
+        n.arms = NA, multiarm = NA, studies = studies, narms = narms, 
+        designs = unique(sort(designs$design)), comps = comps, 
+        k.comps = NA, n.comps = NA, events.comps = NA, na.unident = na.unident, 
+        comps.unident = comps.unident, TE.nma.common = NAs, seTE.nma.common = NAs, 
+        lower.nma.common = NAs, upper.nma.common = NAs, statistic.nma.common = NAs, 
+        pval.nma.common = NAs, TE.cnma.common = res.c$comparisons$TE[o], 
+        seTE.cnma.common = res.c$comparisons$seTE[o], lower.cnma.common = res.c$comparisons$lower[o], 
+        upper.cnma.common = res.c$comparisons$upper[o], statistic.cnma.common = res.c$comparisons$statistic[o], 
+        pval.cnma.common = res.c$comparisons$p[o], TE.common = res.c$all.comparisons$TE, 
+        seTE.common = res.c$all.comparisons$seTE, lower.common = res.c$all.comparisons$lower, 
+        upper.common = res.c$all.comparisons$upper, statistic.common = res.c$all.comparisons$statistic, 
+        pval.common = res.c$all.comparisons$p, TE.nma.random = NAs, 
+        seTE.nma.random = NAs, lower.nma.random = NAs, upper.nma.random = NAs, 
+        statistic.nma.random = NAs, pval.nma.random = NAs, TE.cnma.random = res.r$comparisons$TE[o], 
+        seTE.cnma.random = res.r$comparisons$seTE[o], lower.cnma.random = res.r$comparisons$lower[o], 
+        upper.cnma.random = res.r$comparisons$upper[o], statistic.cnma.random = res.r$comparisons$statistic[o], 
+        pval.cnma.random = res.r$comparisons$p[o], TE.random = res.r$all.comparisons$TE, 
+        seTE.random = res.r$all.comparisons$seTE, lower.random = res.r$all.comparisons$lower, 
+        upper.random = res.r$all.comparisons$upper, statistic.random = res.r$all.comparisons$statistic, 
+        pval.random = res.r$all.comparisons$p, Comp.common = unname(res.c$components$TE), 
+        seComp.common = unname(res.c$components$seTE), lower.Comp.common = unname(res.c$components$lower), 
+        upper.Comp.common = unname(res.c$components$upper), statistic.Comp.common = unname(res.c$components$statistic), 
+        pval.Comp.common = unname(res.c$components$p), Comp.random = unname(res.r$components$TE), 
+        seComp.random = unname(res.r$components$seTE), lower.Comp.random = unname(res.r$components$lower), 
+        upper.Comp.random = unname(res.r$components$upper), statistic.Comp.random = unname(res.r$components$statistic), 
+        pval.Comp.random = unname(res.r$components$p), Comb.common = unname(res.c$combinations$TE), 
+        seComb.common = unname(res.c$combinations$seTE), lower.Comb.common = unname(res.c$combinations$lower), 
+        upper.Comb.common = unname(res.c$combinations$upper), 
+        statistic.Comb.common = unname(res.c$combinations$statistic), 
+        pval.Comb.common = unname(res.c$combinations$p), Comb.random = unname(res.r$combinations$TE), 
+        seComb.random = unname(res.r$combinations$seTE), lower.Comb.random = unname(res.r$combinations$lower), 
+        upper.Comb.random = unname(res.r$combinations$upper), 
+        statistic.Comb.random = unname(res.r$combinations$statistic), 
+        pval.Comb.random = unname(res.r$combinations$p), Q.additive = res.c$Q.additive, 
+        df.Q.additive = df.Q.additive, pval.Q.additive = res.c$pval.Q.additive, 
+        tau = tau, I2 = res.c$I2, lower.I2 = res.c$lower.I2, 
+        upper.I2 = res.c$upper.I2, Q.standard = Q, df.Q.standard = df.Q, 
+        pval.Q.standard = pval.Q, Q.diff = Q.diff, df.Q.diff = df.Q.diff, 
+        pval.Q.diff = pval.Q.diff, W.matrix.common = W.matrix.common, 
+        W.matrix.random = W.matrix.random, A.matrix = A.matrix, 
+        X.matrix = X.matrix, B.matrix = B.matrix, C.matrix = C.matrix, 
+        L.matrix.common = res.c$L.matrix, Lplus.matrix.common = res.c$Lplus.matrix, 
+        L.matrix.random = res.r$L.matrix, Lplus.matrix.random = res.r$Lplus.matrix, 
+        H.matrix.common = res.c$H.matrix[o, o, drop = FALSE], 
+        H.matrix.random = res.r$H.matrix[o, o, drop = FALSE], 
+        n.matrix = NULL, events.matrix = NULL, Cov.common = res.c$Cov, 
+        Cov.random = res.r$Cov, sm = sm, method = "Inverse", 
+        level = level, level.ma = level.ma, common = common, 
+        random = random, reference.group = reference.group, baseline.reference = baseline.reference, 
+        all.treatments = NULL, seq = seq, method.tau = "DL", 
+        tau.preset = tau.preset, tol.multiarm = tol.multiarm, 
+        details.chkmultiarm = details.chkmultiarm, sep.trts = sep.trts, 
+        sep.comps = sep.comps, nchar.comps = nchar.comps, sep.ia = sep.ia, 
+        inactive = inactive, func.inverse = deparse(substitute(func.inverse)), 
+        overall.hetstat = overall.hetstat, backtransf = backtransf, 
+        title = title, call = match.call(), version = packageDescription("netmeta")$Version)
+    class(res) <- c("discomb", "netcomb")
+    if (any(res$narms > 2)) {
+        tdata1 <- data.frame(studlab = res$studlab, .order = seq(along = res$studlab))
+        tdata2 <- data.frame(studlab = res$studies, narms = res$narms)
+        tdata12 <- merge(tdata1, tdata2, by = "studlab", all.x = TRUE, 
+            all.y = FALSE, sort = FALSE)
+        tdata12 <- tdata12[order(tdata12$.order), ]
+        res$n.arms <- tdata12$narms
+        res$multiarm <- tdata12$narms > 2
+    }
+    else {
+        res$n.arms <- rep(2, length(res$studlab))
+        res$multiarm <- rep(FALSE, length(res$studlab))
+    }
+    l1 <- length(res$treat1)
+    tab.trts <- table(longarm(res$treat1, res$treat2, rep(1, 
+        l1), rep(2, l1), rep(1, l1), rep(2, l1), studlab = res$studlab)$treat)
+    res$k.trts <- as.numeric(tab.trts)
+    names(res$k.trts) <- names(tab.trts)
+    if (keepdata) {
+        data$.design <- designs(data$.treat1, data$.treat2, data$.studlab, 
+            sep = sep.trts)$design
+        res$data <- merge(data, data.frame(.studlab = res$studies, 
+            .narms = res$narms), by = ".studlab", stringsAsFactors = FALSE)
+        if (isCol(res$data, ".subset")) 
+            sel.s <- res$data$.subset
+        else sel.s <- rep(TRUE, nrow(res$data))
+        res$data$.seTE.adj.common <- NA
+        res$data$.seTE.adj.random <- NA
+        res$data$.seTE.adj.common[sel.s] <- res$seTE.adj.common
+        res$data$.seTE.adj.random[sel.s] <- res$seTE.adj.random
+        res$data <- res$data[order(res$data$.order), ]
+        res$data$.order <- NULL
+    }
+    if (available.n) {
+        res$n.matrix <- netmatrix(res, n1 + n2, func = "sum")
+        dat.n <- data.frame(studlab = c(studlab, studlab), treat = c(treat1, 
+            treat2), n = c(n1, n2))
+        dat.n <- dat.n[!duplicated(dat.n[, c("studlab", "treat")]), 
+            ]
+        dat.n <- by(dat.n$n, dat.n$treat, sum, na.rm = TRUE)
+        res$n.trts <- as.vector(dat.n[trts])
+        names(res$n.trts) <- trts
+    }
+    if (available.events) {
+        res$events.matrix <- netmatrix(res, event1 + event2, 
+            func = "sum")
+        dat.e <- data.frame(studlab = c(studlab, studlab), treat = c(treat1, 
+            treat2), n = c(event1, event2))
+        dat.e <- dat.e[!duplicated(dat.e[, c("studlab", "treat")]), 
+            ]
+        dat.e <- by(dat.e$n, dat.e$treat, sum, na.rm = TRUE)
+        res$events.trts <- as.vector(dat.e[trts])
+        names(res$events.trts) <- trts
+    }
+    res$fixed <- res$common
+    res$comb.fixed <- res$common
+    res$comb.random <- res$random
+    res$seTE.adj.fixed <- res$seTE.adj.common
+    res$TE.nma.fixed <- res$TE.nma.common
+    res$seTE.nma.fixed <- res$seTE.nma.common
+    res$lower.nma.fixed <- res$lower.nma.common
+    res$upper.nma.fixed <- res$upper.nma.common
+    res$statistic.nma.fixed <- res$statistic.nma.common
+    res$pval.nma.fixed <- res$pval.nma.common
+    res$TE.cnma.fixed <- res$TE.cnma.common
+    res$seTE.cnma.fixed <- res$seTE.cnma.common
+    res$lower.cnma.fixed <- res$lower.cnma.common
+    res$upper.cnma.fixed <- res$upper.cnma.common
+    res$statistic.cnma.fixed <- res$statistic.cnma.common
+    res$pval.cnma.fixed <- res$pval.cnma.common
+    res$TE.fixed <- res$TE.common
+    res$seTE.fixed <- res$seTE.common
+    res$lower.fixed <- res$lower.common
+    res$upper.fixed <- res$upper.common
+    res$statistic.fixed <- res$statistic.common
+    res$pval.fixed <- res$pval.common
+    res$Comp.fixed <- res$Comp.common
+    res$seComp.fixed <- res$seComp.common
+    res$lower.Comp.fixed <- res$lower.Comp.common
+    res$upper.Comp.fixed <- res$upper.Comp.common
+    res$statistic.Comp.fixed <- res$statistic.Comp.common
+    res$pval.Comp.fixed <- res$pval.Comp.common
+    res$Comb.fixed <- res$Comb.common
+    res$seComb.fixed <- res$seComb.common
+    res$lower.Comb.fixed <- res$lower.Comb.common
+    res$upper.Comb.fixed <- res$upper.Comb.common
+    res$statistic.Comb.fixed <- res$statistic.Comb.common
+    res$pval.Comb.fixed <- res$pval.Comb.common
+    res$L.matrix.fixed <- res$L.matrix.common
+    res$Lplus.matrix.fixed <- res$Lplus.matrix.common
+    res$H.matrix.fixed <- res$H.matrix.common
+    res
+}
+<bytecode: 0x0000022e6b8597b8>
+<environment: namespace:netmeta>

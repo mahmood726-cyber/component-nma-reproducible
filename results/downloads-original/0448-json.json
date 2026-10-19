@@ -1,0 +1,110 @@
+{
+  "comps": [
+    "aerobic exercise",
+    "aquatic exercise",
+    "diathermy (high)",
+    "diathermy (low)",
+    "education",
+    "electrical stimulation",
+    "no treatment",
+    "placebo",
+    "proprioception exercise",
+    "strength exercise",
+    "ultrasound"
+  ],
+  "tau2": 0.960165549187366,
+  "Q": 307.3282571075593,
+  "df": 58,
+  "components": {
+    "aerobic exercise": {
+      "est": -0.6875,
+      "se": null
+    },
+    "aquatic exercise": {
+      "est": -1.140625,
+      "se": null
+    },
+    "diathermy (high)": {
+      "est": -0.609375,
+      "se": null
+    },
+    "diathermy (low)": {
+      "est": -0.890625,
+      "se": null
+    },
+    "education": {
+      "est": -0.8125,
+      "se": null
+    },
+    "electrical stimulation": {
+      "est": -0.921875,
+      "se": null
+    },
+    "no treatment": {
+      "est": 0.078125,
+      "se": null
+    },
+    "placebo": {
+      "est": 0.890625,
+      "se": null
+    },
+    "proprioception exercise": {
+      "est": -0.859375,
+      "se": null
+    },
+    "strength exercise": {
+      "est": -1.140625,
+      "se": null
+    },
+    "ultrasound": {
+      "est": 0.109375,
+      "se": null
+    }
+  },
+  "combinations": {
+    "aerobic exercise": {
+      "est": -0.6875,
+      "se": 0
+    },
+    "aquatic exercise": {
+      "est": -1.140625,
+      "se": 0
+    },
+    "diathermy (high)": {
+      "est": -0.609375,
+      "se": 0
+    },
+    "diathermy (low)": {
+      "est": -0.890625,
+      "se": 0
+    },
+    "education": {
+      "est": -0.8125,
+      "se": 0
+    },
+    "electrical stimulation": {
+      "est": -0.921875,
+      "se": 0
+    },
+    "no treatment": {
+      "est": 0.078125,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0.890625,
+      "se": 0
+    },
+    "proprioception exercise": {
+      "est": -0.859375,
+      "se": 0
+    },
+    "strength exercise": {
+      "est": -1.140625,
+      "se": 0
+    },
+    "ultrasound": {
+      "est": 0.109375,
+      "se": 0
+    }
+  }
+}

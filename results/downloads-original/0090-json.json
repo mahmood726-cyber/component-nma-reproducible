@@ -1,0 +1,186 @@
+{
+  "comps": [
+    "face-to-face cbt",
+    "face-to-face interpsy",
+    "face-to-face pst",
+    "face-to-face psychodyn",
+    "hypericum",
+    "ind drug",
+    "low-dose sari",
+    "nassa",
+    "no contact cbt",
+    "nri",
+    "other face-to-face",
+    "placebo",
+    "remote cbt",
+    "rmao-a",
+    "self-help cbt",
+    "snri",
+    "ssri",
+    "tca",
+    "uc"
+  ],
+  "tau2": 0.015716280122946204,
+  "Q": 69.949526290335,
+  "df": 60,
+  "components": {
+    "face-to-face cbt": {
+      "est": 2.8903717578962187,
+      "se": 0.9304387567824959
+    },
+    "face-to-face interpsy": {
+      "est": 2.2522456352744484,
+      "se": 1.0320694405334636
+    },
+    "face-to-face pst": {
+      "est": 2.3541896069010875,
+      "se": 1.0127245756455283
+    },
+    "face-to-face psychodyn": {
+      "est": -0.5,
+      "se": null
+    },
+    "hypericum": {
+      "est": 0,
+      "se": null
+    },
+    "ind drug": {
+      "est": 3.032219162041997,
+      "se": 1.0467096165937833
+    },
+    "low-dose sari": {
+      "est": 0.75,
+      "se": null
+    },
+    "nassa": {
+      "est": 0,
+      "se": null
+    },
+    "no contact cbt": {
+      "est": 2.7362596608834338,
+      "se": 0.9639298491896199
+    },
+    "nri": {
+      "est": -0.5,
+      "se": null
+    },
+    "other face-to-face": {
+      "est": 2.748339375539956,
+      "se": 0.9540606473634872
+    },
+    "placebo": {
+      "est": -0.25,
+      "se": null
+    },
+    "remote cbt": {
+      "est": 2.9261336722957196,
+      "se": 0.9485084254753212
+    },
+    "rmao-a": {
+      "est": -0.25,
+      "se": null
+    },
+    "self-help cbt": {
+      "est": 2.830327310604872,
+      "se": 0.9613616613177093
+    },
+    "snri": {
+      "est": -0.5,
+      "se": null
+    },
+    "ssri": {
+      "est": -0.5,
+      "se": null
+    },
+    "tca": {
+      "est": 0,
+      "se": null
+    },
+    "uc": {
+      "est": 2.3149688937478032,
+      "se": 0.9458701956500745
+    }
+  },
+  "combinations": {
+    "face-to-face cbt": {
+      "est": 2.8903717578962187,
+      "se": 0.9304387567824959
+    },
+    "face-to-face cbt+ssri": {
+      "est": 2.3903717578962187,
+      "se": 0
+    },
+    "face-to-face interpsy": {
+      "est": 2.2522456352744484,
+      "se": 1.0320694405334636
+    },
+    "face-to-face pst": {
+      "est": 2.3541896069010875,
+      "se": 1.0127245756455283
+    },
+    "face-to-face psychodyn": {
+      "est": -0.5,
+      "se": 0
+    },
+    "hypericum": {
+      "est": 0,
+      "se": 0
+    },
+    "ind drug": {
+      "est": 3.032219162041997,
+      "se": 1.0467096165937833
+    },
+    "low-dose sari": {
+      "est": 0.75,
+      "se": 0
+    },
+    "nassa": {
+      "est": 0,
+      "se": 0
+    },
+    "no contact cbt": {
+      "est": 2.7362596608834338,
+      "se": 0.9639298491896199
+    },
+    "nri": {
+      "est": -0.5,
+      "se": 0
+    },
+    "other face-to-face": {
+      "est": 2.748339375539956,
+      "se": 0.9540606473634872
+    },
+    "placebo": {
+      "est": -0.25,
+      "se": 0
+    },
+    "remote cbt": {
+      "est": 2.9261336722957196,
+      "se": 0.9485084254753212
+    },
+    "rmao-a": {
+      "est": -0.25,
+      "se": 0
+    },
+    "self-help cbt": {
+      "est": 2.830327310604872,
+      "se": 0.9613616613177093
+    },
+    "snri": {
+      "est": -0.5,
+      "se": 0
+    },
+    "ssri": {
+      "est": -0.5,
+      "se": 0
+    },
+    "tca": {
+      "est": 0,
+      "se": 0
+    },
+    "uc": {
+      "est": 2.3149688937478032,
+      "se": 0.9458701956500745
+    }
+  }
+}

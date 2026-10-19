@@ -1,0 +1,36 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                       | value                             |
+|---------------------------|-----------------------------------|
+| comps                     | ["ics","laba","tio-hh","tio-smi"] |
+| tau2                      | 0                                 |
+| Q                         | 19.883201650589214                |
+| df                        | 27                                |
+| components.ics.est        | -0.2443405273877324               |
+| components.ics.se         | 0.14352450947473916               |
+| components.laba.est       | 0.011522120152120272              |
+| components.laba.se        | 0.15797597342905081               |
+| components.tio-hh.est     | -0.06519341849979547              |
+| components.tio-hh.se      | 0.07090655642415236               |
+| components.tio-smi.est    | 0.4081760205652836                |
+| components.tio-smi.se     | 0.18727044459884148               |
+| combinations.ics.est      | -0.2443405273877324               |
+| combinations.ics.se       | 0.14352450947473916               |
+| combinations.ics+laba.est | -0.23281840723561215              |
+| combinations.ics+laba.se  | 0.1871005341378474                |
+| combinations.laba.est     | 0.011522120152120272              |
+| combinations.laba.se      | 0.15797597342905081               |
+| combinations.tio-hh.est   | -0.06519341849979547              |
+| combinations.tio-hh.se    | 0.07090655642415236               |
+| combinations.tio-smi.est  | 0.4081760205652836                |
+| combinations.tio-smi.se   | 0.18727044459884148               |

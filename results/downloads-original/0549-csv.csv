@@ -1,0 +1,27 @@
+key,value
+comps,"[""bone grafts"",""emd"",""gtr"",""prp""]"
+tau2,0.27671092997256536
+Q,236.4445362390589
+df,65
+components.bone grafts.est,0.16076469657940298
+components.bone grafts.se,0.155782328804894
+components.emd.est,0.8245668471739062
+components.emd.se,0.12580201647092482
+components.gtr.est,0.8742965857872834
+components.gtr.se,0.11457808813186598
+components.prp.est,-0.018870844743946066
+components.prp.se,0.28641315541379936
+combinations.bone grafts+emd.est,0.9853315437533091
+combinations.bone grafts+emd.se,0.1863168215960117
+combinations.bone grafts+emd+prp.est,0.966460699009363
+combinations.bone grafts+emd+prp.se,0.3416818016864949
+combinations.bone grafts+gtr.est,1.0350612823666865
+combinations.bone grafts+gtr.se,0.1720935522737589
+combinations.bone grafts+gtr+prp.est,1.0161904376227404
+combinations.bone grafts+gtr+prp.se,0.3341387231798945
+combinations.emd.est,0.8245668471739062
+combinations.emd.se,0.12580201647092482
+combinations.emd+gtr.est,1.6988634329611896
+combinations.emd+gtr.se,0.18936177281539884
+combinations.gtr.est,0.8742965857872834
+combinations.gtr.se,0.11457808813186598

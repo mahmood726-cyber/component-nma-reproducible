@@ -1,0 +1,13 @@
+key,value
+comps,"[""chlorpheniramine"",""doxylamine""]"
+tau2,0
+Q,5.39577347409819
+df,6
+components.chlorpheniramine.est,0.2303081691176609
+components.chlorpheniramine.se,0.06207626833763308
+components.doxylamine.est,0.23227306272102258
+components.doxylamine.se,0.08846732330297886
+combinations.chlorpheniramine.est,0.2303081691176609
+combinations.chlorpheniramine.se,0.06207626833763308
+combinations.doxylamine.est,0.23227306272102258
+combinations.doxylamine.se,0.08846732330297886

@@ -1,0 +1,13 @@
+key,value
+comps,"[""placebo"",""warfarin""]"
+tau2,0
+Q,2.029551030130513
+df,4
+components.placebo.est,-0.5672021433545495
+components.placebo.se,0.6717455505854477
+components.warfarin.est,-1.5356717621944913
+components.warfarin.se,0.6482046778447613
+combinations.placebo.est,-0.5672021433545495
+combinations.placebo.se,0.6717455505854477
+combinations.warfarin.est,-1.5356717621944913
+combinations.warfarin.se,0.6482046778447613

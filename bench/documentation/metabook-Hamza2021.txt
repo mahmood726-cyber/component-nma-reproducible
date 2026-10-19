@@ -1,0 +1,95 @@
+_A_n_t_i_d_e_p_r_e_s_s_a_n_t_s _D_a_t_a_s_e_t _f_o_r _D_o_s_e-_R_e_s_p_o_n_s_e _N_e_t_w_o_r_k _M_e_t_a-_A_n_a_l_y_s_i_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Results from 170 trials examining 20 antidepressants and placebo
+     in adults with major depressive disorder.
+
+_U_s_a_g_e:
+
+     Hamza2021
+     
+_F_o_r_m_a_t:
+
+     The data frame contains the following columns:
+
+       *id*          'numeric'    study ID                                             
+       *drug*        'character'  treatment                                            
+       *dose*        'numeric'    drug dose                                            
+       *resp*        'numeric'    number of responders in treatment arm                
+       *total*       'numeric'    sample size in treatment arm                         
+       *rob*         'character'  risk of bias (low / high)                            
+       *age*         'numeric'    mean age in treatment arm                            
+       *year*        'numeric'    year of publication                                  
+       *year.c*      'numeric'    year centered around 2010                            
+       *class*       'character'  drug class                                           
+       *dose_label*  'ordered'    drug dose as licensed or lower / higher              
+       *dose_flux*   'numeric'    fluoxetine-equivalent dose                           
+       *varlnOR*     'character'  variance of log odds ratio (comparison to reference) 
+      
+_D_e_t_a_i_l_s:
+
+     This dataset goes back to the network meta-analysis by Cipriani et
+     al. (2018) evaluting 20 antidepressants and placebo in adults with
+     major depressive disorder. The primary outcome is the response
+     rate, defined as the proportion of patients achieving at least a
+     50% reduction in symptoms.
+
+     The dataset and code to conduct a Bayesian dose-response network
+     meta-analyis is publicly available on Zenodo (Hamza et al., 2021).
+     The data have been used in two methodological publications on
+     statistical methods for dose-response network meta-analysis (Hamza
+     et al., 2024; Petropoulou et al., 2025). A reduced version of this
+     data set is available in R package *netdose* under the name
+     'antidepressants'.
+
+     The data set is in long arm-based format, i.e., one treatment arm
+     per row.
+
+_C_o_n_c_e_p_t_s:
+
+     medicine, depression, odds ratios, component network meta-analysis
+
+_S_o_u_r_c_e:
+
+     Hamza T, Furukawa TA, Orsini N, Cipriani A, Iglesias C, Salanti G
+     (2021): A dose-effect network meta-analysis model: an application
+     in antidepressants. _Zenodo_. doi:10.5281/zenodo.5866456
+     <https://doi.org/10.5281/zenodo.5866456>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Cipriani A et al. (2018): Comparative efficacy and acceptability
+     of 21 antidepressant drugs for the acute treatment of adults with
+     major depressive disorder: a systematic review and network
+     meta-analysis. _Lancet_, *391*, 1357-66
+
+     Hamza T, Furukawa TA, Orsini N, Cipriani A, Iglesias CP, Salanti G
+     (2024): A dose<e2><80><93>effect network meta-analysis model with application
+     in antidepressants using restricted cubic splines. _Statistical
+     Methods in Medical Research_, *33*, 1461-72
+
+     Petropoulou M, R<c3><bc>cker G, Schwarzer G (2026): Network meta-analysis
+     with dose-response relationships. _BMC Medical Research
+     Methodology_, *26*, 17
+
+_E_x_a_m_p_l_e_s:
+
+     if (requireNamespace("netdose", quietly = TRUE)) {
+     # Load netdose package
+     library("netdose")
+     
+     pw <- pairwise(agent = drug, dose = dose, studlab = id,
+       event = resp, n = total, data = Hamza2021, sm = "OR")
+     
+     ## Not run:
+     
+     # Do not execute without user input due to the long run time
+     drnma.quad <- netdose(TE, seTE, agent1, dose1, agent2, dose2, studlab,
+       data = pw, method = "quadratic")
+     dotplot(drnma.quad)
+     plot(drnma.quad)
+     ## End(Not run)
+     
+     }
+     

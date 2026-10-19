@@ -1,0 +1,61 @@
+_A_m_l_o_d_i_p_i_n_e _f_o_r _W_o_r_k _C_a_p_a_c_i_t_y
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Meta-analysis on the effect of amlodipine on work capacity.
+
+     This meta-analysis is used as a data example in Hartung and Knapp
+     (2001).
+
+_F_o_r_m_a_t:
+
+     A data frame with the following columns:
+
+           *_study_*  study label                                
+          *_n.amlo_*  number of observations in amlodipine group 
+       *_mean.amlo_*  estimated mean in amlodipine group         
+        *_var.amlo_*  variance in amlodipine group               
+          *_n.plac_*  number of observations in placebo group    
+       *_mean.plac_*  estimated mean in placebo group            
+        *_var.plac_*  variance in placebo group                  
+      
+_S_o_u_r_c_e:
+
+     Hartung J & Knapp G (2001): On tests of the overall treatment
+     effect in meta-analysis with normally distributed responses.
+     _Statistics in Medicine_, *20*, 1771-82
+
+_S_e_e _A_l_s_o:
+
+     'metacont'
+
+_E_x_a_m_p_l_e_s:
+
+     data(amlodipine)
+     
+     ma <- metacont(n.amlo, mean.amlo, sqrt(var.amlo),
+       n.plac, mean.plac, sqrt(var.plac),
+       data = amlodipine, studlab = study,
+       method.tau = "DL")
+     ma.hk <- update(ma, method.random.ci = "HK")
+     
+     # Same results for mean difference as in Table III in Hartung and
+     # Knapp (2001)
+     #
+     vars.common <- c("TE.common", "lower.common", "upper.common")
+     vars.random <- c("TE.random", "lower.random", "upper.random")
+     #
+     res.common <- as.data.frame(ma[vars.common])
+     names(res.common) <- vars.random
+     #
+     res.md <- rbind(res.common,
+       as.data.frame(ma[vars.random]),
+       as.data.frame(ma.hk[vars.random]))
+     #
+     res.md <- round(res.md, 5)
+     #
+     row.names(res.md) <- c("CE", "RE", "RE (HaKn)")
+     names(res.md) <- c("Absolute difference", "CI lower", "CI upper")
+     #
+     res.md
+     

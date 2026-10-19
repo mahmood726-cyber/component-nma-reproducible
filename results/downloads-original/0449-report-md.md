@@ -1,0 +1,58 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                                      | value                                                                                                                                                                                  |
+|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| comps                                    | ["aerobic exercise","aquatic exercise","diathermy (high)","diathermy (low)","education","electrical stimulation","placebo","proprioception exercise","strength exercise","ultrasound"] |
+| tau2                                     | 0.4775371457319373                                                                                                                                                                     |
+| Q                                        | 287.97774640947557                                                                                                                                                                     |
+| df                                       | 59                                                                                                                                                                                     |
+| components.aerobic exercise.est          | -0.8949445217908085                                                                                                                                                                    |
+| components.aerobic exercise.se           | 0.22702327915998818                                                                                                                                                                    |
+| components.aquatic exercise.est          | -0.8693634308367391                                                                                                                                                                    |
+| components.aquatic exercise.se           | 0.35123661802029393                                                                                                                                                                    |
+| components.diathermy (high).est          | -0.8102329273479361                                                                                                                                                                    |
+| components.diathermy (high).se           | 0.7946059177786192                                                                                                                                                                     |
+| components.diathermy (low).est           | -1.0596158619468166                                                                                                                                                                    |
+| components.diathermy (low).se            | 0.7949755997444458                                                                                                                                                                     |
+| components.education.est                 | -0.4916758011690573                                                                                                                                                                    |
+| components.education.se                  | 0.2532720681827405                                                                                                                                                                     |
+| components.electrical stimulation.est    | -0.6839577703096471                                                                                                                                                                    |
+| components.electrical stimulation.se     | 0.4156224785891396                                                                                                                                                                     |
+| components.placebo.est                   | 0.5524206137922917                                                                                                                                                                     |
+| components.placebo.se                    | 0.6145730790807038                                                                                                                                                                     |
+| components.proprioception exercise.est   | -1.0805007320867297                                                                                                                                                                    |
+| components.proprioception exercise.se    | 0.28251983667333647                                                                                                                                                                    |
+| components.strength exercise.est         | -0.9220879505024178                                                                                                                                                                    |
+| components.strength exercise.se          | 0.18948154501504041                                                                                                                                                                    |
+| components.ultrasound.est                | -0.24996153415695566                                                                                                                                                                   |
+| components.ultrasound.se                 | 0.8671961798689293                                                                                                                                                                     |
+| combinations.aerobic exercise.est        | -0.8949445217908085                                                                                                                                                                    |
+| combinations.aerobic exercise.se         | 0.22702327915998818                                                                                                                                                                    |
+| combinations.aquatic exercise.est        | -0.8693634308367391                                                                                                                                                                    |
+| combinations.aquatic exercise.se         | 0.35123661802029393                                                                                                                                                                    |
+| combinations.diathermy (high).est        | -0.8102329273479361                                                                                                                                                                    |
+| combinations.diathermy (high).se         | 0.7946059177786192                                                                                                                                                                     |
+| combinations.diathermy (low).est         | -1.0596158619468166                                                                                                                                                                    |
+| combinations.diathermy (low).se          | 0.7949755997444458                                                                                                                                                                     |
+| combinations.education.est               | -0.4916758011690573                                                                                                                                                                    |
+| combinations.education.se                | 0.2532720681827405                                                                                                                                                                     |
+| combinations.electrical stimulation.est  | -0.6839577703096471                                                                                                                                                                    |
+| combinations.electrical stimulation.se   | 0.4156224785891396                                                                                                                                                                     |
+| combinations.placebo.est                 | 0.5524206137922917                                                                                                                                                                     |
+| combinations.placebo.se                  | 0.6145730790807038                                                                                                                                                                     |
+| combinations.proprioception exercise.est | -1.0805007320867297                                                                                                                                                                    |
+| combinations.proprioception exercise.se  | 0.28251983667333647                                                                                                                                                                    |
+| combinations.strength exercise.est       | -0.9220879505024178                                                                                                                                                                    |
+| combinations.strength exercise.se        | 0.18948154501504041                                                                                                                                                                    |
+| combinations.ultrasound.est              | -0.24996153415695566                                                                                                                                                                   |
+| combinations.ultrasound.se               | 0.8671961798689293                                                                                                                                                                     |

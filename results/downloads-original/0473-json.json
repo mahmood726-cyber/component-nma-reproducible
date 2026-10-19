@@ -1,0 +1,65 @@
+{
+  "comps": [
+    "antecubital vein",
+    "lidocaine pretreatment",
+    "lidocaine-propofol admixture",
+    "pretreatment with ketamine",
+    "pretreatment with non-steroidal anti-inflammatory",
+    "pretreatment with opioids"
+  ],
+  "tau2": 0.38802826703259125,
+  "Q": 220.12321672407148,
+  "df": 102,
+  "components": {
+    "antecubital vein": {
+      "est": -2.4394983194220634,
+      "se": 0.4256150375670968
+    },
+    "lidocaine pretreatment": {
+      "est": -1.588045659315276,
+      "se": 0.16801290230013052
+    },
+    "lidocaine-propofol admixture": {
+      "est": -1.686744658694028,
+      "se": 0.1414030703691141
+    },
+    "pretreatment with ketamine": {
+      "est": -2.122421402137431,
+      "se": 0.29630802794504213
+    },
+    "pretreatment with non-steroidal anti-inflammatory": {
+      "est": -0.9470377076794452,
+      "se": 0.28140767021370766
+    },
+    "pretreatment with opioids": {
+      "est": -1.50030839200159,
+      "se": 0.21881958262443896
+    }
+  },
+  "combinations": {
+    "antecubital vein": {
+      "est": -2.4394983194220634,
+      "se": 0.4256150375670968
+    },
+    "lidocaine pretreatment": {
+      "est": -1.588045659315276,
+      "se": 0.16801290230013052
+    },
+    "lidocaine-propofol admixture": {
+      "est": -1.686744658694028,
+      "se": 0.1414030703691141
+    },
+    "pretreatment with ketamine": {
+      "est": -2.122421402137431,
+      "se": 0.29630802794504213
+    },
+    "pretreatment with non-steroidal anti-inflammatory": {
+      "est": -0.9470377076794452,
+      "se": 0.28140767021370766
+    },
+    "pretreatment with opioids": {
+      "est": -1.50030839200159,
+      "se": 0.21881958262443896
+    }
+  }
+}

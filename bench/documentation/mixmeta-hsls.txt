@@ -1,0 +1,57 @@
+_H_i_g_h _S_c_h_o_o_l _L_o_n_g_i_t_u_d_i_n_a_l _S_t_u_d_y
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This is a nationally representative, longitudinal study of more
+     than 21,000 9th graders in 944 schools who will be followed
+     through their secondary and postsecondary years. The data are used
+     for testing whether sex, socioeconomic status and sex by
+     socio-economic status interaction are predictive of the
+     mathematics standardized score in each of the eight race groups.
+
+_U_s_a_g_e:
+
+     hsls
+     
+_F_o_r_m_a_t:
+
+     A data frame with 8 observations on the following 10 variables:
+
+        * 'race': race group.
+
+        * 'b1, b2, b3': estimated regression coefficients for sex,
+          socio-economic status and sex by socio-economic status
+          interaction, respectively, on the mathematics standardized
+          score.
+
+        * 'V11, V22, V33': variances of the estimated coefficients.
+
+        * 'V12, V13, V23': covariances of the estimated coefficients.
+
+_S_o_u_r_c_e:
+
+     Chen H, Manning AK, Dupuis J (2012). A method of moments estimator
+     for random effect multivariate meta-analysis. _Biometrics_.
+     *68*(4):1278-1284.
+
+     Sera F, Armstrong B, Blangiardo M, Gasparrini A (2019). An
+     extended mixed-effects framework for meta-analysis._Statistics in
+     Medicine_. 2019;38(29):5429-5444. [Freely available *here*].
+
+_E_x_a_m_p_l_e_s:
+
+     ### REPRODUCE THE RESULTS IN CHEN ET AL. (2012)
+     
+     # INSPECT THE DATA
+     hsls
+     
+     # FIXED-EFFECTS MODEL
+     S <- as.matrix(hsls[5:10])
+     mod1 <- mixmeta(cbind(b1,b2,b3), S, data=hsls, method="fixed")
+     summary(mod1)
+     
+     # MM MODEL
+     mod2 <- mixmeta(cbind(b1,b2,b3), S,data=hsls, method="mm")
+     summary(mod2)
+     mod2$Psi
+     

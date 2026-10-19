@@ -1,0 +1,77 @@
+{
+  "engine": "Node VM + linkedom",
+  "node": "v24.13.0",
+  "linkedom": "0.18.12",
+  "executed": [
+    "shared/build-info.js",
+    "shared/ma-studies-v1.js",
+    "shared/ma-comparisons-v1.js",
+    "shared/app-flow.js",
+    "shared/autosave.js",
+    "component-nma/index.html:inline-5",
+    "shared/toast.js",
+    "hub/shared/a11y-landmarks.js",
+    "hub/shared/results-export.js",
+    "component-nma/index.html:inline-10",
+    "component-nma/index.html:inline-11",
+    "component-nma/index.html:inline-12",
+    "component-nma/index.html:inline-13"
+  ],
+  "omitted": [
+    {
+      "file": "hub/shared/chart-export-auto.js",
+      "reason": "requires browser geometry, computed styles and canvas; source reviewed, visual download behavior unverified"
+    }
+  ],
+  "defaultResult": {
+    "comps": [
+      "drug",
+      "education",
+      "exercise"
+    ],
+    "tau2": 0,
+    "Q": 0.12006102473839246,
+    "df": 5,
+    "components": {
+      "drug": {
+        "est": -0.2886713320830224,
+        "se": 0.05781445849016328
+      },
+      "education": {
+        "est": -0.10792642213158277,
+        "se": 0.09675087894956219
+      },
+      "exercise": {
+        "est": -0.17716138984489616,
+        "se": 0.05265169222189345
+      }
+    },
+    "combinations": {
+      "drug": {
+        "est": -0.2886713320830224,
+        "se": 0.05781445849016328
+      },
+      "drug+education": {
+        "est": -0.3965977542146052,
+        "se": 0.08926475924379013
+      },
+      "drug+education+exercise": {
+        "est": -0.5737591440595013,
+        "se": 0.08586348779616264
+      },
+      "drug+exercise": {
+        "est": -0.4658327219279186,
+        "se": 0.08379832681872637
+      },
+      "education+exercise": {
+        "est": -0.2850878119764789,
+        "se": 0.08864325466669488
+      },
+      "exercise": {
+        "est": -0.17716138984489616,
+        "se": 0.05265169222189345
+      }
+    }
+  },
+  "browserLayoutVerified": false
+}

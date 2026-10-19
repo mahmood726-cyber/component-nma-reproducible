@@ -1,0 +1,34 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                 | value                |
+|---------------------|----------------------|
+| comps               | ["aa","c","r","ut"]  |
+| tau2                | 0.048399118358544206 |
+| Q                   | 27.288764584329357   |
+| df                  | 21                   |
+| components.aa.est   | 0.6658251872824092   |
+| components.aa.se    | 0.4572713664011322   |
+| components.c.est    | -0.06390994258212943 |
+| components.c.se     | 0.10748599813668659  |
+| components.r.est    | -0.3952800322209023  |
+| components.r.se     | 0.3454289976273871   |
+| components.ut.est   | -0.49675474539863806 |
+| components.ut.se    | 0.5165441677273609   |
+| combinations.aa.est | 0.6658251872824092   |
+| combinations.aa.se  | 0.4572713664011322   |
+| combinations.c.est  | -0.06390994258212943 |
+| combinations.c.se   | 0.10748599813668659  |
+| combinations.r.est  | -0.3952800322209023  |
+| combinations.r.se   | 0.3454289976273871   |
+| combinations.ut.est | -0.49675474539863806 |
+| combinations.ut.se  | 0.5165441677273609   |

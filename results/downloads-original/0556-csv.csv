@@ -1,0 +1,9 @@
+key,value
+comps,"[""salmeterol""]"
+tau2,0
+Q,0.5646724982659775
+df,1
+components.salmeterol.est,-0.8140311053925858
+components.salmeterol.se,0.927669078939237
+combinations.salmeterol.est,-0.8140311053925858
+combinations.salmeterol.se,0.927669078939237

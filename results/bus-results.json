@@ -1,0 +1,200 @@
+{
+  "original": {
+    "passed": 49,
+    "checks": 63,
+    "failures": [
+      {
+        "key": "bus::empty",
+        "quantity": "refusal_result",
+        "got": {
+          "comps": [
+            "a"
+          ],
+          "tau2": 0,
+          "Q": 0.5000000000000002,
+          "df": 1,
+          "components": {
+            "a": {
+              "est": 0.3500000000000001,
+              "se": 0.07071067811865477
+            }
+          },
+          "combinations": {
+            "a": {
+              "est": 0.3500000000000001,
+              "se": 0.07071067811865477
+            }
+          }
+        },
+        "expected": null,
+        "pass_": false
+      },
+      {
+        "key": "bus::empty",
+        "quantity": "refusal_componentTable",
+        "got": "a0.3500.071[0.211, 0.489]",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::empty",
+        "quantity": "refusal_forestMarkup",
+        "got": "<line x1=\"249.16666666666669\" y1=\"20\" x2=\"249.16666666666669\" y2=\"82\" stroke=\"currentColor\" stroke-dasharray=\"3 3\" opacity=\"0.4\"/><text x=\"210\" y=\"34\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" font-weight=\"600\">[C] a</text><line x1=\"375.36877926079853\" y1=\"30\" x2=\"540.8333333333333\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"454.10105629706595\" y=\"26\" width=\"8\" height=\"8\" fill=\"var(--accent)\"/><text x=\"210\" y=\"60\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" >a</text><line x1=\"375.36877926079853\" y1=\"56\" x2=\"540.8333333333333\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"454.10105629706595\" y=\"52\" width=\"8\" height=\"8\" fill=\"var(--warn)\"/><line x1=\"220\" y1=\"82\" x2=\"570\" y2=\"82\" stroke=\"currentColor\" opacity=\"0.5\"/><text x=\"249.16666666666669\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.00</text><text x=\"249.16666666666669\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.00</text><text x=\"540.8333333333333\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.49</text>",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::unsupported-RD",
+        "quantity": "refusal_result",
+        "got": {
+          "comps": [
+            "a"
+          ],
+          "tau2": 0,
+          "Q": 0.5000000000000002,
+          "df": 1,
+          "components": {
+            "a": {
+              "est": 0.3500000000000001,
+              "se": 0.07071067811865477
+            }
+          },
+          "combinations": {
+            "a": {
+              "est": 0.3500000000000001,
+              "se": 0.07071067811865477
+            }
+          }
+        },
+        "expected": null,
+        "pass_": false
+      },
+      {
+        "key": "bus::unsupported-RD",
+        "quantity": "refusal_componentTable",
+        "got": "a0.3500.071[0.211, 0.489]",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::unsupported-RD",
+        "quantity": "refusal_forestMarkup",
+        "got": "<line x1=\"249.16666666666669\" y1=\"20\" x2=\"249.16666666666669\" y2=\"82\" stroke=\"currentColor\" stroke-dasharray=\"3 3\" opacity=\"0.4\"/><text x=\"210\" y=\"34\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" font-weight=\"600\">[C] a</text><line x1=\"375.36877926079853\" y1=\"30\" x2=\"540.8333333333333\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"454.10105629706595\" y=\"26\" width=\"8\" height=\"8\" fill=\"var(--accent)\"/><text x=\"210\" y=\"60\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" >a</text><line x1=\"375.36877926079853\" y1=\"56\" x2=\"540.8333333333333\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"454.10105629706595\" y=\"52\" width=\"8\" height=\"8\" fill=\"var(--warn)\"/><line x1=\"220\" y1=\"82\" x2=\"570\" y2=\"82\" stroke=\"currentColor\" opacity=\"0.5\"/><text x=\"249.16666666666669\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.00</text><text x=\"249.16666666666669\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.00</text><text x=\"540.8333333333333\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.49</text>",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::multi-arm",
+        "quantity": "refusal_result",
+        "got": {
+          "comps": [
+            "a",
+            "b"
+          ],
+          "tau2": 0,
+          "Q": 1.052141619345943e-32,
+          "df": 1,
+          "components": {
+            "a": {
+              "est": -0.34830669426821576,
+              "se": 0.6485386167139991
+            },
+            "b": {
+              "est": -0.13720112151348496,
+              "se": 0.6570611682981485
+            }
+          },
+          "combinations": {
+            "a": {
+              "est": -0.34830669426821576,
+              "se": 0.6485386167139991
+            },
+            "a+b": {
+              "est": -0.4855078157817007,
+              "se": 0.6186137383191972
+            }
+          }
+        },
+        "expected": null,
+        "pass_": false
+      },
+      {
+        "key": "bus::multi-arm",
+        "quantity": "refusal_componentTable",
+        "got": "a-0.3480.649[-1.619, 0.923]b-0.1370.657[-1.425, 1.151]",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::multi-arm",
+        "quantity": "refusal_forestMarkup",
+        "got": "<line x1=\"423.02177398180726\" y1=\"20\" x2=\"423.02177398180726\" y2=\"134\" stroke=\"currentColor\" stroke-dasharray=\"3 3\" opacity=\"0.4\"/><text x=\"210\" y=\"34\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" font-weight=\"600\">[C] a</text><line x1=\"257.20934896751436\" y1=\"30\" x2=\"517.5079064035679\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"383.35862768554114\" y=\"26\" width=\"8\" height=\"8\" fill=\"var(--accent)\"/><text x=\"210\" y=\"60\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" font-weight=\"600\">[C] b</text><line x1=\"277.11415016142377\" y1=\"56\" x2=\"540.8333333333333\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"404.97374174737854\" y=\"52\" width=\"8\" height=\"8\" fill=\"var(--accent)\"/><text x=\"210\" y=\"86\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" >a</text><line x1=\"257.20934896751436\" y1=\"82\" x2=\"517.5079064035679\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"383.35862768554114\" y=\"78\" width=\"8\" height=\"8\" fill=\"var(--warn)\"/><text x=\"210\" y=\"112\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" >a+b</text><line x1=\"249.16666666666666\" y1=\"108\" x2=\"497.45452423555804\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"369.31059545111236\" y=\"104\" width=\"8\" height=\"8\" fill=\"var(--warn)\"/><line x1=\"220\" y1=\"134\" x2=\"570\" y2=\"134\" stroke=\"currentColor\" opacity=\"0.5\"/><text x=\"249.16666666666666\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">-1.70</text><text x=\"423.02177398180726\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.00</text><text x=\"540.8333333333333\" y=\"150\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">1.15</text>",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::multi-arm",
+        "quantity": "refusal_reason",
+        "got": [
+          "Loaded 3 contrasts from the shared bus."
+        ],
+        "expected": "Multi-arm or repeated-study bus inputs are unsupported: contrast covariance is required.",
+        "pass_": false
+      },
+      {
+        "key": "bus::repeated-study",
+        "quantity": "refusal_result",
+        "got": {
+          "comps": [
+            "a"
+          ],
+          "tau2": 0,
+          "Q": 9.597305860274714e-33,
+          "df": 1,
+          "components": {
+            "a": {
+              "est": -0.34830669426821576,
+              "se": 0.5666378308695502
+            }
+          },
+          "combinations": {
+            "a": {
+              "est": -0.34830669426821576,
+              "se": 0.5666378308695502
+            }
+          }
+        },
+        "expected": null,
+        "pass_": false
+      },
+      {
+        "key": "bus::repeated-study",
+        "quantity": "refusal_componentTable",
+        "got": "a-0.3480.567[-1.459, 0.762]",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::repeated-study",
+        "quantity": "refusal_forestMarkup",
+        "got": "<line x1=\"440.7367148121431\" y1=\"20\" x2=\"440.7367148121431\" y2=\"82\" stroke=\"currentColor\" stroke-dasharray=\"3 3\" opacity=\"0.4\"/><text x=\"210\" y=\"34\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" font-weight=\"600\">[C] a</text><line x1=\"249.16666666666669\" y1=\"30\" x2=\"540.8333333333333\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"391\" y=\"26\" width=\"8\" height=\"8\" fill=\"var(--accent)\"/><text x=\"210\" y=\"60\" text-anchor=\"end\" font-size=\"11\" fill=\"currentColor\" >a</text><line x1=\"249.16666666666669\" y1=\"56\" x2=\"540.8333333333333\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.6\"/><rect x=\"391\" y=\"52\" width=\"8\" height=\"8\" fill=\"var(--warn)\"/><line x1=\"220\" y1=\"82\" x2=\"570\" y2=\"82\" stroke=\"currentColor\" opacity=\"0.5\"/><text x=\"249.16666666666669\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">-1.46</text><text x=\"440.7367148121431\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.00</text><text x=\"540.8333333333333\" y=\"98\" text-anchor=\"middle\" font-size=\"11\" fill=\"currentColor\" opacity=\"0.7\">0.76</text>",
+        "expected": "",
+        "pass_": false
+      },
+      {
+        "key": "bus::repeated-study",
+        "quantity": "refusal_reason",
+        "got": [
+          "Loaded 2 contrasts from the shared bus."
+        ],
+        "expected": "Multi-arm or repeated-study bus inputs are unsupported: contrast covariance is required.",
+        "pass_": false
+      }
+    ]
+  },
+  "patched": {
+    "passed": 63,
+    "checks": 63,
+    "failures": []
+  }
+}

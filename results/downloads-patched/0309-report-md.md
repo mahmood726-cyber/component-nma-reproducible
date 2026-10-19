@@ -1,0 +1,46 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                            | value                                                              |
+|--------------------------------|--------------------------------------------------------------------|
+| comps                          | ["hypericum","low-dose sari","nassa","rmao-a","snri","ssri","tca"] |
+| tau2                           | 0.06441161322052867                                                |
+| Q                              | 66.89962044897338                                                  |
+| df                             | 41                                                                 |
+| components.hypericum.est       | -0.10414035834716157                                               |
+| components.hypericum.se        | 0.13942930993634808                                                |
+| components.low-dose sari.est   | -0.5203870251577619                                                |
+| components.low-dose sari.se    | 0.5678726094833964                                                 |
+| components.nassa.est           | -0.11227757330340637                                               |
+| components.nassa.se            | 0.3790562701429291                                                 |
+| components.rmao-a.est          | 0.17649173354034509                                                |
+| components.rmao-a.se           | 0.30139901129862606                                                |
+| components.snri.est            | 0.5074956048136426                                                 |
+| components.snri.se             | 0.22469182270557497                                                |
+| components.ssri.est            | 0.3483774541535468                                                 |
+| components.ssri.se             | 0.12046449517056294                                                |
+| components.tca.est             | 0.7024463565379978                                                 |
+| components.tca.se              | 0.1331586390047759                                                 |
+| combinations.hypericum.est     | -0.10414035834716157                                               |
+| combinations.hypericum.se      | 0.13942930993634808                                                |
+| combinations.low-dose sari.est | -0.5203870251577619                                                |
+| combinations.low-dose sari.se  | 0.5678726094833964                                                 |
+| combinations.nassa.est         | -0.11227757330340637                                               |
+| combinations.nassa.se          | 0.3790562701429291                                                 |
+| combinations.rmao-a.est        | 0.17649173354034509                                                |
+| combinations.rmao-a.se         | 0.30139901129862606                                                |
+| combinations.snri.est          | 0.5074956048136426                                                 |
+| combinations.snri.se           | 0.22469182270557497                                                |
+| combinations.ssri.est          | 0.3483774541535468                                                 |
+| combinations.ssri.se           | 0.12046449517056294                                                |
+| combinations.tca.est           | 0.7024463565379978                                                 |
+| combinations.tca.se            | 0.1331586390047759                                                 |

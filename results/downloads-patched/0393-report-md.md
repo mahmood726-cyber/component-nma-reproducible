@@ -1,0 +1,42 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                                     | value                                                               |
+|-----------------------------------------|---------------------------------------------------------------------|
+| comps                                   | ["budesonide","fluticasone","formoterol","salmeterol","tiotropium"] |
+| tau2                                    | 0.006945099880489132                                                |
+| Q                                       | 89.03989172965204                                                   |
+| df                                      | 72                                                                  |
+| components.budesonide.est               | -0.3129063978711542                                                 |
+| components.budesonide.se                | 0.08134373017327289                                                 |
+| components.fluticasone.est              | -0.09123884777436621                                                |
+| components.fluticasone.se               | 0.03682013469240953                                                 |
+| components.formoterol.est               | -0.041005696516791035                                               |
+| components.formoterol.se                | 0.07194668729704519                                                 |
+| components.salmeterol.est               | -0.1689474623154076                                                 |
+| components.salmeterol.se                | 0.03377443843790516                                                 |
+| components.tiotropium.est               | -0.35514426623387757                                                |
+| components.tiotropium.se                | 0.05186421882082558                                                 |
+| combinations.budesonide.est             | -0.3129063978711542                                                 |
+| combinations.budesonide.se              | 0.08134373017327289                                                 |
+| combinations.budesonide+formoterol.est  | -0.35391209438794524                                                |
+| combinations.budesonide+formoterol.se   | 0.1069455510698652                                                  |
+| combinations.fluticasone.est            | -0.09123884777436621                                                |
+| combinations.fluticasone.se             | 0.03682013469240953                                                 |
+| combinations.fluticasone+salmeterol.est | -0.26018631008977383                                                |
+| combinations.fluticasone+salmeterol.se  | 0.04866278185242261                                                 |
+| combinations.formoterol.est             | -0.041005696516791035                                               |
+| combinations.formoterol.se              | 0.07194668729704519                                                 |
+| combinations.salmeterol.est             | -0.1689474623154076                                                 |
+| combinations.salmeterol.se              | 0.03377443843790516                                                 |
+| combinations.tiotropium.est             | -0.35514426623387757                                                |
+| combinations.tiotropium.se              | 0.05186421882082558                                                 |

@@ -1,0 +1,26 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                            | value                            |
+|--------------------------------|----------------------------------|
+| comps                          | ["beta-blocker","sclerotherapy"] |
+| tau2                           | 0.33541916784087217              |
+| Q                              | 87.50217075174817                |
+| df                             | 28                               |
+| components.beta-blocker.est    | -0.5704821925794598              |
+| components.beta-blocker.se     | 0.23910746847351705              |
+| components.sclerotherapy.est   | -0.36384822902816794             |
+| components.sclerotherapy.se    | 0.16380900506102297              |
+| combinations.beta-blocker.est  | -0.5704821925794598              |
+| combinations.beta-blocker.se   | 0.23910746847351705              |
+| combinations.sclerotherapy.est | -0.36384822902816794             |
+| combinations.sclerotherapy.se  | 0.16380900506102297              |

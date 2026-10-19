@@ -1,0 +1,45 @@
+key,value
+comps,"[""aerobic exercise"",""aquatic exercise"",""diathermy (high)"",""diathermy (low)"",""education"",""electrical stimulation"",""placebo"",""proprioception exercise"",""strength exercise"",""ultrasound""]"
+tau2,0.15676005995200265
+Q,245.6664343395982
+df,59
+components.aerobic exercise.est,-0.3529137284560115
+components.aerobic exercise.se,0.1287249150811452
+components.aquatic exercise.est,-0.42526738798426605
+components.aquatic exercise.se,0.20286630205095774
+components.diathermy (high).est,-0.5805950810146115
+components.diathermy (high).se,0.42717596527394686
+components.diathermy (low).est,-0.6735704454627232
+components.diathermy (low).se,0.4271187863714161
+components.education.est,-0.1506243221084512
+components.education.se,0.14502404246160236
+components.electrical stimulation.est,-0.6729066264851002
+components.electrical stimulation.se,0.2580693268024488
+components.placebo.est,-0.0975810907943061
+components.placebo.se,0.35381411208662716
+components.proprioception exercise.est,-0.7291671600654237
+components.proprioception exercise.se,0.17204805085669964
+components.strength exercise.est,-0.5161082619981021
+components.strength exercise.se,0.11434076948242226
+components.ultrasound.est,-0.49510980129703663
+components.ultrasound.se,0.4861309040540488
+combinations.aerobic exercise.est,-0.3529137284560115
+combinations.aerobic exercise.se,0.1287249150811452
+combinations.aquatic exercise.est,-0.42526738798426605
+combinations.aquatic exercise.se,0.20286630205095774
+combinations.diathermy (high).est,-0.5805950810146115
+combinations.diathermy (high).se,0.42717596527394686
+combinations.diathermy (low).est,-0.6735704454627232
+combinations.diathermy (low).se,0.4271187863714161
+combinations.education.est,-0.1506243221084512
+combinations.education.se,0.14502404246160236
+combinations.electrical stimulation.est,-0.6729066264851002
+combinations.electrical stimulation.se,0.2580693268024488
+combinations.placebo.est,-0.0975810907943061
+combinations.placebo.se,0.35381411208662716
+combinations.proprioception exercise.est,-0.7291671600654237
+combinations.proprioception exercise.se,0.17204805085669964
+combinations.strength exercise.est,-0.5161082619981021
+combinations.strength exercise.se,0.11434076948242226
+combinations.ultrasound.est,-0.49510980129703663
+combinations.ultrasound.se,0.4861309040540488

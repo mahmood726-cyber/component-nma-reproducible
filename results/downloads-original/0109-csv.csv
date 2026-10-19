@@ -1,0 +1,17 @@
+key,value
+comps,"[""fluticasone"",""salmeterol"",""sfc""]"
+tau2,0
+Q,0.5688323613570238
+df,5
+components.fluticasone.est,-0.588621541118622
+components.fluticasone.se,0.47407515379105836
+components.salmeterol.est,-0.861663165450637
+components.salmeterol.se,0.4465484104493045
+components.sfc.est,-1.2377524141856395
+components.sfc.se,0.5470347670732773
+combinations.fluticasone.est,-0.588621541118622
+combinations.fluticasone.se,0.47407515379105836
+combinations.salmeterol.est,-0.861663165450637
+combinations.salmeterol.se,0.4465484104493045
+combinations.sfc.est,-1.2377524141856395
+combinations.sfc.se,0.5470347670732773

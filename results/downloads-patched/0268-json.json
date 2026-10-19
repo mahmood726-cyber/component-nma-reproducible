@@ -1,0 +1,235 @@
+{
+  "comps": [
+    "angerctrl",
+    "behavmod",
+    "cogrestruct",
+    "cogskills",
+    "intpprbsolv",
+    "moralrsng",
+    "other",
+    "relapseprev",
+    "roletaking",
+    "socskills",
+    "subabuse",
+    "victimimpact"
+  ],
+  "tau2": 0.0018414247225462172,
+  "Q": 68.8331518715206,
+  "df": 46,
+  "components": {
+    "angerctrl": {
+      "est": 0.1008882443267776,
+      "se": 0.03722493716902832
+    },
+    "behavmod": {
+      "est": -0.0638558840503384,
+      "se": 0.04359564501701628
+    },
+    "cogrestruct": {
+      "est": 0.032541171806605027,
+      "se": 0.03556143149711642
+    },
+    "cogskills": {
+      "est": -0.04204113502253427,
+      "se": 0.04480590100082034
+    },
+    "intpprbsolv": {
+      "est": 0.027278160476059618,
+      "se": 0.029590738122500064
+    },
+    "moralrsng": {
+      "est": 0.03847533911007392,
+      "se": 0.03954631934421418
+    },
+    "other": {
+      "est": 0.09412274841932813,
+      "se": 0.03602836639463059
+    },
+    "relapseprev": {
+      "est": 0.004608179052895227,
+      "se": 0.03755413926629273
+    },
+    "roletaking": {
+      "est": 0.02964817692566394,
+      "se": 0.030157122206550497
+    },
+    "socskills": {
+      "est": 0.06473843622109401,
+      "se": 0.04381329143405052
+    },
+    "subabuse": {
+      "est": -0.009944847795127339,
+      "se": 0.03369745602327274
+    },
+    "victimimpact": {
+      "est": -0.12865474246311315,
+      "se": 0.0441802719882022
+    }
+  },
+  "combinations": {
+    "angerctrl+behavmod+cogrestruct+cogskills+intpprbsolv+other+relapseprev+roletaking+socskills+subabuse+victimimpact": {
+      "est": 0.10932850789731041,
+      "se": 0.05767101811400283
+    },
+    "angerctrl+behavmod+cogrestruct+cogskills+moralrsng+socskills": {
+      "est": 0.1307461723916779,
+      "se": 0.04106339693563637
+    },
+    "angerctrl+behavmod+cogrestruct+cogskills+moralrsng+socskills+subabuse+victimimpact": {
+      "est": -0.007853417866562573,
+      "se": 0.04422348521751351
+    },
+    "angerctrl+behavmod+cogrestruct+cogskills+roletaking+socskills+subabuse": {
+      "est": 0.11197416241214059,
+      "se": 0.056419746379567634
+    },
+    "angerctrl+behavmod+cogskills+intpprbsolv+moralrsng+relapseprev+roletaking+socskills+subabuse": {
+      "est": 0.1497946692445643,
+      "se": 0.06247666698070593
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+moralrsng+other+victimimpact": {
+      "est": 0.12260978665319688,
+      "se": 0.06977513010807232
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+moralrsng+roletaking+socskills": {
+      "est": 0.2515283938437398,
+      "se": 0.03954239574381438
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills": {
+      "est": 0.28213580528022536,
+      "se": 0.050140248624228764
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills+subabuse": {
+      "est": 0.27219095748509803,
+      "se": 0.04457537438100439
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+relapseprev+roletaking": {
+      "est": 0.15292279756546714,
+      "se": 0.06882221416703724
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+roletaking+socskills": {
+      "est": 0.21305305473366593,
+      "se": 0.046237213928245306
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+roletaking+socskills+subabuse+victimimpact": {
+      "est": 0.07445346447542545,
+      "se": 0.05305040045965846
+    },
+    "angerctrl+cogrestruct+cogskills+intpprbsolv+socskills+subabuse+victimimpact": {
+      "est": 0.04480528754976151,
+      "se": 0.0546587591837216
+    },
+    "angerctrl+cogrestruct+cogskills+moralrsng+other+roletaking+socskills": {
+      "est": 0.31837298178700835,
+      "se": 0.06900487749601647
+    },
+    "angerctrl+cogrestruct+cogskills+moralrsng+roletaking+socskills": {
+      "est": 0.22425023336768024,
+      "se": 0.05649889876429194
+    },
+    "angerctrl+cogrestruct+cogskills+other+relapseprev+subabuse": {
+      "est": 0.1801743607879444,
+      "se": 0.05630604678340079
+    },
+    "angerctrl+cogrestruct+intpprbsolv+moralrsng+other+subabuse": {
+      "est": 0.28336081634371696,
+      "se": 0.04222433132658228
+    },
+    "angerctrl+cogrestruct+other+relapseprev": {
+      "est": 0.232160343605606,
+      "se": 0.05051297494693726
+    },
+    "angerctrl+cogskills+intpprbsolv+socskills+victimimpact": {
+      "est": 0.022208963538283832,
+      "se": 0.04905714547139602
+    },
+    "angerctrl+cogskills+moralrsng+other+roletaking+socskills": {
+      "est": 0.28583180998040336,
+      "se": 0.07761908606469746
+    },
+    "behavmod+cogrestruct+cogskills+intpprbsolv+other+roletaking+socskills": {
+      "est": 0.14243167477587806,
+      "se": 0.05467901327554749
+    },
+    "behavmod+cogrestruct+cogskills+intpprbsolv+other+socskills": {
+      "est": 0.11278349785021412,
+      "se": 0.05223362275933809
+    },
+    "behavmod+cogrestruct+cogskills+intpprbsolv+roletaking+socskills": {
+      "est": 0.048308926356549924,
+      "se": 0.052240575116442076
+    },
+    "behavmod+cogrestruct+cogskills+other+relapseprev+socskills+subabuse": {
+      "est": 0.0801686686319224,
+      "se": 0.03577576828858406
+    },
+    "behavmod+cogskills+intpprbsolv+other": {
+      "est": 0.015503889822515077,
+      "se": 0.07451356007778911
+    },
+    "cogrestruct+cogskills+intpprbsolv+other+relapseprev+socskills+subabuse": {
+      "est": 0.1713027131583204,
+      "se": 0.03328923889385811
+    },
+    "cogrestruct+cogskills+intpprbsolv+relapseprev+socskills+subabuse": {
+      "est": 0.07717996473899227,
+      "se": 0.043721807485635866
+    },
+    "cogrestruct+cogskills+intpprbsolv+roletaking": {
+      "est": 0.04742637418579431,
+      "se": 0.06058190946745961
+    },
+    "cogrestruct+cogskills+intpprbsolv+roletaking+socskills": {
+      "est": 0.11216481040688833,
+      "se": 0.03981165330587742
+    },
+    "cogrestruct+intpprbsolv+moralrsng": {
+      "est": 0.09829467139273856,
+      "se": 0.03628256894946505
+    },
+    "cogrestruct+intpprbsolv+moralrsng+relapseprev+socskills+subabuse": {
+      "est": 0.15769643887160048,
+      "se": 0.05411787440948933
+    },
+    "cogrestruct+intpprbsolv+moralrsng+socskills": {
+      "est": 0.16303310761383258,
+      "se": 0.05128304786003816
+    },
+    "cogrestruct+intpprbsolv+moralrsng+subabuse": {
+      "est": 0.08834982359761123,
+      "se": 0.03305589633424234
+    },
+    "cogrestruct+intpprbsolv+other+socskills+subabuse+victimimpact": {
+      "est": 0.08008092666484631,
+      "se": 0.04869111228164123
+    },
+    "cogrestruct+moralrsng": {
+      "est": 0.07101651091667895,
+      "se": 0.041257145667545146
+    },
+    "cogskills+intpprbsolv+other+roletaking+socskills": {
+      "est": 0.17374638701961143,
+      "se": 0.04700610203412505
+    },
+    "cogskills+intpprbsolv+roletaking+socskills": {
+      "est": 0.07962363860028329,
+      "se": 0.02434584086158878
+    },
+    "cogskills+intpprbsolv+socskills": {
+      "est": 0.04997546167461936,
+      "se": 0.02224405024049302
+    },
+    "cogskills+relapseprev+socskills+subabuse": {
+      "est": 0.01736063245632763,
+      "se": 0.03936947724086606
+    },
+    "intpprbsolv+relapseprev": {
+      "est": 0.031886339528954845,
+      "se": 0.051051785572256966
+    },
+    "other+relapseprev+subabuse": {
+      "est": 0.08878607967709604,
+      "se": 0.03975518275860209
+    }
+  }
+}

@@ -1,0 +1,45 @@
+key,value
+comps,"[""choice of product"",""gum"",""inhalator"",""intranasal spray"",""oral spray"",""patch"",""patch and gum"",""patch and inhalator"",""patch, gum, and lozenge"",""tablets/lozenges""]"
+tau2,0.035523286232991155
+Q,191.24535606529923
+df,121
+components.choice of product.est,0.395343499858432
+components.choice of product.se,0.11066710761623819
+components.gum.est,0.39409157909563886
+components.gum.se,0.04678268815723382
+components.inhalator.est,0.6387781857124076
+components.inhalator.se,0.20270831376719012
+components.intranasal spray.est,0.6921181968603465
+components.intranasal spray.se,0.18244708725972214
+components.oral spray.est,0.9063180387863279
+components.oral spray.se,0.40000729475735947
+components.patch.est,0.48015117559038994
+components.patch.se,0.05099804204021824
+components.patch and gum.est,0.033125450999938306
+components.patch and gum.se,0.34058990297800623
+components.patch and inhalator.est,0.06637506894487255
+components.patch and inhalator.se,0.3683241775889573
+"components.patch, gum, and lozenge.est",2.7080502011022105
+"components.patch, gum, and lozenge.se",1.0453496977736716
+components.tablets/lozenges.est,0.504236605808722
+components.tablets/lozenges.se,0.11364722034461176
+combinations.choice of product.est,0.395343499858432
+combinations.choice of product.se,0.11066710761623819
+combinations.gum.est,0.39409157909563886
+combinations.gum.se,0.04678268815723382
+combinations.inhalator.est,0.6387781857124076
+combinations.inhalator.se,0.20270831376719012
+combinations.intranasal spray.est,0.6921181968603465
+combinations.intranasal spray.se,0.18244708725972214
+combinations.oral spray.est,0.9063180387863279
+combinations.oral spray.se,0.40000729475735947
+combinations.patch.est,0.48015117559038994
+combinations.patch.se,0.05099804204021824
+combinations.patch and gum.est,0.033125450999938306
+combinations.patch and gum.se,0.34058990297800623
+combinations.patch and inhalator.est,0.06637506894487255
+combinations.patch and inhalator.se,0.3683241775889573
+"combinations.patch, gum, and lozenge.est",2.7080502011022105
+"combinations.patch, gum, and lozenge.se",1.0453496977736716
+combinations.tablets/lozenges.est,0.504236605808722
+combinations.tablets/lozenges.se,0.11364722034461176

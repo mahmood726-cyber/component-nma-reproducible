@@ -1,0 +1,42 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The model estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                       | value                                                  |
+|---------------------------|--------------------------------------------------------|
+| comps                     | ["ics","laba","laba-ics","placebo","tio-hh","tio-smi"] |
+| tau2                      | 0                                                      |
+| Q                         | 53.25525857938337                                      |
+| df                        | 76                                                     |
+| components.ics.est        | 0.1328125                                              |
+| components.ics.se         | NaN                                                    |
+| components.laba.est       | 0.0078125                                              |
+| components.laba.se        | NaN                                                    |
+| components.laba-ics.est   | -0.1171875                                             |
+| components.laba-ics.se    | NaN                                                    |
+| components.placebo.est    | 0.1171875                                              |
+| components.placebo.se     | NaN                                                    |
+| components.tio-hh.est     | 0.0390625                                              |
+| components.tio-hh.se      | NaN                                                    |
+| components.tio-smi.est    | 0.5234375                                              |
+| components.tio-smi.se     | NaN                                                    |
+| combinations.ics.est      | 0.1328125                                              |
+| combinations.ics.se       | 0                                                      |
+| combinations.laba.est     | 0.0078125                                              |
+| combinations.laba.se      | 0                                                      |
+| combinations.laba-ics.est | -0.1171875                                             |
+| combinations.laba-ics.se  | 0                                                      |
+| combinations.placebo.est  | 0.1171875                                              |
+| combinations.placebo.se   | 0                                                      |
+| combinations.tio-hh.est   | 0.0390625                                              |
+| combinations.tio-hh.se    | 0                                                      |
+| combinations.tio-smi.est  | 0.5234375                                              |
+| combinations.tio-smi.se   | 0                                                      |

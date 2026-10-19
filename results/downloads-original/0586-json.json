@@ -1,0 +1,38 @@
+{
+  "comps": [
+    "<tag>&x",
+    "__proto__",
+    "constructor"
+  ],
+  "tau2": 0,
+  "Q": 4.814824860968089e-33,
+  "df": 1,
+  "components": {
+    "<tag>&x": {
+      "est": 0.3,
+      "se": 0.1
+    },
+    "__proto__": {
+      "est": 0.10000000000000002,
+      "se": 0.2
+    },
+    "constructor": {
+      "est": 0.2,
+      "se": 0.15
+    }
+  },
+  "combinations": {
+    "<tag>&x": {
+      "est": 0.3,
+      "se": 0.1
+    },
+    "__proto__": {
+      "est": 0.10000000000000002,
+      "se": 0.2
+    },
+    "constructor": {
+      "est": 0.2,
+      "se": 0.15
+    }
+  }
+}

@@ -1,0 +1,28 @@
+# Component NMA
+
+_Generated 2026-10-19 with allmeta — browser-only evidence synthesis (https://github.com/)._
+
+## Methods
+
+Additive model for multi-component interventions (Welton et al., Am J Epidemiol 2009). Each intervention is a set of components (e.g., "drug + exercise + education"). The random-effects model uses a generalized DerSimonian–Laird estimator and normal 95% confidence intervals. It estimates one effect per component; any combination's effect is the sum of its components.
+
+Welton NJ, Caldwell DM, Adamopoulos E, Vedhara K. Mixed treatment comparison meta-analysis of complex interventions: psychological interventions in coronary heart disease. Am J Epidemiol 2009;169:1158-1165. R-parity: the additive engine matches netmeta::discomb(inactive="control") to 1e-4 on component effects + SE and the additive Q decomposition (hub/shared/tests/component-nma-parity.spec.mjs).
+
+## Results
+
+| key                  | value               |
+|----------------------|---------------------|
+| comps                | ["a","b"]           |
+| tau2                 | 0.11500000000000003 |
+| Q                    | 12.500000000000002  |
+| df                   | 1                   |
+| components.a.est     | 0.39999999999999997 |
+| components.a.se      | 0.39370039370059057 |
+| components.b.est     | 0.5499999999999999  |
+| components.b.se      | 0.25                |
+| combinations.a.est   | 0.39999999999999997 |
+| combinations.a.se    | 0.39370039370059057 |
+| combinations.a+b.est | 0.95                |
+| combinations.a+b.se  | 0.4663689526544408  |
+| combinations.b.est   | 0.5499999999999999  |
+| combinations.b.se    | 0.25                |

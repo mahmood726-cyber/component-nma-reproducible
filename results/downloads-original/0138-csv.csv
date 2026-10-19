@@ -1,0 +1,21 @@
+key,value
+comps,"[""cq"",""hcq"",""placebo"",""standard of care""]"
+tau2,0
+Q,6.134855254742309
+df,25
+components.cq.est,0.375
+components.cq.se,NaN
+components.hcq.est,-0.125
+components.hcq.se,NaN
+components.placebo.est,0
+components.placebo.se,NaN
+components.standard of care.est,-0.125
+components.standard of care.se,NaN
+combinations.cq.est,0.375
+combinations.cq.se,0
+combinations.hcq.est,-0.125
+combinations.hcq.se,0
+combinations.placebo.est,0
+combinations.placebo.se,0
+combinations.standard of care.est,-0.125
+combinations.standard of care.se,0

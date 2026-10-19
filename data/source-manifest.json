@@ -1,0 +1,30 @@
+{
+  "commit": "acd363fa33f0decd2fcafcf08814f663bb9d6178",
+  "files": {
+    "LICENSE": "05ac89555dffdedd1360a1fd01a584c6f3d6a0df404a72dd2d66b1d388a65952",
+    "component-nma/README.md": "7d59f67e227634cb064a5e2d31cd12c672878cfe985e75a11f179d207e660e77",
+    "component-nma/index.html": "6b363d41d58eb4bbb240982b8b672e4f4ec395f60e2e6bf47d7b8a366785769f",
+    "component-nma/tests/fixtures/cnma-oracle.R": "34dff84774966dfe8242577f0fa67076f9a9bd291afeb35eb5891f237aba0155",
+    "component-nma/tests/fixtures/cnma-oracle.json": "191af0084735feaab61448af53c94ee40bd8da22b051234a1636a45b2a258fe2",
+    "component-nma/tests/fixtures/cnma-tiny.csv": "a468284f5f0ef5031305652a4dd03bceaf0b5865beea809a689781daaaca9031",
+    "component-nma/tests/test_a11y.py": "5ff9cbccc3fee3c9fd2b8596237372588e6143c3e939d6c05a63dc4b0cbed876",
+    "component-nma/tests/test_smoke.py": "28b5dc3787886ff86db9da2b0628fc7459a03095622a21682a1dfdc8b2514365",
+    "component-nma/tests/test_structure.py": "dfdcd93aad2fada9d7f16a8ec82d5c8753e0ab7b87b34d83558d2f436c544abd",
+    "hub/app-style.css": "475254903d40eebe241574975f1ddff13808c8ad478c17137fda449a3952361f",
+    "hub/shared/a11y-landmarks.js": "a9b35c71c500b0fe4e5a080f23c9dbb11c5462663a0d44e4557f782149e5f8ea",
+    "hub/shared/chart-export-auto.js": "fd8f482db81863aac1e5dbbdbb48286249e04c185654117c5ac7a05c76a8fb20",
+    "hub/shared/results-export.js": "8fd30b46fc6e0d09b98326f69edf14757659dbcf2cf1434ca8c5de60c057cc71",
+    "hub/shared/vendor/jspdf.min.js": "98ccf17aa10c20bb1301762618fcc9b6ab3a4e7f26b6071d64d0b41154df3875",
+    "shared/app-flow.js": "2b8e366dbdbf5aebffc70f0b25b1ac7a49d65cc4ecfd7c0807113b3b5556162e",
+    "shared/autosave.js": "18bcc6c10f6177482b2f8453bede3f92887d7e6729413862cc903891405d23e8",
+    "shared/build-info.js": "f75a435e283d007883ce8fb2f66da7a1cf6132cd5a391a57419b137a69c9c238",
+    "shared/forced-colors.css": "a967581cb9dfe03bcd6158264353dd8c3fff386d2919143587aa507a24e0c39c",
+    "shared/ma-comparisons-v1.js": "161059ca0917937bf453542399d9ca176d48f09b50ff691b6dc28056bc1208ee",
+    "shared/ma-studies-v1.js": "0710fcb7284e1c837810e4d388d5538836d55483d6b014c6e7f864c44bf26bf6",
+    "shared/toast.js": "7562eaca3216ebb3312a42b54af03c3d0030acec22c59976de5537ce3ed11a5b"
+  },
+  "snapshot_files": {
+    "component-nma/tests/fixtures/cnma-oracle.R": "af32eacbdc7705b29e26ecf716258428780e3768d41aa6f362d42fd81a36a998"
+  },
+  "snapshot_normalization": "The unused upstream R fixture uses repository-relative paths in both snapshots. files records untouched upstream hashes; snapshot_files overrides only the portable snapshot hash. The executed page code and fix.patch are unaffected."
+}

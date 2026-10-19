@@ -1,0 +1,47 @@
+{
+  "comps": [
+    "comti",
+    "dopamine agonist",
+    "maobi",
+    "placebo"
+  ],
+  "tau2": 0.03081607586637195,
+  "Q": 64.97093067677271,
+  "df": 27,
+  "components": {
+    "comti": {
+      "est": -0.5,
+      "se": null
+    },
+    "dopamine agonist": {
+      "est": -0.25,
+      "se": null
+    },
+    "maobi": {
+      "est": -0.5,
+      "se": null
+    },
+    "placebo": {
+      "est": 0.25,
+      "se": null
+    }
+  },
+  "combinations": {
+    "comti": {
+      "est": -0.5,
+      "se": 0
+    },
+    "dopamine agonist": {
+      "est": -0.25,
+      "se": 0
+    },
+    "maobi": {
+      "est": -0.5,
+      "se": 0
+    },
+    "placebo": {
+      "est": 0.25,
+      "se": 0
+    }
+  }
+}

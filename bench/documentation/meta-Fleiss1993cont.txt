@@ -1,0 +1,45 @@
+_M_e_n_t_a_l _H_e_a_l_t_h _T_r_e_a_t_m_e_n_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Meta-analysis on the Effect of Mental Health Treatment on Medical
+     Utilisation.
+
+     Data example in Fleiss (1993) for meta-analysis with continuous
+     outcomes.
+
+_F_o_r_m_a_t:
+
+     A data frame with the following columns:
+
+           *_study_*  study label                               
+            *_year_*  year of publication                       
+          *_n.psyc_*  number of observations in psychotherapy   
+                      group                                     
+       *_mean.psyc_*  estimated mean in psychotherapy group     
+         *_sd.psyc_*  standard deviation in psychotherapy group 
+          *_n.cont_*  number of observations in control group   
+       *_mean.cont_*  estimated mean in control group           
+         *_sd.cont_*  standard deviation in control group       
+      
+_S_o_u_r_c_e:
+
+     Fleiss JL (1993): The statistical basis of meta-analysis.
+     _Statistical Methods in Medical Research_, *2*, 121-45
+
+_S_e_e _A_l_s_o:
+
+     'Fleiss1993bin'
+
+     'metacont'
+
+_E_x_a_m_p_l_e_s:
+
+     data(Fleiss1993cont)
+     # Note, the following command uses the bias-corrected version of
+     # Hedges' g. Accordingly, results differ from Fleiss (1993), section 3,
+     # using the uncorrected version of Hedges' g.
+     metacont(n.psyc, mean.psyc, sd.psyc, n.cont, mean.cont, sd.cont,
+       data = Fleiss1993cont, studlab = paste(study, year),
+       random = FALSE, sm = "SMD")
+     

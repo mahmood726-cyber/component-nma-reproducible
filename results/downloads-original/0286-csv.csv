@@ -1,0 +1,41 @@
+key,value
+comps,"[""hypericum"",""low-dose sari"",""nassa"",""nri"",""placebo"",""rmao-a"",""snri"",""ssri"",""tca""]"
+tau2,0.021002997278349617
+Q,50.189122490836
+df,41
+components.hypericum.est,0.125
+components.hypericum.se,NaN
+components.low-dose sari.est,0.3125
+components.low-dose sari.se,NaN
+components.nassa.est,0
+components.nassa.se,NaN
+components.nri.est,-0.03125
+components.nri.se,NaN
+components.placebo.est,-0.625
+components.placebo.se,NaN
+components.rmao-a.est,-0.171875
+components.rmao-a.se,NaN
+components.snri.est,0.109375
+components.snri.se,NaN
+components.ssri.est,-0.03125
+components.ssri.se,NaN
+components.tca.est,0.046875
+components.tca.se,NaN
+combinations.hypericum.est,0.125
+combinations.hypericum.se,0
+combinations.low-dose sari.est,0.3125
+combinations.low-dose sari.se,0
+combinations.nassa.est,0
+combinations.nassa.se,0
+combinations.nri.est,-0.03125
+combinations.nri.se,0
+combinations.placebo.est,-0.625
+combinations.placebo.se,0
+combinations.rmao-a.est,-0.171875
+combinations.rmao-a.se,0
+combinations.snri.est,0.109375
+combinations.snri.se,0
+combinations.ssri.est,-0.03125
+combinations.ssri.se,0
+combinations.tca.est,0.046875
+combinations.tca.se,0
