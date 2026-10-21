@@ -20,7 +20,7 @@ references:
     authors:
       - family-names: Ahmad
         given-names: Mahmood
-    version: "<ALLMETA_RELEASE>"
-    doi: "<ALLMETA_RELEASE_DOI>"
-    url: "https://github.com/mahmood726-cyber/allmeta/releases/tag/<ALLMETA_RELEASE>"
+    version: "v1.8.0"
+    doi: "10.5281/zenodo.23515177"
+    url: "https://github.com/mahmood726-cyber/allmeta/releases/tag/v1.8.0"
     notes: "isDerivedFrom; allmeta release containing the corrections"

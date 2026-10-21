@@ -1,6 +1,6 @@
 # Additive component network meta-analysis in the browser: validation of the allmeta component-nma app against netmeta
 
-Validated original page: allmeta commit acd363f (acd363fa33f0decd2fcafcf08814f663bb9d6178); component-nma and every file it loads are unchanged on main da66b89. Corrections: pull request #153, branch fix/component-nma-validate, head f7a78dc (f7a78dc542270ca461c3fa0b3fedca5c8e4a62a5), not yet merged. Release containing the corrections: allmeta <ALLMETA_RELEASE>, DOI <ALLMETA_RELEASE_DOI>. Upstream: https://github.com/mahmood726-cyber/allmeta.
+Validated original page: allmeta commit acd363f (acd363fa33f0decd2fcafcf08814f663bb9d6178); component-nma and every file it loads are unchanged on main da66b89. Corrections: pull request #153, branch fix/component-nma-validate, head f7a78dc (f7a78dc542270ca461c3fa0b3fedca5c8e4a62a5), not yet merged. Release containing the corrections: allmeta v1.8.0, DOI 10.5281/zenodo.23515177. Upstream: https://github.com/mahmood726-cyber/allmeta.
 
 R 4.6.0, netmeta 3.7.0, meta 8.5.0, metafor 5.2-1 (packageVersion 5.2.1), metadat 1.6-0, jsonlite 2.0.0; corpus construction also used metabook 0.2.0, mixmeta 1.2.2 and mvmeta 1.0.3. The installed data catalogue (639 entries) was screened; 54 package datasets supply 576 configurations, plus 19 focused cases, 595 in all. The R reference fits 330 and refuses 265 (256 unidentifiable component designs, 2 with fewer than two contrasts, 7 invalid inputs). Package examples are software fixtures, not clinical analyses.
 

@@ -99,8 +99,11 @@ def verify():
     assert exp['patched']['passed'] == exp['patched']['checks'], 'Patched page does not pass every check'
     for name in ['README.md', 'CITATION.cff', '.zenodo.json']:
         text = (ROOT / name).read_text(encoding='utf-8')
-        assert '<ALLMETA_RELEASE>' in text and '<ALLMETA_RELEASE_DOI>' in text, 'Release tokens missing: ' + name
+        assert '<ALLMETA_RELEASE' not in text, 'Unfilled release token: ' + name
+        assert 'v1.8.0' in text and '10.5281/zenodo.23515177' in text, 'allmeta v1.8.0 tag/DOI missing: ' + name
         assert FIX[:7] in text and ORIG[:7] in text, 'Provenance commits missing: ' + name
+    eq = (ROOT / 'RELEASE_EQUIVALENCE.md').read_text(encoding='utf-8')
+    assert '1cb3f8409c7af75ed41f7e1811f9c502f900fc79' in eq and 'byte-identical' in eq, 'Release equivalence record missing'
     print(f'ARCHIVE PASS: {len(files)} source files; inventory, coverage, patch replay, expected counts verified', flush=True)
 
 

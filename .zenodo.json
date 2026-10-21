@@ -16,10 +16,10 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://github.com/mahmood726-cyber/allmeta/releases/tag/<ALLMETA_RELEASE>",
+      "identifier": "https://github.com/mahmood726-cyber/allmeta/releases/tag/v1.8.0",
       "relation": "isDerivedFrom",
       "scheme": "url"
     }
   ],
-  "description": "Validation archive for the allmeta component-nma page against R netmeta 3.7.0. Validated original page: commit acd363f (component-nma unchanged on main da66b89). Corrections: pull request #153, branch fix/component-nma-validate, head f7a78dc. allmeta release <ALLMETA_RELEASE>, DOI <ALLMETA_RELEASE_DOI>."
+  "description": "Validation archive for the allmeta component-nma page against R netmeta 3.7.0. Validated original page: commit acd363f (component-nma unchanged on main da66b89). Corrections: pull request #153, branch fix/component-nma-validate, head f7a78dc. allmeta release v1.8.0, DOI 10.5281/zenodo.23515177."
 }
